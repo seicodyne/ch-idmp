@@ -28,7 +28,7 @@ contact:
 
 dependencies:
 #  ch.fhir.ig.ch-core: 4.0.1
-  hl7.terminology: 5.4.0
+  hl7.terminology: 5.5.0
 
 pages:
   index.md:
@@ -37,8 +37,6 @@ pages:
     title: IDMP Standard ISO 11615
   authorised-medicinal-product.md:
     title: Datasource Authorised Medicinal Product
-  spezialitaetenliste.md:
-    title: Dataexport FOPH Spezialitätenliste
   usecase-german.md:
     title: Use Cases
   examples.md:
@@ -55,7 +53,6 @@ menu:
   Documentation:
     ISO IDMP: idmp.html
     Datasource: authorised-medicinal-product.html
-    Spezialitätenliste: spezialitaetenliste.html
   Use Case:
     German: usecase-german.html 
   Examples: examples.html

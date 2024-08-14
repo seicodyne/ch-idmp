@@ -8,7 +8,7 @@ Description: "Defines basic constraints and extensions on the Organization resou
 * identifier ^slicing.discriminator.type = #type
 * identifier ^slicing.discriminator.path = "$this"
 * identifier ^slicing.rules = #open
-* identifier.value 0..
+//* identifier.value 0..
 * identifier contains
 //    BER 0..1 and
 //    UIDB 0..1 and
