@@ -102,3 +102,4 @@ Description: "Value Set for the Packaging from EDQM used by SMC"
 * $edqm#13131000 "Capsule for opening"
 * $edqm#13151000 "Tablet tube"
 * $edqm#13156000 "Gas cylinder bundle"
+

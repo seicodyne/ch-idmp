@@ -88,7 +88,3 @@ Description: "Value Set for the Route Of Administration from EDQM"
 * $edqm#20081000 "Subretinal use"
 * $edqm#20084000 "Intracorneal use"
 * $edqm#20086000 "Intraputaminal use"
-
-
-
-

@@ -8,7 +8,7 @@ Description: "Xospata 40 mg, Filmtabletten: Example of a ClinicalUseDefinition (
 * type = #indication
 
 // (the link between the IDMP class and Medicinal Product)
-* subject = Reference(Xospata-40mg-Filmcoatedtablet) 
+* subject = Reference(Xospata-Filmcoatedtablet) 
 
 // Therapeutic Indication.Indication as "Disease / Symptom / Procedure", and Therapeutic Indication.Indication Text
 * indication.diseaseSymptomProcedure.concept = $IndicationAs#10081513 "Acute myeloid leukaemia refractory"
@@ -29,7 +29,7 @@ Description: "Xospata 40 mg, Filmtabletten: Example of a ClinicalUseDefinition (
 * type = #indication
 
 // (the link between the IDMP class and Medicinal Product)
-* subject = Reference(Xospata-40mg-Filmcoatedtablet) 
+* subject = Reference(Xospata-Filmcoatedtablet) 
 
 // Therapeutic Indication.Indication as "Disease / Symptom / Procedure", and Therapeutic Indication.Indication Text
 * indication.diseaseSymptomProcedure.concept = $IndicationAs#10081514 "Acute myeloid leukemia refractory"
@@ -50,7 +50,7 @@ Description: "Xospata 40 mg, Filmtabletten: Example of a ClinicalUseDefinition (
 * type = #indication
 
 // (the link between the IDMP class and Medicinal Product)
-* subject = Reference(Xospata-40mg-Filmcoatedtablet) 
+* subject = Reference(Xospata-Filmcoatedtablet) 
 
 // Therapeutic Indication.Indication as "Disease / Symptom / Procedure", and Therapeutic Indication.Indication Text
 * indication.diseaseSymptomProcedure.concept = $IndicationAs#10059034 "Acute myeloid leukaemia recurrent"
@@ -71,7 +71,7 @@ Description: "Xospata 40 mg, Filmtabletten: Example of a ClinicalUseDefinition (
 * type = #indication
 
 // (the link between the IDMP class and Medicinal Product)
-* subject = Reference(Xospata-40mg-Filmcoatedtablet) 
+* subject = Reference(Xospata-Filmcoatedtablet) 
 
 // Therapeutic Indication.Indication as "Disease / Symptom / Procedure", and Therapeutic Indication.Indication Text
 * indication.diseaseSymptomProcedure.concept = $IndicationAs#10060558 "Acute myeloid leukemia recurrent"
@@ -92,7 +92,7 @@ Description: "Xospata 40 mg, Filmtabletten: Example of a ClinicalUseDefinition (
 * type = #indication
 
 // (the link between the IDMP class and Medicinal Product)
-* subject = Reference(Xospata-40mg-Filmcoatedtablet) 
+* subject = Reference(Xospata-Filmcoatedtablet) 
 
 // Therapeutic Indication.Indication as "Disease / Symptom / Procedure", and Therapeutic Indication.Indication Text
 * indication.diseaseSymptomProcedure.concept = $IndicationAs#10084619 "FLT3-Gen-Mutation"

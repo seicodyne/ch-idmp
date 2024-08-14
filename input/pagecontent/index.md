@@ -1,6 +1,8 @@
 ### Introduction
 
-CH EPL is a project of the Swiss Federal Office of Public Health (FOPH), to enable to receive IDMP/FHIR based medicinal product information from SMC and the marketing authorisation holders and to export the Spezialitätenliste in FHIR 
+CH IDMP is a project of the Refdata Foundation Switzerland to enable stuctured datacommunication of medicinal product information in IDMP/FHIR. 
+
+This is a draft implementation guide as basis for the first IDMP pilot project planned for the year 2025. 
 
 ### IDMP Dependencies
 This implementation guide is dependent on 
@@ -15,12 +17,11 @@ This implementation guide is dependent on
 which describe the international context, especially related to IDMP.
 
 ### Documentation
-This implementation guide describes mainly the exchange formats and handlings around the "Spezialitätenliste". 
+This implementation guide describes mainly the exchange formats for the Swiss IDMP Pilot Project. 
 
 The following documents have been defined (and described in more detail on the respective subsections):
-[IDMP](idmp.html)
-[Data Import to FOPH](authorised-medicinal-product.html)
-[Data Export from FOPH](spezialitaetenliste.html)
+[IDMP](idmp.html)<br>
+[Data Import / Export in FHIR](authorised-medicinal-product.html)
 
 <div markdown="1" class="stu-note">
 
@@ -33,6 +34,9 @@ The following documents have been defined (and described in more detail on the r
 ### Collaboration
 This guide is the product of collaborative work undertaken with participants from:
 
+* [Refdata Foundation Switzerland](https://www.refdata.ch)
+* [Astellas Pharma AG Switzerland](https://www.astellas.com/ch/de/)
+* [HCI Solutions AG](https://www.hcisolutions.ch)
 * [Swiss FHIR Implementers Community](https://www.fhir.ch)
 * [HL7 Switzerland](https://www.hl7.ch)
 * [eHealth Suisse](https://www.e-health-suisse.ch/startseite.html)

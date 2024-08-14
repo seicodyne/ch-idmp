@@ -43,90 +43,67 @@ Alias: $CSChIgExampleTranslation =      https://fhir.ch/ig/ch-ig/CodeSystem/ch-i
 Alias:  $FHIR-Domain =                                       http://hl7.org/fhir/medicinal-product-domain
 
 // Section Yellow - Medicinal Product
-Alias:  $CH-MedicialProductNameTypeCS =                      http://fhir.ch/ig/ch-epl/CodeSystem/ch-medicinal-product-name-type
+Alias:  $CH-MedicialProductNameTypeCS =                      http://fhir.ch/ig/ch-idmp/CodeSystem/ch-medicinal-product-name-type
 
 // SMC
-Alias:  $SMC-DomainCS =                                 http://fhir.ch/ig/ch-epl/CodeSystem/ch-SMC-domain //Provisorisch
+Alias:  $SMC-DomainCS =                                 http://fhir.ch/ig/ch-idmp/CodeSystem/ch-SMC-domain //Provisorisch
 Alias:  $SMC-AuthorisedDoseFormCS =                   urn:oid:0.4.0.127.0.16.1.1.2.1
-Alias:  $SMC-AdditionalMonitoringIndicatorCS =        http://fhir.ch/ig/ch-epl/CodeSystem/ch-SMC-additional-monitoring-indicator //Provisorisch
-Alias:  $SMC-PediatricUseIndicatorCS =                http://fhir.ch/ig/ch-epl/CodeSystem/ch-SMC-pediatric-use-indicator //Provisorisch
-//Alias:  $SMC-SpecialMeasures =                        http://fhir.ch/ig/ch-epl/CodeSystem/ch-SMC-SpecialMeasures //Provisorisch
-Alias:  $SMC-HeilmittelcodeCS =                       http://fhir.ch/ig/ch-epl/CodeSystem/ch-SMC-heilmittelcode //Provisorisch
-Alias:  $SMC-OrphanIndicationType =                   http://fhir.ch/ig/ch-epl/CodeSystem/ch-SMC-OrphanIndicationType //Provisorisch
-Alias:  $SMC-OrphanDesignationAuthorisationStatus =   http://fhir.ch/ig/ch-epl/CodeSystem/ch-SMC-OrphanDesignationAuthorisationStatus //Provisorisch
-Alias:  $CH-MedicinalProductNameType =                       http://fhir.ch/ig/ch-epl/CodeSystem/ch-medicinal-product-name-type
-Alias:  $SMC-MasterFileType =                         http://fhir.ch/ig/ch-epl/CodeSystem/ch-SMC-MasterFileType //Provisorisch
-Alias:  $SMC-ReferencedProductType =                  http://fhir.ch/ig/ch-epl/CodeSystem/ch-SMC-ReferencedProductType //Provisorisch
-Alias:  $SMC-AttachedDocumentTypeCS =                 http://fhir.ch/ig/ch-epl/CodeSystem/ch-SMC-attached-document-type //Provisorisch
+Alias:  $SMC-AdditionalMonitoringIndicatorCS =        http://fhir.ch/ig/ch-idmp/CodeSystem/ch-SMC-additional-monitoring-indicator //Provisorisch
+Alias:  $SMC-AttachedDocumentType =                         http://fhir.ch/ig/ch-idmp/CodeSystem/ch-SMC-AttachedDocumentType //Provisorisch
+Alias:  $SMC-PediatricUseIndicatorCS =                http://fhir.ch/ig/ch-idmp/CodeSystem/ch-SMC-pediatric-use-indicator //Provisorisch
+Alias:  $SMC-TherapeuticProductcodeCS =                       http://fhir.ch/ig/ch-idmp/CodeSystem/ch-SMC-therapeuticproductcode //Provisorisch
+Alias:  $SMC-OrphanIndicationType =                   http://fhir.ch/ig/ch-idmp/CodeSystem/ch-SMC-OrphanIndicationType //Provisorisch
+Alias:  $SMC-OrphanDesignationAuthorisationStatus =   http://fhir.ch/ig/ch-idmp/CodeSystem/ch-SMC-OrphanDesignationAuthorisationStatus //Provisorisch
+Alias:  $CH-MedicinalProductNameType =                       http://fhir.ch/ig/ch-idmp/CodeSystem/ch-medicinal-product-name-type
+Alias:  $SMC-MasterFileType =                         http://fhir.ch/ig/ch-idmp/CodeSystem/ch-SMC-MasterFileType //Provisorisch
+Alias:  $SMC-ReferencedProductType =                  http://fhir.ch/ig/ch-idmp/CodeSystem/ch-SMC-ReferencedProductType //Provisorisch
+
+// FOPH
+Alias:  $ePL-StatusMedicinalProduct =                        http://fhir.ch/ig/ch-idmp/CodeSystem/ch-idmp-foph-status-medicinal-product 
 
 // Section Green - Marketing Authorisations
 
 // SMC
-Alias:  $CH-AuthorisationType =                              http://fhir.ch/ig/ch-epl/CodeSystem/ch-authorisation-type //Provisorisch
-Alias:  $SMC-LegalStatusOfSupplyCS =                  http://fhir.ch/ig/ch-epl/CodeSystem/ch-SMC-legal-status-of-supply //Provisorisch
-Alias:  $SMC-AuthorisationStatusCS =                  http://fhir.ch/ig/ch-epl/CodeSystem/ch-SMC-authorisation-status //Provisorisch
-Alias:  $SMC-ProcedureType =                          http://fhir.ch/ig/ch-epl/CodeSystem/ch-SMC-ProcedureType //Provisorisch
-Alias:  $SMC-ProcedureTypeVS =                        http://fhir.ch/ig/ch-epl/ValueSet/ch-SMC-ProcedureType //Provisorisch
-Alias:  $SMC-ApplicationType =                        http://fhir.ch/ig/ch-epl/CodeSystem/ch-SMC-ApplicationType //Provisorisch
-Alias:  $SMC-ApplicationTypeVS =                      http://fhir.ch/ig/ch-epl/ValueSet/ch-SMC-ApplicationType //Provisorisch
-Alias:  $SMC-MarketingStatusCS =                      http://fhir.ch/ig/ch-epl/CodeSystem/ch-SMC-marketing-status //Provisorisch
-
-// FOPH
-Alias:  $ePL-MedicinalProductStatusCS =                      http://fhir.ch/ig/ch-epl/CodeSystem/ch-epl-foph-medicinal-product-status
-Alias:  $ePL-TypeOfPriceChangeCS =                           http://fhir.ch/ig/ch-epl/CodeSystem/ch-epl-foph-type-of-price-change 
-Alias:  $ePL-LimitationStatusCS =                            http://fhir.ch/ig/ch-epl/CodeSystem/ch-epl-foph-limitation-status 
-Alias:  $ePL-ReimbursementStatusCS =                         http://fhir.ch/ig/ch-epl/CodeSystem/ch-epl-foph-reimbursement-status  
-Alias:  $ePL-ListingStatusCS =                               http://fhir.ch/ig/ch-epl/CodeSystem/ch-epl-foph-listing-status  
-Alias:  $ePL-GammeCS =                                       http://fhir.ch/ig/ch-epl/CodeSystem/ch-epl-foph-gamme
-Alias:  $ePL-PriceTypeCS =                                   http://fhir.ch/ig/ch-epl/CodeSystem/ch-epl-foph-price-type
+Alias:  $CH-AuthorisationType =                       http://fhir.ch/ig/ch-idmp/CodeSystem/ch-authorisation-type //Provisorisch
+Alias:  $SMC-LegalStatusOfSupplyCS =                  http://fhir.ch/ig/ch-idmp/CodeSystemch-SMC-legal-status-of-supply //Provisorisch
+Alias:  $SMC-AuthorisationStatusCS =                  http://fhir.ch/ig/ch-idmp/CodeSystem/ch-SMC-authorisation-status //Provisorisch
+Alias:  $SMC-ProcedureType =                          http://fhir.ch/ig/ch-idmp/CodeSystem/ch-SMC-ProcedureType //Provisorisch
+Alias:  $SMC-ProcedureTypeVS =                        http://fhir.ch/ig/ch-idmp/ValueSet/ch-SMC-ProcedureType //Provisorisch
+Alias:  $SMC-ApplicationType =                        http://fhir.ch/ig/ch-idmp/CodeSystem/ch-SMC-ApplicationType //Provisorisch
+Alias:  $SMC-ApplicationTypeVS =                      http://fhir.ch/ig/ch-idmp/ValueSet/ch-SMC-ApplicationType //Provisorisch
+Alias:  $SMC-MarketingStatusCS =                      http://fhir.ch/ig/ch-idmp/CodeSystem/ch-SMC-marketing-status //Provisorisch
 
 // Section purple - Clinical Particulars 
 
 // SMC
-//Alias:  $ema-IntendedEffectCS =                              http://fhir.ch/ig/ch-epl/CodeSystem/ch-ema-intended-effect //Provisorisch
+//Alias:  $ema-IntendedEffectCS =                              http://fhir.ch/ig/ch-idmp/CodeSystem/ch-ema-intended-effect //Provisorisch
 
 // Section blue - Packaging
 
 // SMC
-Alias:  $SMC-DataCarrierIdentifierSystem =            http://fhir.ch/ig/ch-epl/CodeSystem/ch-SMC-DataCarrierIdentifierSystem //Provisorisch GS1 urn:oid:2.51.1.1
-Alias:  $SMC-DataCarrierIdentifierSystemVS =          http://fhir.ch/ig/ch-epl/ValueSet/ch-SMC-DataCarrierIdentifierSystem //Provisorisch GS1 urn:oid:2.51.1.1
-// Alias:  $SMC-PackageItemContainerTypeCS =             http://fhir.ch/ig/ch-epl/CodeSystem/edqm-packaging
-Alias:  $SMC-PackageCharacteristics =                 http://fhir.ch/ig/ch-epl/CodeSystem/ch-SMC-PackageCharacteristics //Provisorisch 
-Alias:  $SMC-PackageCharacteristicsVS =               http://fhir.ch/ig/ch-epl/ValueSet/ch-SMC-PackageCharacteristics //Provisorisch
-Alias:  $SMC-PackageComponentType =                   http://fhir.ch/ig/ch-epl/CodeSystem/ch-SMC-PackageComponentType //Provisorisch //EDQM urn:oid:0.4.0.127.0.16.1.1.2.9
-Alias:  $SMC-PackageComponentTypeVS =                 http://fhir.ch/ig/ch-epl/ValueSet/ch-SMC-PackageComponentType //Provisorisch //EDQM urn:oid:0.4.0.127.0.16.1.1.2.9
-// Alias:  $SMC-ShelfLifeTimePeriodUnit =                http://unitsofmeasure.org 
-Alias:  $SMC-ShelfLifeTimePeriodUnitVS =              http://fhir.ch/ig/ch-epl/ValueSet/ch-SMC-ShelfLifeTimePeriodUnit //Provisorisch
-Alias:  $SMC-SpecialPrecautionsForStorageCS =         http://fhir.ch/ig/ch-epl/CodeSystem/ch-SMC-special-precautions-for-storage //Provisorisch
-Alias:  $SMC-Scoring =                                http://fhir.ch/ig/ch-epl/CodeSystem/ch-SMC-Scoring //Provisorisch
-Alias:  $SMC-ScoringVS =                              http://fhir.ch/ig/ch-epl/ValueSet/ch-SMC-Scoring //Provisorisch
-// Alias:  $SMC-ManufacturedDoseFormCS =                 urn:oid:0.4.0.127.0.16.1.1.2.1
-// Alias:  $SMC-ManufacturedDoseFormVS =                 http://fhir.ch/ig/ch-emed/ValueSet/edqm-pharmaceuticaldoseform 
-// Alias:  $SMC-UnitOfPresentationCS =                   http://fhir.ch/ig/ch-epl/CodeSystem/edqm-unit-of-presentation
+Alias:  $SMC-DataCarrierIdentifierSystem =            http://fhir.ch/ig/ch-idmp/CodeSystem/ch-SMC-DataCarrierIdentifierSystem //Provisorisch GS1 urn:oid:2.51.1.1
+Alias:  $SMC-DataCarrierIdentifierSystemVS =          http://fhir.ch/ig/ch-idmp/ValueSet/ch-SMC-DataCarrierIdentifierSystem //Provisorisch GS1 urn:oid:2.51.1.1
+Alias:  $SMC-PackageCharacteristics =                 http://fhir.ch/ig/ch-idmp/CodeSystem/ch-SMC-PackageCharacteristics //Provisorisch 
+Alias:  $SMC-PackageCharacteristicsVS =               http://fhir.ch/ig/ch-idmp/ValueSet/ch-SMC-PackageCharacteristics //Provisorisch
+Alias:  $SMC-PackageComponentType =                   http://fhir.ch/ig/ch-idmp/CodeSystem/ch-SMC-PackageComponentType //Provisorisch //EDQM urn:oid:0.4.0.127.0.16.1.1.2.9
+Alias:  $SMC-PackageComponentTypeVS =                 http://fhir.ch/ig/ch-idmp/ValueSet/ch-SMC-PackageComponentType //Provisorisch //EDQM urn:oid:0.4.0.127.0.16.1.1.2.9
+Alias:  $SMC-ShelfLifeTimePeriodUnitVS =              http://fhir.ch/ig/ch-idmp/ValueSet/ch-SMC-ShelfLifeTimePeriodUnit //Provisorisch
+Alias:  $SMC-SpecialPrecautionsForStorageCS =         http://fhir.ch/ig/ch-idmp/ValueSet/ch-SMC-SpecialPrecautionsForStorage //Provisorisch
+Alias:  $SMC-Scoring =                                http://fhir.ch/ig/ch-idmp/CodeSystem/ch-SMC-Scoring //Provisorisch
+Alias:  $SMC-ScoringVS =                              http://fhir.ch/ig/ch-idmp/ValueSet/ch-SMC-Scoring //Provisorisch
 
 // Section orange - Substances Strength
 
 // SMC
-Alias:  $SMC-IngredientRoleCS =                       http://fhir.ch/ig/ch-epl/CodeSystem/ch-SMC-ingredient-role //Provisorisch                      
-Alias:  $SMC-SubstanceCS =                            http://fhir.ch/ig/ch-epl/CodeSystem/ch-SMC-substance //Provisorisch                      
-Alias:  $SMC-OriginOfSubstance =                      http://fhir.ch/ig/ch-epl/CodeSystem/ch-SMC-OriginOfSubstance //Provisorisch                      
-Alias:  $SMC-OriginOfSubstanceVS =                    http://fhir.ch/ig/ch-epl/ValueSet/ch-SMC-OriginOfSubstance //Provisorisch
-Alias:  $SMC-QuantityOperator =                       http://fhir.ch/ig/ch-epl/CodeSystem/ch-SMC-QuantityOperator //Provisorisch                      
-Alias:  $SMC-QuantityOperatorVS =                     http://fhir.ch/ig/ch-epl/ValueSet/ch-SMC-QuantityOperator //Provisorisch
-Alias:  $SMC-StrengthPresentationUnit =               http://fhir.ch/ig/ch-epl/CodeSystem/ch-SMC-StrengthPresentationUnit //Provisorisch //EDQM urn:oid:0.4.0.127.0.16.1.1.2.11 
-Alias:  $SMC-StrengthPresentationUnitVS =             http://fhir.ch/ig/ch-epl/ValueSet/ch-SMC-StrengthPresentationUnit //Provisorisch //EDQM urn:oid:0.4.0.127.0.16.1.1.2.11 
+Alias:  $SMC-IngredientRoleCS =                       http://fhir.ch/ig/ch-idmp/CodeSystem/ch-SMC-ingredient-role //Provisorisch                     
+Alias:  $SMC-SubstanceCS =                            http://fhir.ch/ig/ch-idmp/CodeSystem/ch-SMC-substance //Provisorisch                      
+Alias:  $SMC-OriginOfSubstance =                      http://fhir.ch/ig/ch-idmp/CodeSystem/ch-SMC-OriginOfSubstance //Provisorisch                      
+Alias:  $SMC-OriginOfSubstanceVS =                    http://fhir.ch/ig/ch-idmp/ValueSet/ch-SMC-OriginOfSubstance //Provisorisch
+Alias:  $SMC-QuantityOperator =                       http://fhir.ch/ig/ch-idmp/CodeSystem/ch-SMC-QuantityOperator //Provisorisch                      
+Alias:  $SMC-QuantityOperatorVS =                     http://fhir.ch/ig/ch-idmp/ValueSet/ch-SMC-QuantityOperator //Provisorisch
+Alias:  $SMC-StrengthPresentationUnit =               http://fhir.ch/ig/ch-idmp/CodeSystem/ch-SMC-StrengthPresentationUnit //Provisorisch //EDQM urn:oid:0.4.0.127.0.16.1.1.2.11 
+Alias:  $SMC-StrengthPresentationUnitVS =             http://fhir.ch/ig/ch-idmp/ValueSet/ch-SMC-StrengthPresentationUnit //Provisorisch //EDQM urn:oid:0.4.0.127.0.16.1.1.2.11 
 
-// SMC
-
-// Section red - Pharmaceutical Product
-
-// SMC
-// Alias:  $SMC-RouteOfAdministrationCS =                urn:oid:0.4.0.127.0.16.1.1.2.1
-// Alias:  $SMC-RouteOfAdministrationVS =                http://fhir.ch/ig/ch-emed/ValueSet/edqm-routeofadministration
-Alias:  $SMC-MethodOfAdministration =                 http://fhir.ch/ig/ch-epl/CodeSystem/ch-SMC-MethodOfAdministration //Provisorisch 
-Alias:  $SMC-MethodOfAdministrationVS =               http://fhir.ch/ig/ch-epl/ValueSet/ch-SMC-MethodOfAdministration //Provisorisch 
-// Alias:  $SMC-AdministrableDoseFormCS =                urn:oid:0.4.0.127.0.16.1.1.2.1
-//Alias:  $SMC-AdministrableDoseFormVS =                http://fhir.ch/ig/ch-emed/ValueSet/edqm-pharmaceuticaldoseform
 
 // External Identifier Systems
 

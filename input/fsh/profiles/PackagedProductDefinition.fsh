@@ -5,31 +5,31 @@ Title: "IDMP PackagedProductDefinition"
 Description: "Profile of the PackagedProductDefinition resource for representing a medically related item or items, in a container or package."
 * . ^short = "CH IDMP PackagedProductDefinition"
 
-* identifier ^slicing.discriminator.type = #value
-* identifier ^slicing.discriminator.path = "system"
-* identifier ^slicing.rules = #open
-* identifier contains
-    PCID 0..1 and
-    GTIN 0..1 
-* identifier[PCID].system = $PCID
-* identifier[PCID].value 1..
-* identifier[GTIN].system = "urn:oid:2.51.1.1"
-* identifier[GTIN].value 1..
+//* identifier ^slicing.discriminator.type = #value
+//* identifier ^slicing.discriminator.path = "system"
+//* identifier ^slicing.rules = #open
+//* identifier contains
+//    PCID 0..1 and
+//    GTIN 0..1 
+//* identifier[PCID].system = $PCID
+//* identifier[PCID].value 1..
+//* identifier[GTIN].system = "urn:oid:2.51.1.1"
+//* identifier[GTIN].value 1..
 
 * packageFor only Reference(CHIDMPMedicinalProductDefinition)
 
 * description ^short = "Textual description (this is not the name of the package or product)"
 
-* legalStatusOfSupply.code from ChSMCLegalStatusOfSupplyVS (required)
-* legalStatusOfSupply.code.coding 1..
-* legalStatusOfSupply.code.coding ^slicing.discriminator.type = #value
-* legalStatusOfSupply.code.coding ^slicing.discriminator.path = "system"
-* legalStatusOfSupply.code.coding ^slicing.rules = #open
-* legalStatusOfSupply.code.coding contains 
-    SMC 0..1
-* legalStatusOfSupply.code.coding[SMC].system 1..
-* legalStatusOfSupply.code.coding[SMC].system = $SMC-LegalStatusOfSupplyCS
-* legalStatusOfSupply.code.coding[SMC].code 1..
+//* legalStatusOfSupply.code from ChSMCLegalStatusOfSupplyVS (required)
+//* legalStatusOfSupply.code.coding 1..
+//* legalStatusOfSupply.code.coding ^slicing.discriminator.type = #value
+//* legalStatusOfSupply.code.coding ^slicing.discriminator.path = "system"
+//* legalStatusOfSupply.code.coding ^slicing.rules = #open
+//* legalStatusOfSupply.code.coding contains 
+//    SMC 0..1
+//* legalStatusOfSupply.code.coding[SMC].system 1..
+// * legalStatusOfSupply.code.coding[SMC].system = ChSMCLegalStatusOfSupplyCS
+//* legalStatusOfSupply.code.coding[SMC].code 1..
 
 * marketingStatus.country = $country#CH
 
@@ -65,16 +65,16 @@ Description: "Profile of the PackagedProductDefinition resource for representing
 * packaging.shelfLifeStorage.type 
 * packaging.shelfLifeStorage.periodDuration
 
-* packaging.shelfLifeStorage.specialPrecautionsForStorage from ChSMCSpecialPrecautionsForStorageVS (required)
-* packaging.shelfLifeStorage.specialPrecautionsForStorage.coding 1..
-* packaging.shelfLifeStorage.specialPrecautionsForStorage.coding ^slicing.discriminator[+].type = #value
-* packaging.shelfLifeStorage.specialPrecautionsForStorage.coding ^slicing.discriminator[=].path = "system"
-* packaging.shelfLifeStorage.specialPrecautionsForStorage.coding ^slicing.rules = #open
-* packaging.shelfLifeStorage.specialPrecautionsForStorage.coding contains 
-    SMC 0..1
-* packaging.shelfLifeStorage.specialPrecautionsForStorage.coding[SMC].system 1..
-* packaging.shelfLifeStorage.specialPrecautionsForStorage.coding[SMC].system = $SMC-SpecialPrecautionsForStorageCS
-* packaging.shelfLifeStorage.specialPrecautionsForStorage.coding[SMC].code 1..
+//* packaging.shelfLifeStorage.specialPrecautionsForStorage from ChSMCSpecialPrecautionsForStorageVS (required)
+//* packaging.shelfLifeStorage.specialPrecautionsForStorage.coding 1..
+//* packaging.shelfLifeStorage.specialPrecautionsForStorage.coding ^slicing.discriminator[+].type = #value
+//* packaging.shelfLifeStorage.specialPrecautionsForStorage.coding ^slicing.discriminator[=].path = "system"
+//* packaging.shelfLifeStorage.specialPrecautionsForStorage.coding ^slicing.rules = #open
+//* packaging.shelfLifeStorage.specialPrecautionsForStorage.coding contains 
+//    SMC 0..1
+//* packaging.shelfLifeStorage.specialPrecautionsForStorage.coding[SMC].system 1..
+//* packaging.shelfLifeStorage.specialPrecautionsForStorage.coding[SMC].system = $SMC-SpecialPrecautionsForStorageCS
+//* packaging.shelfLifeStorage.specialPrecautionsForStorage.coding[SMC].code 1..
 
 * packaging.containedItem.item only CodeableReference(CHIDMPManufacturedItemDefinition or CHIDMPPackagedProductDefinition)
 * packaging.containedItem.amount 1..

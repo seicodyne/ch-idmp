@@ -24,3 +24,5 @@ Description: "Padcev 30 mg, Pulver für ein Konzentrat zur Herstellung einer Inf
   * insert bundleEntry(AdministrableProductDefinition, PhP-Enfortumabum-vedotinum-30-Solution)
 * entry[+]
   * insert bundleEntry(ClinicalUseDefinition, IND-10057352)
+* entry[+]
+  * insert bundleEntry(Ingredient, EnfortumabumVedotinum30)
