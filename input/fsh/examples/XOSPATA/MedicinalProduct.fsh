@@ -7,7 +7,7 @@ Description: "Xospata 40 mg, Filmtabletten: Example of a MedicinalProductDefinit
 // Medicinal Product
 * identifier[+].system = $MPID
 * identifier[=].value = "CH-7601001000964-6721101" // MPID
-* domain.coding[EMA] = $ema#100000000012 "Human" // Domain
+* domain.coding[EMA] = $emaDomain#100000000012 "Human" // Domain
 * extension[authorizedDoseForm].valueCodeableConcept.coding[SMC] = $SMC-AuthorisedDoseFormCS#10221000 "Film-coated tablet" // Authorised Pharmaceutical Dose Form
 //* combinedPharmaceuticalDoseForm = n/a // Combined Pharmaceutical Dose Form
 * indication = "Xospata wird angewendet für die Behandlung von erwachsenen Patienten, die an rezidivierter oder refraktärer akuter myeloider Leukämie (AML) mit FMS-ähnlichen Tyrosinkinase 3 (FLT3)-Mutationen leiden." // Full indication text
@@ -37,6 +37,8 @@ Description: "Xospata 40 mg, Filmtabletten: Example of a MedicinalProductDefinit
 //* name[de-CH][=].part[=].type = $ISO-NamePart#StrengthPart "Strength part"
 //* name[de-CH][=].part[+].part = ","
 //* name[de-CH][=].part[=].type = $ISO-NamePart#DelimiterPart "Delimiter Part"
+
+* name[0].type.coding = ChMedicinalProductNameTypeCS#SMC "Swissmedic" // Name Type (Swissmedic or FPOH)
 
 // Country / Language
 * name[de-CH][=].usage[0].country = $country#CH "Switzerland" // Country: https://hl7.org/fhir/R4/valueset-iso3166-1-2.html

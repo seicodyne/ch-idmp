@@ -5,7 +5,7 @@ Title: "CH IDMP Organization"
 Description: "Defines basic constraints and extensions on the Organization resource for use with other CH IDMP resources"
 
 * . ^short = "CH EPL Organization"
-* identifier ^slicing.discriminator.type = #type
+* identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "$this"
 * identifier ^slicing.rules = #open
 //* identifier.value 0..

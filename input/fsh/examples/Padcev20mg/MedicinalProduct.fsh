@@ -7,7 +7,7 @@ Description: "Padcev 20 mg, Pulver für ein Konzentrat zur Herstellung einer Inf
 // Medicinal Product
 * identifier[+].system = $MPID
 * identifier[=].value = "CH-7601001000964-6829103" // MPID
-* domain.coding[EMA] = $ema#100000000012 "Human" // Domain
+* domain.coding[EMA] = $emaDomain#100000000012 "Human" // Domain
 * extension[authorizedDoseForm].valueCodeableConcept.coding[SMC] = $SMC-AuthorisedDoseFormCS#11215000 "Lyophilisate for solution for infusion" // Authorised Pharmaceutical Dose Form
 //* combinedPharmaceuticalDoseForm = n/a // Combined Pharmaceutical Dose Form
 * indication = "Padcev ist indiziert zur Behandlung von Erwachsenen mit lokal fortgeschrittenem oder metastasiertem Urothelkarzinom (mUC), die eine platinhaltige Chemotherapie im neoadjuvanten/adjuvanten, lokal fortgeschrittenen oder metastasierten Setting erhalten haben und die während oder nach der Behandlung mit einem Inhibitor des programmierten Zelltodrezeptors-1 (PD-1) oder des programmierten Zelltod-Liganden 1 (PD-L1) einen Progress oder einen Rückfall der Erkrankung erlitten haben." // Full indication text
@@ -36,6 +36,8 @@ Description: "Padcev 20 mg, Pulver für ein Konzentrat zur Herstellung einer Inf
 //* name[de-CH][=].part[=].type = $ISO-NamePart#StrengthPart "Strength part"
 //* name[de-CH][=].part[+].part = ","
 //* name[de-CH][=].part[=].type = $ISO-NamePart#DelimiterPart "Delimiter Part"
+
+* name[0].type.coding = ChMedicinalProductNameTypeCS#SMC "Swissmedic" // Name Type (Swissmedic or FPOH)
 
 // Country / Language
 * name[de-CH][=].usage[0].country = $country#CH "Switzerland" // Country: https://hl7.org/fhir/R4/valueset-iso3166-1-2.html

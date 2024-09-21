@@ -17,4 +17,4 @@ Description: "Padcev 20 mg, Pulver für ein Konzentrat zur Herstellung einer Inf
 //* indication.comorbidity.concept = $SMC-Comorbidity#.. "xxx"
 
 // Therapeutic Indication.Intended Effect
-* indication.intendedEffect.concept = $ema#200000003194 "therapeutic"
+* indication.intendedEffect.concept = $emaIntendedEffect#200000003194 "therapeutic"

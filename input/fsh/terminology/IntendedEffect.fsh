@@ -3,9 +3,16 @@ Id: ema-intended-effect
 Title: "EMA - Intended Effect"
 Description: "Value Set for the Intended Effect from EMA used by SMC"
 * ^experimental = false
-* ^identifier.use = #official
-* ^identifier.system = "urn:ietf:rfc:3986" //todo - correct the system urn to EMA
-* ^identifier.value = "https://spor.ema.europa.eu/rmswi/#/lists/200000003186/terms"
-* $ema#200000003192 "prevention"
-* $ema#200000003194 "treatment"
-* $ema#200000003196 "diagnosis"
+* include codes from system EMAIntendedEffectCS
+
+CodeSystem: EMAIntendedEffectCS
+Id: ema-intended-effect
+Title: "EMA - Intended Effect"
+Description: "CH - Standard Terms used in Switzerland (aggregations of codes of Value Set for the Intended Effect from EMA used by SMC)"
+* ^url = "http://spor.ema.europa.eu/v1/lists/200000003186"
+* ^experimental = false
+* ^caseSensitive = false
+* ^content = #complete
+* #200000003192 "prevention"
+* #200000003194 "treatment"
+* #200000003196 "diagnosis"

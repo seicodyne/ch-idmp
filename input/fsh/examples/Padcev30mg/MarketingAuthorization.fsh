@@ -1,7 +1,7 @@
 Instance: MA-6829104
 InstanceOf: CHIDMPRegulatedAuthorization
 Usage: #example
-Title: "68291001"
+Title: "6829104"
 Description: "Padcev 30 mg, Pulver für ein Konzentrat zur Herstellung einer Infusionslösung"
 * contained[+] = holder-Astellas-Pharma-AG
 * contained[+] = regulator-SMC
