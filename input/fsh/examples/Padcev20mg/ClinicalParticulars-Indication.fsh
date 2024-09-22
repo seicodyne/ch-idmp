@@ -11,7 +11,7 @@ Description: "Padcev 20 mg, Pulver für ein Konzentrat zur Herstellung einer Inf
 * subject = Reference(Padcev-20mg-Powder) 
 
 // Therapeutic Indication.Indication as "Disease / Symptom / Procedure", and Therapeutic Indication.Indication Text
-* indication.diseaseSymptomProcedure.concept = $IndicationAs#10057352 "Metastatic carcinoma of the bladder"
+* indication.diseaseSymptomProcedure.concept = $mdr#10057352 "Metastatic carcinoma of the bladder"
 
 // Comorbidity
 //* indication.comorbidity.concept = $SMC-Comorbidity#.. "xxx"

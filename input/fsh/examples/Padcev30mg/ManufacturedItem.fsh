@@ -1,7 +1,7 @@
 Instance: MI-Enfortumabum-vedotinum-30-Powder
 InstanceOf: CHIDMPManufacturedItemDefinition
 Usage: #example
-Title: "MI Enfortumabum-Vedotinum-30-Lyophilisate-for-solution-for-infusion"
+Title: "MI Enfortumabum-vedotinum-30-Powder"
 Description: "Manufactured Item definition for Enfortumabum Vedotinum 30 mg, Lyophilisate for solution for infusion"
 * status = #active
 

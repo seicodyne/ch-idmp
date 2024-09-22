@@ -23,6 +23,16 @@ Description: "Padcev 20 mg, Pulver für ein Konzentrat zur Herstellung einer Inf
 * entry[+]
   * insert bundleEntry(AdministrableProductDefinition, PhP-Enfortumabum-vedotinum-20-Solution)
 * entry[+]
-  * insert bundleEntry(ClinicalUseDefinition, IND-10057352)
-* entry[+]
   * insert bundleEntry(Ingredient, EnfortumabumVedotinum20)
+* entry[+]
+  * insert bundleEntry(Ingredient, Histidinum)
+* entry[+]
+  * insert bundleEntry(Ingredient, HistidiniHydrochloridumMonohydricum)
+* entry[+]
+  * insert bundleEntry(Ingredient, TrehalosumDihydricum)
+* entry[+]
+  * insert bundleEntry(Ingredient, Polysorbatum20)
+* entry[+]
+  * insert bundleEntry(Ingredient, AquaAdIniectabile)
+* entry[+]
+  * insert bundleEntry(ClinicalUseDefinition, IND-10057352)

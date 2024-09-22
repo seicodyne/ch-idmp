@@ -21,22 +21,22 @@ Description: "Xospata 40 mg, Filmtabletten: Example of a PackagedProductDefiniti
 
 // Package Item (Container) - Outer Package
 * packaging.type.coding[SMC] = $edqm#30009000 "Box" // Package Item (Container) Type
-* packaging.quantity = 6 // Package Item (Container) Quantity
+* packaging.quantity = 1 // Package Item (Container) Quantity
+
+// Package Item (Container) - Inner Package
+* packaging.packaging[0].type.coding = $edqm#30007000 "Blister" // Package Item (Container) Type
+* packaging.packaging[0].quantity = 4 // Package Item (Container) Quantity
+
+* packaging.packaging.containedItem[+].item.reference = Reference(MI-Gilteritinibi-hemifumaras-40-Filmcoatedtablet)
+* packaging.packaging.containedItem[=].amount.value = 12
+* packaging.packaging.containedItem[=].amount.unit = "countable unit(s)"
+* packaging.packaging.containedItem[=].amount.system = "http://unitsofmeasure.org" 
+* packaging.packaging.containedItem[=].amount.code = #1
 
 // Shelf Life / Storage
 * packaging.shelfLifeStorage[0].type = $emaShelfLifeType#100000073403 "Shelf life of the medicinal product as packaged for sale" // Shelf Life Type
 * packaging.shelfLifeStorage[=].periodDuration = 36 'mo' "month" // Shelf Life Time Period
 * packaging.shelfLifeStorage[0].specialPrecautionsForStorage.coding = ChSMCSpecialPrecautionsForStorageCS#NO30 "Nicht über 30°C" // Special Precaution for Storage
-
-// Package Item (Container) - Inner Package
-* packaging.packaging[0].type.coding = $edqm#30007000 "Blister" // Package Item (Container) Type
-* packaging.packaging[0].quantity = 12 // Package Item (Container) Quantity
-
-* packaging.containedItem[+].item.reference = Reference(MI-Gilteritinibi-hemifumaras-40-Filmcoatedtablet)
-* packaging.containedItem[=].amount.value = 4
-* packaging.containedItem[=].amount.unit = "Blister"
-* packaging.containedItem[=].amount.system = $edqm
-* packaging.containedItem[=].amount.code = #30007000
 
 // Packaged Medicinal Product.Marketing Status
 //* marketingStatus[+].country = $country#CH "Switzerland"

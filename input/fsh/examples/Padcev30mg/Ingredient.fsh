@@ -7,12 +7,12 @@ Description: "Padcev-30mg-Powder: Example of an Ingredient (Ingredient)"
 * for[0] = Reference(PhP-Enfortumabum-vedotinum-30-Solution) 
 * for[+] = Reference(MI-Enfortumabum-vedotinum-30-Powder) 
 * role[+].coding[SMC] = $SMC-IngredientRoleCS#WIRKS "Wirkstoff"
-* substance[+].code.concept.coding[UNII] = $SMC-SubstanceCS#DLE8519RWM "Enfortumabum vedotinum"
+* substance[+].code.concept.coding[UNII] = $SMC-SubstanceCS#DLE8519RWM "Enfortumab vedotin"
 * substance[=].strength[+].presentationRatio[+].numerator.value = 30
 * substance[=].strength[=].presentationRatio[=].numerator.unit = "mg" 
 * substance[=].strength[=].presentationRatio[=].numerator.system = "http://unitsofmeasure.org" 
 * substance[=].strength[=].presentationRatio[=].numerator.code = #mg 
 * substance[=].strength[=].presentationRatio[=].denominator.value = 1
-* substance[=].strength[=].presentationRatio[=].denominator.unit = "bottle" 
-* substance[=].strength[=].presentationRatio[=].denominator.system = "http://unitsofmeasure.org" 
-* substance[=].strength[=].presentationRatio[=].denominator.code = #{bottle}
+* substance[=].strength[=].presentationRatio[=].denominator.unit = "vial" 
+* substance[=].strength[=].presentationRatio[=].denominator.system = $edqm
+* substance[=].strength[=].presentationRatio[=].denominator.code = #{vial}

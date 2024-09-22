@@ -11,7 +11,7 @@ Description: "Xospata 40 mg, Filmtabletten: Example of a ClinicalUseDefinition (
 * subject = Reference(Xospata-Filmcoatedtablet) 
 
 // Therapeutic Indication.Indication as "Disease / Symptom / Procedure", and Therapeutic Indication.Indication Text
-* indication.diseaseSymptomProcedure.concept = $IndicationAs#10081513 "Acute myeloid leukaemia refractory"
+* indication.diseaseSymptomProcedure.concept = $mdr#10081513 "Acute myeloid leukaemia refractory"
 
 // Comorbidity
 //* indication.comorbidity.concept = $EMA-Comorbidity#.. "xxx"
@@ -32,7 +32,7 @@ Description: "Xospata 40 mg, Filmtabletten: Example of a ClinicalUseDefinition (
 * subject = Reference(Xospata-Filmcoatedtablet) 
 
 // Therapeutic Indication.Indication as "Disease / Symptom / Procedure", and Therapeutic Indication.Indication Text
-* indication.diseaseSymptomProcedure.concept = $IndicationAs#10081514 "Acute myeloid leukemia refractory"
+* indication.diseaseSymptomProcedure.concept = $mdr#10081514 "Acute myeloid leukemia refractory"
 
 // Comorbidity
 //* indication.comorbidity.concept = $EMA-Comorbidity#.. "xxx"
@@ -53,7 +53,7 @@ Description: "Xospata 40 mg, Filmtabletten: Example of a ClinicalUseDefinition (
 * subject = Reference(Xospata-Filmcoatedtablet) 
 
 // Therapeutic Indication.Indication as "Disease / Symptom / Procedure", and Therapeutic Indication.Indication Text
-* indication.diseaseSymptomProcedure.concept = $IndicationAs#10059034 "Acute myeloid leukaemia recurrent"
+* indication.diseaseSymptomProcedure.concept = $mdr#10059034 "Acute myeloid leukaemia recurrent"
 
 // Comorbidity
 //* indication.comorbidity.concept = $EMA-Comorbidity#.. "xxx"
@@ -74,7 +74,7 @@ Description: "Xospata 40 mg, Filmtabletten: Example of a ClinicalUseDefinition (
 * subject = Reference(Xospata-Filmcoatedtablet) 
 
 // Therapeutic Indication.Indication as "Disease / Symptom / Procedure", and Therapeutic Indication.Indication Text
-* indication.diseaseSymptomProcedure.concept = $IndicationAs#10060558 "Acute myeloid leukemia recurrent"
+* indication.diseaseSymptomProcedure.concept = $mdr#10060558 "Acute myeloid leukemia recurrent"
 
 // Comorbidity
 //* indication.comorbidity.concept = $EMA-Comorbidity#.. "xxx"
@@ -95,7 +95,7 @@ Description: "Xospata 40 mg, Filmtabletten: Example of a ClinicalUseDefinition (
 * subject = Reference(Xospata-Filmcoatedtablet) 
 
 // Therapeutic Indication.Indication as "Disease / Symptom / Procedure", and Therapeutic Indication.Indication Text
-* indication.diseaseSymptomProcedure.concept = $IndicationAs#10084619 "FLT3-Gen-Mutation"
+* indication.diseaseSymptomProcedure.concept = $mdr#10084619 "FLT3-Gen-Mutation"
 
 // Comorbidity
 //* indication.comorbidity.concept = $EMA-Comorbidity#.. "xxx"

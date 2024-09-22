@@ -14,7 +14,7 @@ Alias: $gln =                           urn:oid:2.51.1.3
 Alias: $emaDomain =                     http://spor.ema.europa.eu/v1/lists/100000000004
 Alias: $emaIntendedEffect =             http://spor.ema.europa.eu/v1/lists/200000003186
 Alias: $emaShelfLifeType =              http://spor.ema.europa.eu/v1/lists/100000073343
-Alias: $mdr =                           http://terminology.hl7.org/CodeSystem/mdr
+Alias: $mdr =                           https://www.meddra.org
 Alias: $sct =                           http://snomed.info/sct
 
 // ISO 

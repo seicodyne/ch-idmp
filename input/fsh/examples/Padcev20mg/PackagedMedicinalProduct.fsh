@@ -21,22 +21,22 @@ Description: "Padcev 20 mg, Pulver für ein Konzentrat zur Herstellung einer Inf
 
 // Package Item (Container) - Outer Package
 * packaging.type.coding[SMC] = $edqm#30009000 "Box" // Package Item (Container) Type
-* packaging.quantity = 6 // Package Item (Container) Quantity
-
-// Shelf Life / Storage
-* packaging.shelfLifeStorage[0].type = $emaShelfLifeType#100000073403 "Shelf life of the medicinal product as packaged for sale" // Shelf Life Type
-* packaging.shelfLifeStorage[=].periodDuration = 36 'mo' "month" // Shelf Life Time Period
-* packaging.shelfLifeStorage[0].specialPrecautionsForStorage.coding = ChSMCSpecialPrecautionsForStorageCS#L "vor Licht Schützen" // Special Precautions for Storage
+* packaging.quantity = 1 // Package Item (Container) Quantity
 
 // Package Item (Container) - Inner Package
 * packaging.packaging[0].type.coding = $edqm#30069000 "Vial" // Package Item (Container) Type
 * packaging.packaging[0].quantity = 1 // Package Item (Container) Quantity
 
-* packaging.containedItem[+].item.reference = Reference(MI-Enfortumabum-vedotinum-20-Powder)
-* packaging.containedItem[=].amount.value = 1
-* packaging.containedItem[=].amount.unit = "Vial"
-* packaging.containedItem[=].amount.system = $edqm
-* packaging.containedItem[=].amount.code = #30069000
+* packaging.packaging.containedItem[+].item.reference = Reference(MI-Enfortumabum-vedotinum-20-Powder)
+* packaging.packaging.containedItem[=].amount.value = 20
+* packaging.packaging.containedItem[=].amount.unit = "mg"
+* packaging.packaging.containedItem[=].amount.system = "http://unitsofmeasure.org" 
+* packaging.packaging.containedItem[=].amount.code = #mg
+
+// Shelf Life / Storage
+* packaging.shelfLifeStorage[0].type = $emaShelfLifeType#100000073403 "Shelf life of the medicinal product as packaged for sale" // Shelf Life Type
+* packaging.shelfLifeStorage[=].periodDuration = 36 'mo' "month" // Shelf Life Time Period
+* packaging.shelfLifeStorage[0].specialPrecautionsForStorage.coding = ChSMCSpecialPrecautionsForStorageCS#L "vor Licht Schützen" // Special Precautions for Storage
 
 // Marketing Status
 //* marketingStatus[+].country = $country#CH "Switzerland"

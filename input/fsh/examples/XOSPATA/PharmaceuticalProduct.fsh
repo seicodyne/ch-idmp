@@ -1,4 +1,4 @@
-Instance: PhP-Gilteritinibi-hemifumaras-40mg-Filmcoatedtablet
+Instance: PhP-Gilteritinibi-hemifumaras-40-Filmcoatedtablet
 InstanceOf: CHIDMPAdministrableProductDefinition
 Usage: #example
 Title: "PhP Gilteritinibi-hemifumaras-40-Filmtabletten"

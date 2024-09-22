@@ -28,7 +28,7 @@ contact:
 
 dependencies:
 #  ch.fhir.ig.ch-core: 4.0.1
-  hl7.terminology: 5.5.0
+  hl7.terminology.r5: 5.5.0
 
 pages:
   index.md:
@@ -39,8 +39,12 @@ pages:
     title: Datasource Authorised Medicinal Product
   usecase-german.md:
     title: Use Cases
-  examples.md:
-    title: Examples
+  padcev20.md:
+    title: Padcev20
+  padcev30.md:
+    title: Padcev30
+  xospata.md:
+    title: Xospata 
   profiles.md:
     title: Profiles
   extensions.md:
@@ -55,7 +59,10 @@ menu:
     Datasource: authorised-medicinal-product.html
   Use Case:
     German: usecase-german.html 
-  Examples: examples.html
+  Examples: 
+     Padcev 20 mg: padcev20.html
+     Padcev 30 mg: padcev30.html
+     Xospata: xospata.html
   Profiles: profiles.html
   Extensions: extensions.html
   Terminology: terminology.html

@@ -23,7 +23,27 @@ Description: "Xospata 40 mg, Filmtabletten: Example of a Bundle"
 * entry[+]
   * insert bundleEntry(ManufacturedItemDefiniton, MI-Gilteritinibi-hemifumaras-40-Filmcoatedtablet) 
 * entry[+]
-  * insert bundleEntry(AdministrableProductDefinition, PhP-Gilteritinibi-hemifumaras-40mg-Filmcoatedtablet)
+  * insert bundleEntry(AdministrableProductDefinition, PhP-Gilteritinibi-hemifumaras-40-Filmcoatedtablet)
+* entry[+]
+  * insert bundleEntry(Ingredient, GilteritinibiHemifumaras40)
+* entry[+]
+  * insert bundleEntry(Ingredient, Mannitolum)
+* entry[+]
+  * insert bundleEntry(Ingredient, Hydroxypropylcellulosum)
+* entry[+]
+  * insert bundleEntry(Ingredient, HydroxypropylcellulosumSubstitutumHumile)
+* entry[+]
+  * insert bundleEntry(Ingredient, Talcum)
+* entry[+]
+  * insert bundleEntry(Ingredient, Macrogolum8000)
+* entry[+]
+  * insert bundleEntry(Ingredient, E171)
+* entry[+]
+  * insert bundleEntry(Ingredient, E172Flavum)
+* entry[+]
+  * insert bundleEntry(Ingredient, MagnesiumStearate)
+* entry[+]
+  * insert bundleEntry(Ingredient, Hypromellosum)
 * entry[+]
   * insert bundleEntry(ClinicalUseDefinition, IND-10081514)
 * entry[+]
@@ -34,5 +54,3 @@ Description: "Xospata 40 mg, Filmtabletten: Example of a Bundle"
   * insert bundleEntry(ClinicalUseDefinition, IND-10060558)
 * entry[+]
   * insert bundleEntry(ClinicalUseDefinition, IND-10084619)
-* entry[+]
-  * insert bundleEntry(Ingredient, GilteritinibiHemifumaras40)
