@@ -8,7 +8,7 @@ Description: "Value Set for Authorisation Type in Switzerland used by FOPH"
 CodeSystem: ChAuthorisationTypeCS
 Id: ch-authorisation-type
 Title: "CH - Authorisation Type"
-Description: "CH EPL - Standard Terms used in Switzerland (aggregations of codes of ValueSets Authorisation Type"
+Description: "CH - Standard Terms used in Switzerland (aggregations of codes of ValueSets Authorisation Type"
 * ^experimental = false
 * ^caseSensitive = false
 * ^content = #complete

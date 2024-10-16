@@ -19,12 +19,12 @@ fhirVersion: 5.0.0
 copyrightYear: 2023+
 releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 publisher:
-  name: Federal Office of Public Health FOPH
+  name: Astellas Pharma AG
 contact:
-  - name: Federal Office of Public Health FOPH
+  - name: Astellas Pharma AG
     telecom:
       - system: url
-        value: https://www.bag.admin.ch/bag/en/home/das-bag/kontakt-standort.html
+        value: https://www.astellas.com/ch/de/impressum
 
 dependencies:
 #  ch.fhir.ig.ch-core: 4.0.1
@@ -37,8 +37,8 @@ pages:
     title: IDMP Standard ISO 11615
   authorised-medicinal-product.md:
     title: Datasource Authorised Medicinal Product
-  usecase-german.md:
-    title: Use Cases
+#  usecase-german.md:
+#    title: Use Cases
   padcev20.md:
     title: Padcev20
   padcev30.md:
@@ -57,8 +57,8 @@ menu:
   Documentation:
     ISO IDMP: idmp.html
     Datasource: authorised-medicinal-product.html
-  Use Case:
-    German: usecase-german.html 
+#  Use Case:
+#    German: usecase-german.html 
   Examples: 
      Padcev 20 mg: padcev20.html
      Padcev 30 mg: padcev30.html

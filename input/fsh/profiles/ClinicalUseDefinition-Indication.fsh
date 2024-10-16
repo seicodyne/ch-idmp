@@ -13,8 +13,6 @@ Description: "Profile of the ClinicalUseDefinition resource for representing an 
 
 * indication 1..
 
-// * indication.extension contains ChEplLimitation named limitation 0..1
-
 * indication.diseaseSymptomProcedure.concept 1..
 * indication.diseaseSymptomProcedure.concept.coding 1..
 * indication.diseaseSymptomProcedure.concept.coding ^slicing.discriminator[+].type = #value

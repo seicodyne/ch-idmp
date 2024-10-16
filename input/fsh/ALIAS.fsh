@@ -49,20 +49,18 @@ Alias:  $FHIR-Domain =                                       http://hl7.org/fhir
 Alias:  $CH-MedicialProductNameTypeCS =                      http://fhir.ch/ig/ch-idmp/CodeSystem/ch-medicinal-product-name-type
 
 // SMC to be updated as soon the final addresses are officially published by Swissmedic
-Alias:  $SMC-DomainCS =                               http://fhir.ch/ig/ch-epl/CodeSystem/ch-SMC-domain //Provisorisch
+Alias:  $SMC-DomainCS =                               http://fhir.ch/ig/ch-idmp/CodeSystem/ch-SMC-domain //Provisorisch
 Alias:  $SMC-AuthorisedDoseFormCS =                   http://standardterms.edqm.eu
-Alias:  $SMC-AdditionalMonitoringIndicatorCS =        http://fhir.ch/ig/ch-epl/CodeSystem/ch-SMC-additional-monitoring-indicator //Provisorisch
-Alias:  $SMC-AttachedDocumentType =                   http://fhir.ch/ig/ch-epl/CodeSystem/ch-SMC-AttachedDocumentType //Provisorisch
-Alias:  $SMC-PediatricUseIndicatorCS =                http://fhir.ch/ig/ch-epl/CodeSystem/ch-SMC-pediatric-use-indicator //Provisorisch
-Alias:  $SMC-TherapeuticProductcodeCS =               http://fhir.ch/ig/ch-epl/CodeSystem/ch-SMC-therapeuticproductcode //Provisorisch
-Alias:  $SMC-OrphanIndicationType =                   http://fhir.ch/ig/ch-epl/CodeSystem/ch-SMC-OrphanIndicationType //Provisorisch
-Alias:  $SMC-OrphanDesignationAuthorisationStatus =   http://fhir.ch/ig/ch-epl/CodeSystem/ch-SMC-OrphanDesignationAuthorisationStatus //Provisorisch
-Alias:  $CH-MedicinalProductNameTypeCS =              http://fhir.ch/ig/ch-epl/CodeSystem/ch-medicinal-product-name-type
-Alias:  $SMC-MasterFileType =                         http://fhir.ch/ig/ch-epl/CodeSystem/ch-SMC-MasterFileType //Provisorisch
-Alias:  $SMC-ReferencedProductType =                  http://fhir.ch/ig/ch-epl/CodeSystem/ch-SMC-ReferencedProductType //Provisorisch
+Alias:  $SMC-AdditionalMonitoringIndicatorCS =        http://fhir.ch/ig/ch-idmp/CodeSystem/ch-SMC-additional-monitoring-indicator //Provisorisch
+Alias:  $SMC-AttachedDocumentType =                   http://fhir.ch/ig/ch-idmp/CodeSystem/ch-SMC-AttachedDocumentType //Provisorisch
+Alias:  $SMC-PediatricUseIndicatorCS =                http://fhir.ch/ig/ch-idmp/CodeSystem/ch-SMC-pediatric-use-indicator //Provisorisch
+Alias:  $SMC-TherapeuticProductcodeCS =               http://fhir.ch/ig/ch-idmp/CodeSystem/ch-SMC-therapeuticproductcode //Provisorisch
+Alias:  $SMC-OrphanIndicationType =                   http://fhir.ch/ig/ch-idmp/CodeSystem/ch-SMC-OrphanIndicationType //Provisorisch
+Alias:  $SMC-OrphanDesignationAuthorisationStatus =   http://fhir.ch/ig/ch-idmp/CodeSystem/ch-SMC-OrphanDesignationAuthorisationStatus //Provisorisch
+Alias:  $CH-MedicinalProductNameTypeCS =              http://fhir.ch/ig/ch-idmp/CodeSystem/ch-medicinal-product-name-type
+Alias:  $SMC-MasterFileType =                         http://fhir.ch/ig/ch-idmp/CodeSystem/ch-SMC-MasterFileType //Provisorisch
+Alias:  $SMC-ReferencedProductType =                  http://fhir.ch/ig/ch-idmp/CodeSystem/ch-SMC-ReferencedProductType //Provisorisch
 
-// FOPH
-Alias:  $ePL-StatusMedicinalProduct =                        http://fhir.ch/ig/ch-idmp/CodeSystem/ch-idmp-foph-status-medicinal-product 
 
 // Section Green - Marketing Authorisations
 
