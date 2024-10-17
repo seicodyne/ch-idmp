@@ -1,7 +1,7 @@
 ValueSet: ChSMCAuthorisationStatusVS
 Id: ch-SMC-authorisation-status
 Title: "CH SMC - Authorisation Status"
-Description: "Value Set for the Authorisation Status from SMC used by FOPH"
+Description: "Value Set for the Authorisation Status from SMC"
 * ^experimental = false
 * include codes from system ChSMCAuthorisationStatusCS
 

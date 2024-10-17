@@ -1,7 +1,7 @@
 ValueSet: ChSMCTherapeuticProductcodeVS
 Id: ch-SMC-therapeuticproductcode
 Title: "CH SMC - TherapeuticProductcode"
-Description: "Value Set for the TherapeuticProductcode from SMC used by FOPH"
+Description: "Value Set for the TherapeuticProductcode from SMC"
 * ^experimental = false
 * include codes from system ChSMCTherapeuticProductcodeCS
 

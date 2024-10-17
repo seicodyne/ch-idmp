@@ -1,7 +1,7 @@
 ValueSet: ChSMCAdditionalMonitoringIndicatorVS
 Id: ch-SMC-additional-monitoring-indicator
 Title: "CH SMC- Additional Monitoring Indicator"
-Description: "Value Set for the Additional Monitoring Indicator from SMC used by FOPH"
+Description: "Value Set for the Additional Monitoring Indicator from SMC"
 * ^experimental = false
 * include codes from system ChSMCAdditionalMonitoringIndicatorCS
 

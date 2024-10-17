@@ -67,14 +67,3 @@ Description: "Identifier holding the SMC Authorisation Number"
 * system ^short = "MarketingAuthorizationNumber"
 * value 1..
 * value ^short = "MarketingAuthorizationNumber"
-
-Profile: FOPHIdentifier
-Parent: Identifier
-Id: ch-foph-dossier-number
-Title: "FOPH Dossier Number"
-Description: "Identifier holding the Dossier number of FOPH"
-* system 1..
-* system = "urn:oid:2.16.756.1" (exactly) // todo: define system for FOPH
-* system ^short = "FOPHDossierNumber"
-* value 1..
-* value ^short = "FOPHDossierNumber"
