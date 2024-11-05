@@ -9,7 +9,7 @@ Description: "Xospata 40 mg, Filmtabletten: Example of a PackagedProductDefiniti
 * identifier[=].value = "CH-7601001000964-6721101-001" // PCID
 * packageFor = Reference(Xospata-Filmcoatedtablet)
 * description = "4 Blister zu 7 Tabletten in 1 Box" // Package Description
-* legalStatusOfSupply[+].code = ChSMCLegalStatusOfSupplyCS#756005022001 "One-time dispensation on medical or veterinary prescription (A)"
+* legalStatusOfSupply[+].code = ChSMCLegalStatusOfSupplyCS#756005022001 "Medicinal product subject to medical or veterinary prescription single dispensation (A)"
 * containedItemQuantity[+].value = 48  // Pack Size
 * containedItemQuantity[=].unit = "Tablet" 
 * containedItemQuantity[=].system = $edqm 
@@ -36,7 +36,7 @@ Description: "Xospata 40 mg, Filmtabletten: Example of a PackagedProductDefiniti
 // Shelf Life / Storage
 * packaging.shelfLifeStorage[0].type = $emaShelfLifeType#100000073403 "Shelf life of the medicinal product as packaged for sale" // Shelf Life Type
 * packaging.shelfLifeStorage[=].periodDuration = 36 'mo' "month" // Shelf Life Time Period
-* packaging.shelfLifeStorage[0].specialPrecautionsForStorage.coding = ChSMCSpecialPrecautionsForStorageCS#NO30 "Nicht über 30°C" // Special Precaution for Storage
+* packaging.shelfLifeStorage[0].specialPrecautionsForStorage.coding = ChSMCSpecialPrecautionsForStorageCS#756005042009 "Nicht über 30°C" // Special Precaution for Storage
 
 // Packaged Medicinal Product.Marketing Status
 //* marketingStatus[+].country = $country#CH "Switzerland"

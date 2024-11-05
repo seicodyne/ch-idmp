@@ -6,7 +6,7 @@ Description: "Padcev-20mg-Powder: Example of an Ingredient (Ingredient)"
 * status = #active
 * for[0] = Reference(PhP-Enfortumabum-vedotinum-20-Solution) 
 * for[+] = Reference(MI-Enfortumabum-vedotinum-20-Powder) 
-* role[+].coding[SMC] = $SMC-IngredientRoleCS#WIRKS "Wirkstoff"
+* role[+].coding[SMC] = $SMC-IngredientRoleCS#756005051001 "Wirkstoff"
 * substance[+].code.concept.coding[UNII] = $SMC-SubstanceCS#DLE8519RWM "Enfortumab vedotin"
 * substance[=].strength[+].presentationRatio[+].numerator.value = 20
 * substance[=].strength[=].presentationRatio[=].numerator.unit = "mg" 
@@ -15,7 +15,7 @@ Description: "Padcev-20mg-Powder: Example of an Ingredient (Ingredient)"
 * substance[=].strength[=].presentationRatio[=].denominator.value = 1
 * substance[=].strength[=].presentationRatio[=].denominator.unit = "vial" 
 * substance[=].strength[=].presentationRatio[=].denominator.system = $edqm
-* substance[=].strength[=].presentationRatio[=].denominator.code = #{vial}
+* substance[=].strength[=].presentationRatio[=].denominator.code = #15060000
 
 Instance: Histidinum
 InstanceOf: CHIDMPIngredient
@@ -25,7 +25,7 @@ Description: "Padcev-20mg-Powder: Example of an Ingredient (Ingredient)"
 * status = #active
 * for[0] = Reference(PhP-Enfortumabum-vedotinum-20-Solution) 
 * for[+] = Reference(MI-Enfortumabum-vedotinum-20-Powder) 
-* role[+].coding[SMC] = $SMC-IngredientRoleCS#HNIDK "Hilfsstoff" 
+* role[+].coding[SMC] = $SMC-IngredientRoleCS#756005051002 "Hilfsstoff"
 * substance[+].code.concept.coding[UNII] = $SMC-SubstanceCS#4QD397987E "Histidine"
 
 Instance: HistidiniHydrochloridumMonohydricum
@@ -36,7 +36,7 @@ Description: "Padcev-20mg-Powder: Example of an Ingredient (Ingredient)"
 * status = #active
 * for[0] = Reference(PhP-Enfortumabum-vedotinum-20-Solution) 
 * for[+] = Reference(MI-Enfortumabum-vedotinum-20-Powder) 
-* role[+].coding[SMC] = $SMC-IngredientRoleCS#HNIDK "Hilfsstoff" 
+* role[+].coding[SMC] = $SMC-IngredientRoleCS#756005051002 "Hilfsstoff"
 * substance[+].code.concept.coding[UNII] = $SMC-SubstanceCS#X573657P6P "Histidine hydrochloride monohydrate"
 
 Instance: TrehalosumDihydricum
@@ -47,7 +47,7 @@ Description: "Padcev-20mg-Powder: Example of an Ingredient (Ingredient)"
 * status = #active
 * for[0] = Reference(PhP-Enfortumabum-vedotinum-20-Solution) 
 * for[+] = Reference(MI-Enfortumabum-vedotinum-20-Powder) 
-* role[+].coding[SMC] = $SMC-IngredientRoleCS#HNIDK "Hilfsstoff" 
+* role[+].coding[SMC] = $SMC-IngredientRoleCS#756005051002 "Hilfsstoff"
 * substance[+].code.concept.coding[UNII] = $SMC-SubstanceCS#7YIN7J07X4 "Trehalose dihydrate"
 
 Instance: Polysorbatum20
@@ -58,7 +58,7 @@ Description: "Padcev-20mg-Powder: Example of an Ingredient (Ingredient)"
 * status = #active
 * for[0] = Reference(PhP-Enfortumabum-vedotinum-20-Solution) 
 * for[+] = Reference(MI-Enfortumabum-vedotinum-20-Powder) 
-* role[+].coding[SMC] = $SMC-IngredientRoleCS#HNIDK "Hilfsstoff" 
+* role[+].coding[SMC] = $SMC-IngredientRoleCS#756005051002 "Hilfsstoff"
 * substance[+].code.concept.coding[UNII] = $SMC-SubstanceCS#7T1F30V5YH "Polysorbate 20"
 
 Instance: AquaAdIniectabile
@@ -68,5 +68,5 @@ Title: "Aqua ad iniectabile"
 Description: "Padcev-20mg-Powder: Example of an Ingredient (Ingredient)"
 * status = #active
 * for[0] = Reference(PhP-Enfortumabum-vedotinum-20-Solution) 
-* role[+].coding[SMC] = $SMC-IngredientRoleCS#HNIDK "Hilfsstoff" 
+* role[+].coding[SMC] = $SMC-IngredientRoleCS#756005051002 "Hilfsstoff"
 * substance[+].code.concept.coding[UNII] = $SMC-SubstanceCS#059QF0KO0R "Water"

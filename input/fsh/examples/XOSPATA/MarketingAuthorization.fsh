@@ -12,7 +12,7 @@ Description: "Xospata 40 mg, Filmtabletten: Example of a RegulatedAuthorization 
 * subject = Reference(Xospata-Filmcoatedtablet) // MedicinalProductDefinition
 * region = $country#CH "Switzerland" // Country
 * type[+].coding[CH] = ChAuthorisationTypeCS#756000002001 "Marketing Authorisation" // Authorisation Type
-* status[+].coding[SMC] = ChSMCAuthorisationStatusCS#Z "zugelassen" // Authorisation Status
+* status[+].coding[SMC] = ChSMCAuthorisationStatusCS#756005023007 "zugelassen" // Authorisation Status
 * statusDate = "2021-11-09" // Authorisation Status Date
 * validityPeriod.start = "2021-11-09" // Validity Period Start
 //* validityPeriod.end = "tbd" // Validity Period End
@@ -37,7 +37,7 @@ Description: "Xospata 40 mg, Filmtabletten: Example of a RegulatedAuthorization 
 * subject = Reference(PMP-Gilteritinibi-hemifumaras-40-Filmcoatedtablet)  // Link to the Packaged Medicinal Product
 * region = $country#CH "Switzerland" // Country
 * type[+].coding[CH] = ChAuthorisationTypeCS#756000002001 "Marketing Authorisation" // Authorisation Type
-* status[+].coding[SMC] = ChSMCAuthorisationStatusCS#Z "zugelassen" // Authorisation Status
+* status[+].coding[SMC] = ChSMCAuthorisationStatusCS#756005023007 "zugelassen" // Authorisation Status
 * statusDate = "2021-11-09" // Authorisation Status Date
 * validityPeriod.start = "2021-11-09" // Validity Period Start
 // * validityPeriod.end = "tbd" // Validity Period End

@@ -9,7 +9,7 @@ Description: "Padcev 20 mg, Pulver für ein Konzentrat zur Herstellung einer Inf
 * identifier[=].value = "CH-7601001000964-6829104-001" // PCID
 * packageFor = Reference(Padcev-20mg-Powder) // Link from Packaged Medicinal Product to Medicinal Product
 * description = "Durchstechflasche 1 Stk" // Package Description
-* legalStatusOfSupply[+].code.coding = ChSMCLegalStatusOfSupplyCS#756005022001 "One-time dispensation on medical or veterinary prescription (A)" // Legal Status of Supply (for a package)
+* legalStatusOfSupply[+].code.coding = ChSMCLegalStatusOfSupplyCS#756005022001 "Medicinal product subject to medical or veterinary prescription single dispensation (A)" // Legal Status of Supply (for a package)
 * containedItemQuantity[+].value = 20  // Pack Size
 * containedItemQuantity[=].unit = "mg" 
 * containedItemQuantity[=].system = "http://unitsofmeasure.org" 
@@ -36,7 +36,7 @@ Description: "Padcev 20 mg, Pulver für ein Konzentrat zur Herstellung einer Inf
 // Shelf Life / Storage
 * packaging.shelfLifeStorage[0].type = $emaShelfLifeType#100000073403 "Shelf life of the medicinal product as packaged for sale" // Shelf Life Type
 * packaging.shelfLifeStorage[=].periodDuration = 36 'mo' "month" // Shelf Life Time Period
-* packaging.shelfLifeStorage[0].specialPrecautionsForStorage.coding = ChSMCSpecialPrecautionsForStorageCS#L "vor Licht Schützen" // Special Precautions for Storage
+* packaging.shelfLifeStorage[0].specialPrecautionsForStorage.coding = ChSMCSpecialPrecautionsForStorageCS#756005042004 "vor Licht Schützen" // Special Precautions for Storage
 
 // Marketing Status
 //* marketingStatus[+].country = $country#CH "Switzerland"

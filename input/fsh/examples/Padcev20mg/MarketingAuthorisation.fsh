@@ -12,7 +12,7 @@ Description: "Padcev 20 mg, Pulver für ein Konzentrat zur Herstellung einer Inf
 * subject = Reference(Padcev-20mg-Powder) // Link to Medicinal Product
 * region = $country#CH "Switzerland" // Country
 * type[+].coding[CH] = ChAuthorisationTypeCS#756000002001 "Marketing Authorisation" // Authorisation Type
-* status[+].coding[SMC] = ChSMCAuthorisationStatusCS#Z "zugelassen" // Authorisation Status
+* status[+].coding[SMC] = ChSMCAuthorisationStatusCS#756005023007 "zugelassen" // Authorisation Status
 * statusDate = "2021-11-09" // Authorisation Status Date
 * validityPeriod.start = "2021-11-09" // Validity Period Start
 * validityPeriod.end = "2026-11-08" // Validity Period End
@@ -37,7 +37,7 @@ Description: "Padcev 20 mg, Pulver für ein Konzentrat zur Herstellung einer Inf
 * subject = Reference(PMP-Enfortumabum-vedotinum-20-Powder) // Link to Packaged Medicinal Product
 * region = $country#CH "Switzerland" // Country
 * type[+].coding[CH] = ChAuthorisationTypeCS#756000002001 "Marketing Authorisation" // Authorisation Type
-* status[+].coding[SMC] = ChSMCAuthorisationStatusCS#Z "zugelassen" // Authorisation Status
+* status[+].coding[SMC] = ChSMCAuthorisationStatusCS#756005023007 "zugelassen" // Authorisation Status
 * statusDate = "2021-11-09" // Authorisation Status Date
 * validityPeriod.start = "2021-11-09" // Validity Period Start Date
 * validityPeriod.end = "2026-11-08" // Validity Period End

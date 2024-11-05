@@ -21,7 +21,7 @@ Description: "Xospata 40 mg, Filmtabletten: Example of a Bundle"
 * entry[+]
   * insert bundleEntry(RegulatedAuthorisation, MA-67211001)
 * entry[+]
-  * insert bundleEntry(ManufacturedItemDefiniton, MI-Gilteritinibi-hemifumaras-40-Filmcoatedtablet) 
+  * insert bundleEntry(ManufacturedItemDefinition, MI-Gilteritinibi-hemifumaras-40-Filmcoatedtablet) 
 * entry[+]
   * insert bundleEntry(AdministrableProductDefinition, PhP-Gilteritinibi-hemifumaras-40-Filmcoatedtablet)
 * entry[+]

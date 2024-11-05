@@ -19,7 +19,7 @@ Description: "Padcev 20 mg, Pulver für ein Konzentrat zur Herstellung einer Inf
 * entry[+]
   * insert bundleEntry(RegulatedAuthorisation, MA-68291001)
 * entry[+]
-  * insert bundleEntry(ManufacturedItemDefiniton, MI-Enfortumabum-vedotinum-20-Powder) 
+  * insert bundleEntry(ManufacturedItemDefinition, MI-Enfortumabum-vedotinum-20-Powder) 
 * entry[+]
   * insert bundleEntry(AdministrableProductDefinition, PhP-Enfortumabum-vedotinum-20-Solution)
 * entry[+]
