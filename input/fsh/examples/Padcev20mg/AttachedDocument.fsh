@@ -7,7 +7,7 @@ Description: "Padcev 20 mg, Pulver für ein Konzentrat zur Herstellung einer Inf
 
 // Attached Document
 * identifier.system = $AttNo
-* identifier.value = "123456989-initial submission-Example-xyz-321" // Attachment Identifier
+* identifier.value = "123456989-initial submission-Example-xyz-321" // Attachment Identifier - sample
 * status = #current
 * type.coding = ChSMCAttachedDocumentTypeCS#756005007001 "Fachinformation"  // Type
 * language = $language#de-CH "German (Switzerland)" // Language
