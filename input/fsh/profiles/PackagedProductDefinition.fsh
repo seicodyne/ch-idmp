@@ -5,6 +5,9 @@ Title: "IDMP PackagedProductDefinition"
 Description: "Profile of the PackagedProductDefinition resource for representing a medically related item or items, in a container or package."
 * . ^short = "CH IDMP PackagedProductDefinition"
 
+// Packaged Medicinal Product$
+
+// Packaged Medicinal Product Identifier (PCID)
 //* identifier ^slicing.discriminator.type = #value
 //* identifier ^slicing.discriminator.path = "system"
 //* identifier ^slicing.rules = #open
@@ -18,6 +21,7 @@ Description: "Profile of the PackagedProductDefinition resource for representing
 
 * packageFor only Reference(CHIDMPMedicinalProductDefinition)
 
+// Package Description
 * description ^short = "Textual description (this is not the name of the package or product)"
 
 //* legalStatusOfSupply.code from ChSMCLegalStatusOfSupplyVS (required)
@@ -31,8 +35,13 @@ Description: "Profile of the PackagedProductDefinition resource for representing
 // * legalStatusOfSupply.code.coding[SMC].system = ChSMCLegalStatusOfSupplyCS
 //* legalStatusOfSupply.code.coding[SMC].code 1..
 
+// To do: Pack Size
+
+// Marketing status
+// Country
 * marketingStatus.country = $country#CH
 
+// Marketing status
 * marketingStatus.status from ChSMCMarketingStatusVS (required)
 * marketingStatus.status.coding 0..1
 * marketingStatus.status.coding ^slicing.discriminator[+].type = #value
@@ -44,6 +53,7 @@ Description: "Profile of the PackagedProductDefinition resource for representing
 * marketingStatus.status.coding[SMC].system = $SMC-MarketingStatusCS
 * marketingStatus.status.coding[SMC].code 1..
 
+// (Marketing Status) start date / end date
 * statusDate
 
 * packaging.type from EdqmPackagingVS (required)
@@ -62,6 +72,7 @@ Description: "Profile of the PackagedProductDefinition resource for representing
 * packaging.property.type
 * packaging.property.value[x] 1..
 
+// Shelf Life / Storage
 * packaging.shelfLifeStorage.type 
 * packaging.shelfLifeStorage.periodDuration
 
@@ -76,6 +87,7 @@ Description: "Profile of the PackagedProductDefinition resource for representing
 //* packaging.shelfLifeStorage.specialPrecautionsForStorage.coding[SMC].system = $SMC-SpecialPrecautionsForStorageCS
 //* packaging.shelfLifeStorage.specialPrecautionsForStorage.coding[SMC].code 1..
 
+// Package item reference(s)
 * packaging.containedItem.item only CodeableReference(CHIDMPManufacturedItemDefinition or CHIDMPPackagedProductDefinition)
 * packaging.containedItem.amount 1..
 * packaging.containedItem.amount.value 1..

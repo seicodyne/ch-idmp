@@ -5,8 +5,10 @@ Title: "CH IDMP DocumentReference"
 Description: "Profile of the DocumentReference resource for representing professional information and patient information as attachments."
 * . ^short = "CH IDMP DocumentReference"
 
+// Attached Documents
 * status
 
+// (Attached socument) Type
 //* type ^short = "Professional information or patient information"
 //* type 1..
 //* type.coding 1..

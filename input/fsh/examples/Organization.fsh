@@ -33,6 +33,8 @@ Usage: #inline
 * identifier[=].value = "100010745"
 * identifier[+].system = "urn:oid:2.51.1.3"
 * identifier[=].value = "7601001000964"
+* identifier[+].system = "www.swissmedic.ch"
+* identifier[=].value = "1002233"
 * name = "Astellas Pharma AG"
 
 Instance: holder-Curatis-AG

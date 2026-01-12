@@ -6,7 +6,7 @@ Description: "Xospata 40 mg, Filmtabletten: Example of a PackagedProductDefiniti
 
 // Packaged Medicinal Product
 * identifier[+].system = $PCID
-* identifier[=].value = "CH-7601001000964-6721101-001" // PCID
+* identifier[=].value = "CH-1002233-0672110010000-0001" // PCID
 * packageFor = Reference(Xospata-Filmcoatedtablet)
 * description = "4 Blister zu 7 Tabletten in 1 Box" // Package Description
 * legalStatusOfSupply[+].code = ChSMCLegalStatusOfSupplyCS#756005022001 "Medicinal product subject to medical or veterinary prescription single dispensation (A)"

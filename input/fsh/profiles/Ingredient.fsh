@@ -9,7 +9,9 @@ Description: "Profile of the Ingredient resource for representing the material u
 
 * for only Reference(CHIDMPMedicinalProductDefinition or CHIDMPAdministrableProductDefinition or CHIDMPManufacturedItemDefinition)
 
-// ingredient role
+// Ingredient
+
+// Ingredient role
 * role from ChSMCIngredientRoleVS (required)
 * role.coding 1..
 * role.coding ^slicing.discriminator.type = #value
@@ -21,7 +23,7 @@ Description: "Profile of the Ingredient resource for representing the material u
 * role.coding[SMC].system = $SMC-IngredientRoleCS
 * role.coding[SMC].code 1..
 
-// substance
+// Substance
 * substance.code from ChSMCSubstanceVS (required)
 * substance.code.concept 1..
 * substance.code.concept.coding 1..
@@ -34,5 +36,10 @@ Description: "Profile of the Ingredient resource for representing the material u
 * substance.code.concept.coding[UNII].system = $SMC-SubstanceCS
 * substance.code.concept.coding[UNII].code 1..
 
+// Substance strength (presentation)
 * substance.strength.presentationRatio.numerator
 * substance.strength.presentationRatio.denominator
+
+// Substance strength(concentration) - to do
+
+// Reference strength ?

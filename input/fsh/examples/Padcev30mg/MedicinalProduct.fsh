@@ -6,8 +6,8 @@ Description: "Padcev 30 mg, Pulver für ein Konzentrat zur Herstellung einer Inf
 
 // Medicinal Product
 * identifier[+].system = $MPID
-* identifier[=].value = "CH-7601001000964-6829104" // MPID
-* domain.coding[EMA] = $emaDomain#100000000012 "Human" // Domain
+* identifier[=].value = "CH-1002233-0682910040000" // MPID
+//* domain.coding[EMA] = $emaDomain#100000000012 "Human" // Domain
 * extension[authorizedDoseForm].valueCodeableConcept.coding[SMC] = $SMC-AuthorisedDoseFormCS#11215000 "Lyophilisate for solution for infusion" // Authorised Pharmaceutical Dose Form
 //* combinedPharmaceuticalDoseForm = n/a // Combined Pharmaceutical Dose Form
 * indication = "Padcev ist indiziert zur Behandlung von Erwachsenen mit lokal fortgeschrittenem oder metastasiertem Urothelkarzinom (mUC), die eine platinhaltige Chemotherapie im neoadjuvanten/adjuvanten, lokal fortgeschrittenen oder metastasierten Setting erhalten haben und die während oder nach der Behandlung mit einem Inhibitor des programmierten Zelltodrezeptors-1 (PD-1) oder des programmierten Zelltod-Liganden 1 (PD-L1) einen Progress oder einen Rückfall der Erkrankung erlitten haben." // Full indication text
@@ -19,10 +19,6 @@ Description: "Padcev 30 mg, Pulver für ein Konzentrat zur Herstellung einer Inf
 * classification[+] = $atc#L01EX13 // ATC Code
 * classification[+] = ChSMCAuthorisationCategoryCS#756005021001 "NA BWS Art 12. Abs. 5 VAZV" // Authorisation Category - sample
 * classification[+] = ChSMCTherapeuticProductcodeCS#756005004004 "Biotechnologika" // Therapeutic Productcode
-
-// Marketing Status
-//* marketingStatus[+].country = $country#CH "Switzerland"
-//* marketingStatus[=].status = $HCI-MarketingStatus#iH "im Handel"  
 
 // Attached Document
 * attachedDocument[+] = Reference(DocRef-FI-Padcev)
@@ -43,3 +39,7 @@ Description: "Padcev 30 mg, Pulver für ein Konzentrat zur Herstellung einer Inf
 // Country / Language
 * name[de-CH][=].usage[0].country = $country#CH "Switzerland" // Country: https://hl7.org/fhir/R4/valueset-iso3166-1-2.html
 * name[de-CH][=].usage[=].language = $language#de-CH "German (Switzerland)" // Language http://hl7.org/fhir/R4/valueset-languages.html
+
+// Marketing Status
+* marketingStatus[+].country = $country#CH "Switzerland"
+* marketingStatus[=].status.coding[SMC] = $SMC-MarketingStatusCS#iH "im Handel" // Marketing Status

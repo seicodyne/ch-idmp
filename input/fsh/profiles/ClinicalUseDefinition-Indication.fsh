@@ -5,14 +5,17 @@ Title: "CH IDMP ClinicalUseDefinition Indication"
 Description: "Profile of the ClinicalUseDefinition resource for representing an indication."
 * . ^short = "CH IDMP ClincalUseDefinition Indication"
 
+// Clinical particulars
 * type = #indication
 //* type. ^short = "indication | contraindication | interaction | undesirable-effect"
 //* type obeys idmp-cud-1
 
 * subject only Reference(CHIDMPMedicinalProductDefinition)
 
+// Therapeutic Indication
 * indication 1..
 
+// Indication as "Disease/Symptom/Procedure"
 * indication.diseaseSymptomProcedure.concept 1..
 * indication.diseaseSymptomProcedure.concept.coding 1..
 * indication.diseaseSymptomProcedure.concept.coding ^slicing.discriminator[+].type = #value
@@ -28,6 +31,7 @@ Description: "Profile of the ClinicalUseDefinition resource for representing an 
 * indication.diseaseSymptomProcedure.concept.coding[FOPH].system = $sct
 * indication.diseaseSymptomProcedure.concept.coding[FOPH].code 1..
 
+// Comorbidity
 * indication.comorbidity.concept 1..
 * indication.comorbidity.concept.coding 1..
 * indication.comorbidity.concept.coding ^slicing.discriminator[+].type = #value
@@ -39,6 +43,7 @@ Description: "Profile of the ClinicalUseDefinition resource for representing an 
 * indication.comorbidity.concept.coding[SMC].system = $mdr
 * indication.comorbidity.concept.coding[SMC].code 1..
 
+// Intended effect
 * indication.intendedEffect from EMAIntendedEffectVS (required)
 * indication.intendedEffect.concept 1..
 * indication.intendedEffect.concept.coding 1..

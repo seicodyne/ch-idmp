@@ -6,7 +6,7 @@ Description: "Padcev 30 mg, Pulver für ein Konzentrat zur Herstellung einer Inf
 
 // Packaged Medicinal Product.PCID
 * identifier[+].system = $PCID // PCID
-* identifier[=].value = "CH-7601001000964-6829104-002"
+* identifier[=].value = "CH-1002233-0682910040000-0002" // PCID
 * packageFor = Reference(Padcev-30mg-Powder) // Link from Packaged Medicinal Product to Medicinal Product
 * description = "Durchstechflasche 1 Stk" // Package Description
 * legalStatusOfSupply[+].code.coding = ChSMCLegalStatusOfSupplyCS#756005022001 "Medicinal product subject to medical or veterinary prescription single dispensation (A)" // Legal Status of Supply (for a package)
