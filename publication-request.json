@@ -1,0 +1,11 @@
+{
+  "package-id" : "ch.fhir.ig.ch-idmp",
+  "version" : "0.0.2-draft",
+  "path" : "http://fhir.ch/ig/ch-idmp/0.0.2", 
+  "mode" : "milestone",
+  "status" : "trial-use", 
+  "sequence" : "initial 2",
+  "desc" : "Refdata Initial 2", 
+  "changes" : "changelog.html",
+  "first" : false
+}

@@ -1,0 +1,150 @@
+Instance: LOC
+InstanceOf: NamingSystem
+Title: "LOC Identifier"
+Description: "Identifier holding a number for LocID (Location Identifier of the European Medicines Agency - Organisation Management System OMS)"
+Usage: #definition
+
+* name = "LocID"
+* status = #active
+* kind = #identifier
+* date = "2025-04-25"
+* uniqueId[+].type = #oid
+* uniqueId[=].value = "1.2.276.0.76"
+* uniqueId[=].preferred = true
+* uniqueId[+].type = #uri
+* uniqueId[=].value = "https://spor.ema.europa.eu/v1/locations"
+* uniqueId[=].preferred = false
+
+
+Instance: GLN
+InstanceOf: NamingSystem
+Title: "GLN Identifier"
+Description: "Identifier holding a number for GLN (Global Location Number)"
+Usage: #definition
+
+* name = "GLNIdentifier"
+* status = #active
+* kind = #identifier
+* date = "2025-04-25"
+* uniqueId[+].type = #oid
+* uniqueId[=].value = "2.51.1.3"
+* uniqueId[=].preferred = true
+* uniqueId[+].type = #uri
+* uniqueId[=].value = "urn:oid:2.51.1.3"
+* uniqueId[=].preferred = false
+
+
+Instance: Dossier
+InstanceOf: NamingSystem
+Title: "FOPH Dossier Number"
+Description: "Identifier holding the Dossier number of FOPH"
+Usage: #definition
+
+* name = "FOPHDossierNumber"
+* status = #active
+* kind = #identifier
+* date = "2025-04-25"
+* uniqueId[+].type = #oid
+* uniqueId[=].value = "2.16.756.1"
+* uniqueId[=].preferred = true
+* uniqueId[+].type = #uri
+* uniqueId[=].value = "urn:oid:2.16.756.1"
+* uniqueId[=].preferred = false
+
+
+Instance: GTIN
+InstanceOf: NamingSystem
+Title: "Global Trade Item Number"
+Description: "GS1 defines trade items as products or services that are priced, ordered or invoiced at any point in the supply chain."
+Usage: #definition
+
+* name = "GTIN"
+* status = #active
+* kind = #identifier
+* date = "2025-04-25"
+* uniqueId[+].type = #oid
+* uniqueId[=].value = "2.51.1.1"
+* uniqueId[=].preferred = true
+* uniqueId[+].type = #uri
+* uniqueId[=].value = "urn:oid:2.51.1.1"
+* uniqueId[=].preferred = false
+
+
+Instance: MPID
+InstanceOf: NamingSystem
+Title: "Medical Product Identifier"
+Description: "Temporary Identifier in this implementation guide until officially released by Swissmedic"
+Usage: #definition
+
+* name = "MPID"
+* status = #draft
+* kind = #identifier
+* date = "2025-10-28"
+* usage = "Used to identify medicinal products per ISO 11615 (MPID)."
+* uniqueId[+].type = #uri
+* uniqueId[=].value = "http://fhir.ch/ig/ch-idmp/sid/mpid"
+* uniqueId[=].preferred = true
+
+
+Instance: PCID
+InstanceOf: NamingSystem
+Title: "Clinical Product Identifier"
+Description: "Temporary Identifier in this implementation guide until officially released by Swissmedic"
+Usage: #definition
+
+* name = "CPID"
+* status = #draft
+* kind = #identifier
+* date = "2025-10-28"
+* usage = "Used to identify clinical products per ISO 11616 (CPID)."
+* uniqueId[+].type = #uri
+* uniqueId[=].value = "http://fhir.ch/ig/ch-idmp/sid/pcid"
+* uniqueId[=].preferred = true
+
+
+Instance: PhPID
+InstanceOf: NamingSystem
+Title: "Pharmaceutical Product Identifier"
+Description: "Temporary Identifier in this implementation guide until officially released by Swissmedic"
+Usage: #definition
+
+* name = "PhPID"
+* status = #draft
+* kind = #identifier
+* date = "2025-10-28"
+* usage = "Used to identify pharmaceutical products per ISO 11616 (PhPID)."
+* uniqueId[+].type = #uri
+* uniqueId[=].value = "http://fhir.ch/ig/ch-idmp/sid/phpid"
+* uniqueId[=].preferred = true
+
+
+Instance: AuthNo
+InstanceOf: NamingSystem
+Title: "Marketing Authorisation Number"
+Description: "Temporary Identifier in this implementation guide until officially released by Swissmedic"
+Usage: #definition
+
+* name = "PhPID"
+* status = #draft
+* kind = #identifier
+* date = "2025-10-28"
+* usage = "Used to identify the regulatory authorisation (MA) of a medicinal product."
+* uniqueId[+].type = #uri
+* uniqueId[=].value = "http://fhir.ch/ig/ch-idmp/sid/authno"
+* uniqueId[=].preferred = true
+
+
+Instance: AttNo
+InstanceOf: NamingSystem
+Title: "Application / Assessment Tracking Number"
+Description: "Temporary Namingsystem in this implementation guide until officially released by Swissmedic"
+Usage: #definition
+
+* name = "AttNo"
+* status = #draft
+* kind = #identifier
+* date = "2025-10-28"
+* usage = "Used to identify regulatory applications or assessment procedures (e.g., MAA, NDA, BLA)."
+* uniqueId[+].type = #uri
+* uniqueId[=].value = "http://fhir.ch/ig/ch-idmp/sid/attno"
+* uniqueId[=].preferred = true
