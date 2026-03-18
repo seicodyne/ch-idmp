@@ -6,11 +6,11 @@ Description: "Padcev 20 mg, Pulver für ein Konzentrat zur Herstellung einer Inf
 
 // Packaged Medicinal Product
 * identifier[+].system = $PCID
-* identifier[=].value = "CH-1002233-0682910030000-0001" // PCID
+* identifier[=].value = "CH-01100869-0682910030000-0001" // PCID
 * packageFor = Reference(Padcev-20mg-Powder) // Link from Packaged Medicinal Product to Medicinal Product
 * description = "Durchstechflasche 1 Stk" // Package Description
 * legalStatusOfSupply[+].code.coding = ChSMCLegalStatusOfSupplyCS#756005022001 "Medicinal product subject to medical or veterinary prescription single dispensation (A)" // Legal Status of Supply (for a package)
-* containedItemQuantity[+].value = 20  // Pack Size
+* containedItemQuantity[+].value = 20 // Pack Size
 * containedItemQuantity[=].unit = "mg" 
 * containedItemQuantity[=].system = "http://unitsofmeasure.org" 
 * containedItemQuantity[=].code = #mg
@@ -21,13 +21,13 @@ Description: "Padcev 20 mg, Pulver für ein Konzentrat zur Herstellung einer Inf
 
 // Package Item (Container) - Outer Package
 * packaging.type.coding[SMC] = $edqm#30009000 "Box" // Package Item (Container) Type
-* packaging.quantity = 1 // Package Item (Container) Quantity
+* packaging.quantity = 6 // Package Item (Container) Quantity
 
 // Package Item (Container) - Inner Package
 * packaging.packaging[0].type.coding = $edqm#30069000 "Vial" // Package Item (Container) Type
 * packaging.packaging[0].quantity = 1 // Package Item (Container) Quantity
 
-* packaging.packaging.containedItem[+].item.reference = Reference(MI-Enfortumabum-vedotinum-20-Powder)
+* packaging.packaging.containedItem[+].item.reference = Reference(MI-Enfortumabum-vedotinum-30-Powder)
 * packaging.packaging.containedItem[=].amount.value = 20
 * packaging.packaging.containedItem[=].amount.unit = "mg"
 * packaging.packaging.containedItem[=].amount.system = "http://unitsofmeasure.org" 
@@ -36,8 +36,17 @@ Description: "Padcev 20 mg, Pulver für ein Konzentrat zur Herstellung einer Inf
 // Shelf Life / Storage
 * packaging.shelfLifeStorage[0].type = $emaShelfLifeType#100000073403 "Shelf life of the medicinal product as packaged for sale" // Shelf Life Type
 * packaging.shelfLifeStorage[=].periodDuration = 36 'mo' "month" // Shelf Life Time Period
-* packaging.shelfLifeStorage[0].specialPrecautionsForStorage.coding = ChSMCSpecialPrecautionsForStorageCS#756005042004 "vor Licht Schützen" // Special Precautions for Storage
+* packaging.shelfLifeStorage[0].specialPrecautionsForStorage.coding = ChSMCSpecialPrecautionsForStorageCS#756005042004 "protect from light" // Special Precautions for Storage
+* packaging.shelfLifeStorage[0].specialPrecautionsForStorage.coding = ChSMCSpecialPrecautionsForStorageCS#756005042001 "Do not freeze" // Special Precautions for Storage
+* packaging.shelfLifeStorage[0].specialPrecautionsForStorage.coding = ChSMCSpecialPrecautionsForStorageCS#756005042007 "in the refrigerator (2°C - 8°C)" // Special Precautions for Storage
+* packaging.shelfLifeStorage[0].specialPrecautionsForStorage.coding = ChSMCSpecialPrecautionsForStorageCS#756005042011 "Store in the original container" // Special Precautions for Storage
 
-// Marketing Status
-//* marketingStatus[+].country = $country#CH "Switzerland"
-//* marketingStatus[=].status.coding[SMC] = $SMC-MarketingStatusCS#iH "im Handel" // Marketing Status
+// Shelf Life / Storage
+* packaging.shelfLifeStorage[0].type = $emaShelfLifeType#100000073405 "Shelf life after dilution or reconstitution according to directions" // Shelf Life Type
+* packaging.shelfLifeStorage[=].periodDuration = 16 'h' "hour" // Shelf Life Time Period
+
+// Packaged Medicinal Product.Marketing Status
+* marketingStatus[+].country = $country#CH "Switzerland"
+* marketingStatus[=].status.coding[Refdata] = $Refdata-MarketingStatusCS#756002026002 "Marketed"
+// Marketing Status Date
+* marketingStatus[=].dateRange.start = "2011-09-11"

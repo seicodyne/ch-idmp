@@ -1,26 +1,26 @@
 Profile: CHIDMPMedicinalProductDefinition
 Parent: MedicinalProductDefinition
 Id: ch-idmp-medicinalproductdefinition
-Title: "IDMP MedicinalProductDefinition"
+Title: "MedicinalProductDefinition"
 Description: "Profile of the MedicinalProductDefinition resource for representing the detailed data of medicinal products." 
-* . ^short = "CH IDMP MedicinalProductDefinition"
+* . ^short = "MedicinalProductDefinition"
 
 // Medicinal Product Identifier (MPID)
 * identifier.system 1..
 * identifier.system = $MPID // Vorschlag für SMC Naming System
 * identifier.value 1..
 
-// domain: not used for pilot project
-// * domain from EMADomainVS (required)
-// * domain.coding 1..
-// * domain.coding ^slicing.discriminator[+].type = #value
-// * domain.coding ^slicing.discriminator[=].path = "system"
-// * domain.coding ^slicing.rules = #open
-// * domain.coding contains 
-//     EMA 0..1
-// * domain.coding[EMA].system 1..
-// * domain.coding[EMA].system = $emaDomain
-// * domain.coding[EMA].code 1..
+// * domain
+* domain from EMADomainVS (required)
+* domain.coding 1..
+* domain.coding ^slicing.discriminator[+].type = #value
+* domain.coding ^slicing.discriminator[=].path = "system"
+* domain.coding ^slicing.rules = #open
+* domain.coding contains 
+    EMA 0..1
+* domain.coding[EMA].system 1..
+* domain.coding[EMA].system = $emaDomain
+* domain.coding[EMA].code 1..
 
 // (Authorised) pharmaceutical dose form
 * extension contains
@@ -70,15 +70,16 @@ Description: "Profile of the MedicinalProductDefinition resource for representin
 * classification ^slicing.discriminator[=].path = "coding.system"
 * classification ^slicing.rules = #open
 * classification contains
-    TherapeuticProductcode 0..1 and
+    MedicinalProductCategory 0..1 and
+    ATC 0..1 and
     AuthorisationCategory 0..1 and
-    ATC 0..1 
+    TherapeuticProductcode 0..1
 
 // Medicinal product category
-* classification[TherapeuticProductcode].coding 1..
-* classification[TherapeuticProductcode].coding.system 1..
-* classification[TherapeuticProductcode].coding.system = $SMC-TherapeuticProductcodeCS (exactly)
-* classification[TherapeuticProductcode].coding.code 1..
+* classification[MedicinalProductCategory].coding 1..
+* classification[MedicinalProductCategory].coding.system 1..
+* classification[MedicinalProductCategory].coding.system = $SMC-MedicinalProductCategoryCS (exactly)
+* classification[MedicinalProductCategory].coding.code 1..
 
 // Authorisation Category
 * classification[AuthorisationCategory].coding 1..
@@ -91,6 +92,12 @@ Description: "Profile of the MedicinalProductDefinition resource for representin
 * classification[ATC].coding.system 1..
 * classification[ATC].coding.system = $atc (exactly)
 * classification[ATC].coding.code 1..
+
+// Therapeutic Product code
+* classification[TherapeuticProductcode].coding 1..
+* classification[TherapeuticProductcode].coding.system 1..
+* classification[TherapeuticProductcode].coding.system = $SMC-TherapeuticProductcodeCS (exactly)
+* classification[TherapeuticProductcode].coding.code 1..
 
 // Medicinal Product Name
 
@@ -106,24 +113,22 @@ Description: "Profile of the MedicinalProductDefinition resource for representin
 
 // Country/Language
 * name[en].productName ^short = "The full product name in English"
-* name[en].part.type from $ISO-NamePartVS (required)
-// Country
+//* name[en].part.type from $ISO-NamePartVS (required)
 * name[en].usage.country = $country#CH
-//Language
 * name[en].usage.language = $language#en
 
 * name[de-CH].productName ^short = "The full product name in German (Switzerland)"
-* name[de-CH].part.type from $ISO-NamePartVS (required)
+//* name[de-CH].part.type from $ISO-NamePartVS (required)
 * name[de-CH].usage.country = $country#CH
 * name[de-CH].usage.language = $language#de-CH
 
 * name[fr-CH].productName ^short = "The full product name in French (Switzerland)"
-* name[fr-CH].part.type from $ISO-NamePartVS (required)
+//* name[fr-CH].part.type from $ISO-NamePartVS (required)
 * name[fr-CH].usage.country = $country#CH
 * name[fr-CH].usage.language = $language#fr-CH
 
 * name[it-CH].productName ^short = "The full product name in Italian (Switzerland)"
-* name[it-CH].part.type from $ISO-NamePartVS (required)
+//* name[it-CH].part.type from $ISO-NamePartVS (required)
 * name[it-CH].usage.country = $country#CH
 * name[it-CH].usage.language = $language#it-CH
 
@@ -131,17 +136,26 @@ Description: "Profile of the MedicinalProductDefinition resource for representin
 * attachedDocument ^short = "Professional information and/or patient information"
 * attachedDocument only Reference(CHIDMPDocumentReference)
 
-// Marketing status
-* marketingStatus.status from ChSMCMarketingStatusVS (required)
+// Marketing Status
+
+// Marketing Status Country
+* marketingStatus.country = $country#CH
+
+// Marketing Status
+* status from ChSMCMarketingStatusVS (required)
 * marketingStatus.status.coding 0..1
 * marketingStatus.status.coding ^slicing.discriminator[+].type = #value
 * marketingStatus.status.coding ^slicing.discriminator[=].path = "system"
 * marketingStatus.status.coding ^slicing.rules = #open
 * marketingStatus.status.coding contains 
-        SMC 0..1
-* marketingStatus.status.coding[SMC].system 1..
+    SMC 0..1 and
+    Refdata 0..1
+* marketingStatus.status.coding[SMC].system 0..1
 * marketingStatus.status.coding[SMC].system = $SMC-MarketingStatusCS
-* marketingStatus.status.coding[SMC].code 1..
+* marketingStatus.status.coding[SMC].code 0..1
+* marketingStatus.status.coding[Refdata].system 0..1
+* marketingStatus.status.coding[Refdata].system = $Refdata-MarketingStatusCS
+* marketingStatus.status.coding[Refdata].code 0..1
 
 // (Marketing Status) start date / end date
-* statusDate
+//* statusDate

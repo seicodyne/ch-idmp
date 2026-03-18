@@ -1,15 +1,17 @@
 ### Introduction
-
 CH IDMP is a project of the Refdata Foundation Switzerland to enable stuctured datacommunication of medicinal product information in IDMP/FHIR. 
 
-This is a draft implementation guide as basis for the first IDMP pilot project planned for the year 2025. 
+This is a draft implementation guide as basis for the first IDMP pilot project planned for the year 2027. 
 
-### IDMP Dependencies
+#### FHIR ressources for IDMP
+This implementation guide uses the following FHIR resource to represent the context of the international ISO IDMP (Identification of Medicinal Products) standard:
+
 This implementation guide is dependent on 
 - [FHIR Medicinal Product Definition](https://hl7.org/fhir/medicinalproductdefinition.html)
 - [FHIR Regulated Authorization](https://hl7.org/fhir/regulatedauthorization.html)
 - [FHIR Packaged Product Definition](https://hl7.org/fhir/packagedproductdefinition.html)
 - [FHIR Manufactured Item Definition](https://hl7.org/fhir/manufactureditemdefinition.html)
+- [FHIR Administrable Product Definition](https://hl7.org/fhir/administrableproductdefinition.html)
 - [FHIR Ingredient](https://hl7.org/fhir/ingredient.html)
 - [FHIR Substance Definition](https://hl7.org/fhir/substancedefinition.html)
 - and [FHIR Clinical Use Definition](https://hl7.org/fhir/clinicalusedefinition.html)
@@ -20,12 +22,21 @@ which describe the international context, especially related to IDMP.
 This implementation guide describes mainly the exchange formats for the Swiss IDMP Pilot Project. 
 
 The following documents have been defined (and described in more detail on the respective subsections):
-[IDMP](idmp.html)<br>
-[Data Import / Export in FHIR](authorised-medicinal-product.html)
+#### The related projects and standards
+1. [FOPH ePL](https://fhir.ch/ig/ch-epl/index.html): Description and summary of the scope ePL project of FOPH (Federal Office of Public Health) 
+2. [HL7 FHIR Standard](fhir.html): Short description and explanation of the FHIR standard.
+3. [ISO IDMP Standard (ISO 11615)](idmp.html): Introduction into the IDMP standard of ISO.
+4. [IDMP and FHIR](fhir-idmp.html): Explanation on how IDMP is build in FHIR.
+
+#### The IDMP implentations
+5. [Swiss IDMP Implementation](ch-idmp.html): Overview of the IDMP implementation in Switzerland
+6. [EMA IDMP Implementation](ema-idmp.html): Introduction of the IDMP implemantation by the European Medicines Agency for the European Union.
+7. [Swissmedic IDMP Implementation](idmp.html): Introduction of the IDMP implementation by Swissmedic for Switzerland
+8. [FOPH Speciality List](specialitieslist.html): Introduction on the IDMP implemantation and its FHIR extensions developed for FOPH. 
 
 <div markdown="1" class="stu-note">
 
-[Significant changes, open and closed issues](changelog.html)
+[Changelog](changelog.html) with significant changes, open and closed issues.
 
 </div>
 
@@ -40,8 +51,8 @@ This guide is the product of collaborative work undertaken with participants fro
 * [Swiss FHIR Implementers Community](https://www.fhir.ch)
 * [HL7 Switzerland](https://www.hl7.ch)
 * [eHealth Suisse](https://www.e-health-suisse.ch/startseite.html)
-* [SMC](https://www.SMC.ch/SMC/de/home.html)
-* [Federal Office of Public Health](https://www.bag.admin.ch/bag/en/home.html)
+* [Swissmedic](https://www.swissmedic.ch)
+* [Federal Office of Public Health](https://www.bag.admin.ch)
 
 ### IP Statements
 This document is licensed under Creative Commons "No Rights Reserved" ([CC0](https://creativecommons.org/publicdomain/zero/1.0/)).
@@ -51,12 +62,14 @@ HL7®, HEALTH LEVEL SEVEN®, FHIR® and the FHIR <img src="icon-fhir-16.png" sty
 {% include ip-statements.xhtml %}
 
 ### Cross Version Analysis
-tbd
-{% include cross-version-analysis.xhtml %}
+
+{% include cross-version-analysis.html %}
 
 ### Dependency Table
 
 {% include dependency-table.xhtml %}
+
+CH-IDMP currently has no dependency on ch-core, as ch-core is based on FHIR R4, whereas CH-IDMP is based on R5. The use of R5 was necessary because IDMP support is only available from R5 onwards.
 
 ### Globals Table
 

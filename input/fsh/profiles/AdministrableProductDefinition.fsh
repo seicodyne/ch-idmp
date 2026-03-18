@@ -1,16 +1,16 @@
 Profile: CHIDMPAdministrableProductDefinition
 Parent: AdministrableProductDefinition
 Id: ch-idmp-administrableproductdefinition
-Title: "CH IDMP AdministrableProductDefinition"
+Title: "AdministrableProductDefinition"
 Description: "Profile of the AdministrableProductDefinition resource for representing a medicinal product in the final form which is suitable for administering to a patient."
-* . ^short = "CH IDMP AdministrableProductDefinition"
+* . ^short = "AdministrableProductDefinition"
 
 * contained ^short = "The ingredients of this administrable medicinal product as inline resources."
 
-// PhPID (not used for the pilot)
-//* identifier.system 1..
-//* identifier.system = $PhPID
-//* identifier.value 1..
+// PhPID
+* identifier.system 1..
+* identifier.system = $PhPID
+* identifier.value 1..
 
 // status internal
 * status

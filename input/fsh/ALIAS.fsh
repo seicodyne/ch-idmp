@@ -1,8 +1,9 @@
 // External Code Systems
 Alias: $loinc =                         http://loinc.org
 Alias: $sct =                           http://snomed.info/sct
+Alias: $sct-ch-edition =                http://snomed.info/sct/ch-edition
+Alias: $sct-ch-full =                   http://snomed.info/sct/ch-edition/version/20250604
 
-Alias: $sct-ch =                        http://snomed.info/sct|http://snomed.info/sct/2011000195101
 Alias: $atc =                           http://www.whocc.no/atc
 
 Alias: $language =                      urn:ietf:bcp:47
@@ -15,7 +16,6 @@ Alias: $emaDomain =                     http://spor.ema.europa.eu/v1/lists/10000
 Alias: $emaIntendedEffect =             http://spor.ema.europa.eu/v1/lists/200000003186
 Alias: $emaShelfLifeType =              http://spor.ema.europa.eu/v1/lists/100000073343
 Alias: $mdr =                           https://www.meddra.org
-Alias: $sct =                           http://snomed.info/sct
 
 // ISO 
 Alias: $ISO-NamePart  =                 http://hl7.org/fhir/medicinal-product-name-part-type
@@ -27,14 +27,14 @@ Alias:  $EMA-Material =                 http://spor.ema.europa.eu/v1/lists/20000
 Alias:  $EMA-ShelfLifeType =            http://spor.ema.europa.eu/v1/lists/100000073343
 
 // MedDRA
-Alias:  $IndicationAs =                 http://terminology.hl7.org/CodeSystem/mdr //MedDRA
-Alias:  $Comorbidity =                  http://terminology.hl7.org/CodeSystem/mdr //MedDRA
+Alias:  $IndicationAs =                 https://www.meddra.org
+Alias:  $Comorbidity =                  https://www.meddra.org
 
 // UCUM
 Alias: $UnitOfMeasurement =             http://unitsofmeasure.org
 
 // Profiles
-Alias: $ChCorePractitioner =            https://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner
+Alias: $ChCorePractitioner =                 https://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner
 
 // XML CH IG Code System
 Alias: $CSChIgExampleTranslation =      https://fhir.ch/ig/ch-ig/CodeSystem/ch-ig-example-translation
@@ -43,18 +43,20 @@ Alias: $CSChIgExampleTranslation =      https://fhir.ch/ig/ch-ig/CodeSystem/ch-i
 // Section Yellow - Medicinal Products
 
 // FHIR Code-Systems
-Alias:  $FHIR-Domain =                                       http://hl7.org/fhir/medicinal-product-domain
+Alias:  $FHIR-Domain =                                http://hl7.org/fhir/medicinal-product-domain
 
 // Section Yellow - Medicinal Product
-Alias:  $CH-MedicialProductNameTypeCS =                      http://fhir.ch/ig/ch-idmp/CodeSystem/ch-medicinal-product-name-type
+Alias:  $CH-MedicialProductNameTypeCS =               http://fhir.ch/ig/ch-idmp/CodeSystem/ch-medicinal-product-name-type
 
 // SMC to be updated as soon the final addresses are officially published by Swissmedic
 Alias:  $SMC-DomainCS =                               http://fhir.ch/ig/ch-idmp/CodeSystem/ch-SMC-domain //Provisorisch
 Alias:  $SMC-AuthorisedDoseFormCS =                   http://standardterms.edqm.eu
+Alias:  $SMC-CombinedDoseFormCS =                   http://standardterms.edqm.eu
 Alias:  $SMC-AdditionalMonitoringIndicatorCS =        http://fhir.ch/ig/ch-idmp/CodeSystem/ch-SMC-additional-monitoring-indicator //Provisorisch
 Alias:  $SMC-AttachedDocumentType =                   http://fhir.ch/ig/ch-idmp/CodeSystem/ch-SMC-AttachedDocumentType //Provisorisch
 Alias:  $SMC-PediatricUseIndicatorCS =                http://fhir.ch/ig/ch-idmp/CodeSystem/ch-SMC-pediatric-use-indicator //Provisorisch
 Alias:  $SMC-AuthorisationCategoryCS =                http://fhir.ch/ig/ch-idmp/CodeSystem/ch-SMC-authorisation-category //Provisorisch
+Alias:  $SMC-MedicinalProductCategoryCS =             http://fhir.ch/ig/ch-idmp/CodeSystem/ch-SMC-MedicinalProductCategory //Provisorisch
 Alias:  $SMC-TherapeuticProductcodeCS =               http://fhir.ch/ig/ch-idmp/CodeSystem/ch-SMC-therapeuticproductcode //Provisorisch
 Alias:  $SMC-OrphanIndicationType =                   http://fhir.ch/ig/ch-idmp/CodeSystem/ch-SMC-OrphanIndicationType //Provisorisch
 Alias:  $SMC-OrphanDesignationAuthorisationStatus =   http://fhir.ch/ig/ch-idmp/CodeSystem/ch-SMC-OrphanDesignationAuthorisationStatus //Provisorisch
@@ -67,7 +69,7 @@ Alias:  $SMC-ReferencedProductType =                  http://fhir.ch/ig/ch-idmp/
 
 // SMC
 Alias:  $CH-AuthorisationType =                       http://fhir.ch/ig/ch-idmp/CodeSystem/ch-authorisation-type //Provisorisch
-Alias:  $SMC-LegalStatusOfSupplyCS =                  http://fhir.ch/ig/ch-idmp/CodeSystemch-SMC-legal-status-of-supply //Provisorisch
+Alias:  $SMC-LegalStatusOfSupplyCS =                  http://fhir.ch/ig/ch-idmp/CodeSystem/ch-SMC-legal-status-of-supply //Provisorisch
 Alias:  $SMC-AuthorisationStatusCS =                  http://fhir.ch/ig/ch-idmp/CodeSystem/ch-SMC-authorisation-status //Provisorisch
 Alias:  $SMC-ProcedureType =                          http://fhir.ch/ig/ch-idmp/CodeSystem/ch-SMC-ProcedureType //Provisorisch
 Alias:  $SMC-ProcedureTypeVS =                        http://fhir.ch/ig/ch-idmp/ValueSet/ch-SMC-ProcedureType //Provisorisch
@@ -75,6 +77,7 @@ Alias:  $SMC-ApplicationType =                        http://fhir.ch/ig/ch-idmp/
 Alias:  $SMC-ApplicationTypeVS =                      http://fhir.ch/ig/ch-idmp/ValueSet/ch-SMC-ApplicationType //Provisorisch
 Alias:  $SMC-MarketingStatusCS =                      http://fhir.ch/ig/ch-idmp/CodeSystem/ch-SMC-marketing-status //Provisorisch
 
+Alias:  $Refdata-MarketingStatusCS =                  http://fhir.ch/ig/ch-idmp/CodeSystem/ch-Refdata-marketing-status //Provisorisch
 // Section purple - Clinical Particulars 
 
 // SMC
@@ -97,20 +100,21 @@ Alias:  $SMC-ScoringVS =                              http://fhir.ch/ig/ch-idmp/
 // Section orange - Substances Strength
 
 // SMC
-Alias:  $SMC-IngredientRoleCS =                       http://fhir.ch/ig/ch-idmp/CodeSystem/ch-SMC-ingredient-role //Provisorisch                     
+Alias:  $SMC-IngredientRoleCS =                       http://fhir.ch/ig/ch-idmp/CodeSystem/ch-SMC-ingredient-role //Provisorisch                      
 Alias:  $SMC-SubstanceCS =                            http://fhir.ch/ig/ch-idmp/CodeSystem/ch-SMC-substance //Provisorisch                      
 Alias:  $SMC-OriginOfSubstance =                      http://fhir.ch/ig/ch-idmp/CodeSystem/ch-SMC-OriginOfSubstance //Provisorisch                      
 Alias:  $SMC-OriginOfSubstanceVS =                    http://fhir.ch/ig/ch-idmp/ValueSet/ch-SMC-OriginOfSubstance //Provisorisch
 Alias:  $SMC-QuantityOperator =                       http://fhir.ch/ig/ch-idmp/CodeSystem/ch-SMC-QuantityOperator //Provisorisch                      
 Alias:  $SMC-QuantityOperatorVS =                     http://fhir.ch/ig/ch-idmp/ValueSet/ch-SMC-QuantityOperator //Provisorisch
-Alias:  $SMC-StrengthPresentationUnit =               http://fhir.ch/ig/ch-idmp/CodeSystem/ch-SMC-StrengthPresentationUnit //Provisorisch //EDQM urn:oid:0.4.0.127.0.16.1.1.2.11 
-Alias:  $SMC-StrengthPresentationUnitVS =             http://fhir.ch/ig/ch-idmp/ValueSet/ch-SMC-StrengthPresentationUnit //Provisorisch //EDQM urn:oid:0.4.0.127.0.16.1.1.2.11 
+Alias:  $SMC-StrengthPresentationUnit =               http://fhir.ch/ig/ch-idmp/CodeSystem/ch-SMC-StrengthPresentationUnit //Provisorisch //EDQM http://standardterms.edqm.eu
+Alias:  $SMC-StrengthPresentationUnitVS =             http://fhir.ch/ig/ch-idmp/ValueSet/ch-SMC-StrengthPresentationUnit //Provisorisch //EDQM http://standardterms.edqm.eu
 
 
 // External Identifier Systems
 
-Alias: $PhPID =   http://SMC.ch/ig/idmp/NamingSystem/IDSystem-ch-PhPID
-Alias: $MPID =    http://SMC.ch/ig/idmp/NamingSystem/IDSystem-ch-MPID  
-Alias: $PCID =    http://SMC.ch/ig/idmp/NamingSystem/IDSystem-ch-PCID
-Alias: $AuthNo =  http://SMC.ch/ig/idmp/NamingSystem/IDSystem-ch-MarketingAuthorisationNumber
-Alias: $AttNo =   http://SMC.ch/ig/idmp/NamingSystem/IDSystem-ch-AttachmentNumber
+Alias: $PhPID =   http://fhir.ch/ig/ch-idmp/sid/phpid //Provisorisch
+Alias: $MPID =    http://fhir.ch/ig/ch-idmp/sid/mpid //Provisorisch
+Alias: $PCID =    http://fhir.ch/ig/ch-idmp/sid/pcid //Provisorisch
+Alias: $AuthNo =  http://fhir.ch/ig/ch-idmp/sid/authno //Provisorisch
+Alias: $AttNo =   http://fhir.ch/ig/ch-idmp/sid/attno //Provisorisch
+

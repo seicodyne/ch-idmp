@@ -5,8 +5,8 @@ Title: "CH-68291002"
 Description: "Padcev 30 mg, Pulver für ein Konzentrat zur Herstellung einer Infusionslösung: Example of a PackagedProductDefinition (Packaged Medicinal Product)"
 
 // Packaged Medicinal Product.PCID
-* identifier[+].system = $PCID // PCID
-* identifier[=].value = "CH-1002233-0682910040000-0002" // PCID
+* identifier[+].system = $PCID
+* identifier[=].value = "CH-01100869-0682910040000-0002" // PCID
 * packageFor = Reference(Padcev-30mg-Powder) // Link from Packaged Medicinal Product to Medicinal Product
 * description = "Durchstechflasche 1 Stk" // Package Description
 * legalStatusOfSupply[+].code.coding = ChSMCLegalStatusOfSupplyCS#756005022001 "Medicinal product subject to medical or veterinary prescription single dispensation (A)" // Legal Status of Supply (for a package)
@@ -36,8 +36,17 @@ Description: "Padcev 30 mg, Pulver für ein Konzentrat zur Herstellung einer Inf
 // Shelf Life / Storage
 * packaging.shelfLifeStorage[0].type = $emaShelfLifeType#100000073403 "Shelf life of the medicinal product as packaged for sale" // Shelf Life Type
 * packaging.shelfLifeStorage[=].periodDuration = 36 'mo' "month" // Shelf Life Time Period
-* packaging.shelfLifeStorage[0].specialPrecautionsForStorage.coding = ChSMCSpecialPrecautionsForStorageCS#756005042004 "vor Licht Schützen" // Special Precautions for Storage
+* packaging.shelfLifeStorage[0].specialPrecautionsForStorage.coding = ChSMCSpecialPrecautionsForStorageCS#756005042004 "protect from light" // Special Precautions for Storage
+* packaging.shelfLifeStorage[0].specialPrecautionsForStorage.coding = ChSMCSpecialPrecautionsForStorageCS#756005042001 "Do not freeze" // Special Precautions for Storage
+* packaging.shelfLifeStorage[0].specialPrecautionsForStorage.coding = ChSMCSpecialPrecautionsForStorageCS#756005042007 "in the refrigerator (2°C - 8°C)" // Special Precautions for Storage
+* packaging.shelfLifeStorage[0].specialPrecautionsForStorage.coding = ChSMCSpecialPrecautionsForStorageCS#756005042011 "Store in the original container" // Special Precautions for Storage
 
-// Marketing Status
-//* marketingStatus[+].country = $country#CH "Switzerland"
-//* marketingStatus[=].status.coding[SMC] = $SMC-MarketingStatusCS#iH "im Handel" // Marketing Status
+// Shelf Life / Storage
+* packaging.shelfLifeStorage[0].type = $emaShelfLifeType#100000073405 "Shelf life after dilution or reconstitution according to directions" // Shelf Life Type
+* packaging.shelfLifeStorage[=].periodDuration = 16 'h' "hour" // Shelf Life Time Period
+
+// Packaged Medicinal Product.Marketing Status
+* marketingStatus[+].country = $country#CH "Switzerland"
+* marketingStatus[=].status.coding[Refdata] = $Refdata-MarketingStatusCS#756002026002 "Marketed"
+// Marketing Status Date
+* marketingStatus[=].dateRange.start = "2011-09-11"

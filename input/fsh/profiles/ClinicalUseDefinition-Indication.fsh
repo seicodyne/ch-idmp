@@ -1,9 +1,9 @@
 Profile: CHIDMPClinicalUseDefinitionIndication
 Parent: ClinicalUseDefinition
 Id: ch-idmp-clinicalusedefinition-indication
-Title: "CH IDMP ClinicalUseDefinition Indication"
+Title: "ClinicalUseDefinition Indication"
 Description: "Profile of the ClinicalUseDefinition resource for representing an indication."
-* . ^short = "CH IDMP ClincalUseDefinition Indication"
+* . ^short = "ClincalUseDefinition Indication"
 
 // Clinical particulars
 * type = #indication
@@ -16,20 +16,16 @@ Description: "Profile of the ClinicalUseDefinition resource for representing an 
 * indication 1..
 
 // Indication as "Disease/Symptom/Procedure"
-* indication.diseaseSymptomProcedure.concept 1..
-* indication.diseaseSymptomProcedure.concept.coding 1..
+* indication.diseaseSymptomProcedure.concept 0..
+* indication.diseaseSymptomProcedure.concept.coding 0..
 * indication.diseaseSymptomProcedure.concept.coding ^slicing.discriminator[+].type = #value
 * indication.diseaseSymptomProcedure.concept.coding ^slicing.discriminator[=].path = "system"
 * indication.diseaseSymptomProcedure.concept.coding ^slicing.rules = #open
 * indication.diseaseSymptomProcedure.concept.coding contains 
-    SMC 0..1 and
-    FOPH 0..1
+    SMC 0..1
 * indication.diseaseSymptomProcedure.concept.coding[SMC].system 1..
 * indication.diseaseSymptomProcedure.concept.coding[SMC].system = $mdr
 * indication.diseaseSymptomProcedure.concept.coding[SMC].code 1..
-* indication.diseaseSymptomProcedure.concept.coding[FOPH].system 1..
-* indication.diseaseSymptomProcedure.concept.coding[FOPH].system = $sct
-* indication.diseaseSymptomProcedure.concept.coding[FOPH].code 1..
 
 // Comorbidity
 * indication.comorbidity.concept 1..

@@ -8,6 +8,7 @@ Description: "Xospata 40 mg, Filmtabletten: Example of a Bundle"
 // Medicinal Product
 
 * type = #collection
+* language = #de-CH
 * entry[0]
   * insert bundleEntry(MedicinalProductDefinition, Xospata-Filmcoatedtablet)
 * entry[+]
