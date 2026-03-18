@@ -1,30 +1,16 @@
 Profile: CHIDMPManufacturedItemDefinition
 Parent: ManufacturedItemDefinition
 Id: ch-idmp-manufactureditemdefinition
-Title: "CH IDMP ManufacturedItemDefinition"
+Title: "ManufacturedItemDefinition"
 Description: "Profile of the ManufacturedItemDefinition resource for representing the characteristics of a medicinal manufactured item as contained in a packaged medicinal product."
-* . ^short = "CH IDMP ManufacturedItemDefinition"
+* . ^short = "ManufacturedItemDefinition"
 
 // status internal
 * status
 
 // Manufactured item
 
-// Unit of presentation
-* unitOfPresentation from EdqmUnitOfPresentationVS (required)
-* unitOfPresentation.coding 1..
-* unitOfPresentation.coding ^slicing.discriminator[+].type = #value
-* unitOfPresentation.coding ^slicing.discriminator[=].path = "system"
-* unitOfPresentation.coding ^slicing.rules = #open
-* unitOfPresentation.coding contains 
-    SMC 1..1
-* unitOfPresentation.coding[SMC].system 1..
-* unitOfPresentation.coding[SMC].system = $edqm
-* unitOfPresentation.coding[SMC].code 1..
-
-// Manufactured item quantity: is defined in the PackagedMedicinalProduct section
-
-// Manufactured dose form
+// manufactured dose form
 * manufacturedDoseForm from EdqmPharmaceuticalDoseFormVS (required)
 * manufacturedDoseForm.coding 1..
 * manufacturedDoseForm.coding ^slicing.discriminator[+].type = #value
@@ -35,6 +21,20 @@ Description: "Profile of the ManufacturedItemDefinition resource for representin
 * manufacturedDoseForm.coding[SMC].system 1..
 * manufacturedDoseForm.coding[SMC].system = $edqm
 * manufacturedDoseForm.coding[SMC].code 1..
+
+// Manufactured item quantity: is defined in the PackagedMedicinalProduct section
+
+// unit of presentation
+* unitOfPresentation from EdqmUnitOfPresentationVS (required)
+* unitOfPresentation.coding 1..
+* unitOfPresentation.coding ^slicing.discriminator[+].type = #value
+* unitOfPresentation.coding ^slicing.discriminator[=].path = "system"
+* unitOfPresentation.coding ^slicing.rules = #open
+* unitOfPresentation.coding contains 
+    SMC 1..1
+* unitOfPresentation.coding[SMC].system 1..
+* unitOfPresentation.coding[SMC].system = $edqm
+* unitOfPresentation.coding[SMC].code 1..
 
 // TODO: definieren other characteristics
 //* property.type

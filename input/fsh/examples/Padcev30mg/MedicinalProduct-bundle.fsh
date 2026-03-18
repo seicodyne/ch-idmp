@@ -8,6 +8,7 @@ Description: "Padcev 30 mg, Pulver für ein Konzentrat zur Herstellung einer Inf
 // Medicinal Product.MPID
 
 * type = #collection
+* language = #de-CH
 * entry[0]
   * insert bundleEntry(MedicinalProductDefinition, Padcev-30mg-Powder)
 * entry[+]

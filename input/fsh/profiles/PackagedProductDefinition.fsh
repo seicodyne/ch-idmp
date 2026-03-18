@@ -1,11 +1,11 @@
 Profile: CHIDMPPackagedProductDefinition
 Parent: PackagedProductDefinition
 Id: ch-idmp-packagedproductdefinition
-Title: "IDMP PackagedProductDefinition"
+Title: "PackagedProductDefinition"
 Description: "Profile of the PackagedProductDefinition resource for representing a medically related item or items, in a container or package."
-* . ^short = "CH IDMP PackagedProductDefinition"
+* . ^short = "PackagedProductDefinition"
 
-// Packaged Medicinal Product$
+// Packaged Medicinal Product
 
 // Packaged Medicinal Product Identifier (PCID)
 //* identifier ^slicing.discriminator.type = #value
@@ -24,38 +24,33 @@ Description: "Profile of the PackagedProductDefinition resource for representing
 // Package Description
 * description ^short = "Textual description (this is not the name of the package or product)"
 
-//* legalStatusOfSupply.code from ChSMCLegalStatusOfSupplyVS (required)
-//* legalStatusOfSupply.code.coding 1..
-//* legalStatusOfSupply.code.coding ^slicing.discriminator.type = #value
-//* legalStatusOfSupply.code.coding ^slicing.discriminator.path = "system"
-//* legalStatusOfSupply.code.coding ^slicing.rules = #open
-//* legalStatusOfSupply.code.coding contains 
-//    SMC 0..1
-//* legalStatusOfSupply.code.coding[SMC].system 1..
-// * legalStatusOfSupply.code.coding[SMC].system = ChSMCLegalStatusOfSupplyCS
-//* legalStatusOfSupply.code.coding[SMC].code 1..
-
 // To do: Pack Size
 
 // Marketing status
+
 // Country
 * marketingStatus.country = $country#CH
 
 // Marketing status
-* marketingStatus.status from ChSMCMarketingStatusVS (required)
+* marketingStatus.status from ChRefdataMarketingStatusVS (required)
 * marketingStatus.status.coding 0..1
 * marketingStatus.status.coding ^slicing.discriminator[+].type = #value
 * marketingStatus.status.coding ^slicing.discriminator[=].path = "system"
 * marketingStatus.status.coding ^slicing.rules = #open
 * marketingStatus.status.coding contains 
-        SMC 0..1
-* marketingStatus.status.coding[SMC].system 1..
+        SMC 0..1 and
+        Refdata 0..1
+* marketingStatus.status.coding[SMC].system 0..1
 * marketingStatus.status.coding[SMC].system = $SMC-MarketingStatusCS
-* marketingStatus.status.coding[SMC].code 1..
+* marketingStatus.status.coding[SMC].code 0..1
+* marketingStatus.status.coding[Refdata].system 0..1
+* marketingStatus.status.coding[Refdata].system = $Refdata-MarketingStatusCS
+* marketingStatus.status.coding[Refdata].code 0..1
 
 // (Marketing Status) start date / end date
-* statusDate
+//* statusDate
 
+// Packaging Type
 * packaging.type from EdqmPackagingVS (required)
 * packaging.type.coding 1..
 * packaging.type.coding ^slicing.discriminator.type = #value

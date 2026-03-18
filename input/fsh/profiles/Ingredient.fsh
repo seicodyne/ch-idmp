@@ -1,9 +1,9 @@
 Profile: CHIDMPIngredient
 Parent: Ingredient
 Id: ch-idmp-ingredient
-Title: "IDMP Ingredient"
+Title: "Ingredient"
 Description: "Profile of the Ingredient resource for representing the material used in the preparation of a medicinal/pharmaceutical product."
-* . ^short = "CH IDMP Ingredient"
+* . ^short = "Ingredient"
 
 * status 
 
@@ -11,7 +11,7 @@ Description: "Profile of the Ingredient resource for representing the material u
 
 // Ingredient
 
-// Ingredient role
+// ingredient role
 * role from ChSMCIngredientRoleVS (required)
 * role.coding 1..
 * role.coding ^slicing.discriminator.type = #value
@@ -23,7 +23,7 @@ Description: "Profile of the Ingredient resource for representing the material u
 * role.coding[SMC].system = $SMC-IngredientRoleCS
 * role.coding[SMC].code 1..
 
-// Substance
+// substance
 * substance.code from ChSMCSubstanceVS (required)
 * substance.code.concept 1..
 * substance.code.concept.coding 1..
@@ -31,14 +31,31 @@ Description: "Profile of the Ingredient resource for representing the material u
 * substance.code.concept.coding ^slicing.discriminator.path = "system"
 * substance.code.concept.coding ^slicing.rules = #open
 * substance.code.concept.coding contains 
-    UNII 0..1 
+   UNII 0..1 
 * substance.code.concept.coding[UNII].system 1..
 * substance.code.concept.coding[UNII].system = $SMC-SubstanceCS
 * substance.code.concept.coding[UNII].code 1..
 
 // Substance strength (presentation)
-* substance.strength.presentationRatio.numerator
-* substance.strength.presentationRatio.denominator
+// * substance.strength.presentationRatio.numerator
+// * substance.strength.presentationRatio.denominator
+
+// Substance strength (presentation)
+// * substance.strength.concentrationRatio.numerator
+// * substance.strength.concentrationRatio.denominator
+
+// Reference Substance
+* substance.strength.referenceStrength.substance from ChSMCSubstanceVS (required)
+* substance.strength.referenceStrength.substance.concept 1..
+* substance.strength.referenceStrength.substance.concept.coding 1..
+* substance.strength.referenceStrength.substance.concept.coding ^slicing.discriminator.type = #value
+* substance.strength.referenceStrength.substance.concept.coding ^slicing.discriminator.path = "system"
+* substance.strength.referenceStrength.substance.concept.coding ^slicing.rules = #open
+* substance.strength.referenceStrength.substance.concept.coding contains 
+    UNII 0..1 
+* substance.strength.referenceStrength.substance.concept.coding[UNII].system 1..
+* substance.strength.referenceStrength.substance.concept.coding[UNII].system = $SMC-SubstanceCS
+* substance.strength.referenceStrength.substance.concept.coding[UNII].code 1..
 
 // Substance strength(concentration) - to do
 
