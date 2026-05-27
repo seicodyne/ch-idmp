@@ -17,33 +17,18 @@ Description: "Profile of the RegulatedAuthorization resource for representing th
 
 // Authorisation Type
 * type from ChAuthorisationTypeVS (required)
-* type.coding 0..1
-* type.coding ^slicing.discriminator.type = #value
-* type.coding ^slicing.discriminator.path = "system"
-* type.coding ^slicing.rules = #open
-* type.coding contains 
-    CH 0..1
-* type.coding[CH].system 1..
-* type.coding[CH].system = $CH-AuthorisationType
-* type.coding[CH].code 1..
 
 // Authorisation Status
 * status from ChSMCAuthorisationStatusVS (required)
-* status.coding 1..
-* status.coding ^slicing.discriminator.type = #value
-* status.coding ^slicing.discriminator.path = "system"
-* status.coding ^slicing.rules = #open
-* status.coding contains 
-    SMC 0..1
-* status.coding[SMC].system 1..
-* status.coding[SMC].system = $SMC-AuthorisationStatusCS
-* status.coding[SMC].code 1..
-
-// Authorisation status date
-* statusDate
-
-* validityPeriod.start
-* validityPeriod.end
+//* status.coding 1..
+//* status.coding ^slicing.discriminator.type = #value
+//* status.coding ^slicing.discriminator.path = "system"
+//* status.coding ^slicing.rules = #open
+//* status.coding contains 
+//    SMC 0..1
+//* status.coding[SMC].system 1..
+//* status.coding[SMC].system = $SMC-AuthorisationStatusCS
+//* status.coding[SMC].code 1..
 
 // Marketing authorisation holder (Organisation)
 * holder ^type.aggregation = #contained

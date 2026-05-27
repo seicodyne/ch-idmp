@@ -2,8 +2,8 @@
 Instance: 200f39aa-ddd8-48a2-a05e-8e4b4e6ac847
 InstanceOf: CHIDMPBundle
 Usage: #example
-Title: "Xospata 40 mg, Filmtabletten (Bundle)"
-Description: "Xospata 40 mg, Filmtabletten: Example of a Bundle"
+Title: "Comprehensive Sample Product, Creme and Pessary (Bundle)"
+Description: "Comprehensive Beispiel Produkt, Creme und Vaginalzäpfchen: Example of a Bundle"
 
 // Medicinal Product
 

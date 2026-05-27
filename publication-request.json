@@ -1,11 +1,15 @@
 {
   "package-id" : "ch.fhir.ig.ch-idmp",
-  "version" : "0.0.2-draft",
-  "path" : "http://fhir.ch/ig/ch-idmp/0.0.2", 
-  "mode" : "milestone",
-  "status" : "trial-use", 
+  "title" : "CH IDMP",
+  "introduction" : "IDMP Base Implementation Guide for Swissmedic",
+  "category" : "Administration",
+  "ci-build" : "http://fhir.ch/ig/ch-idmp",
+  "version" : "1.0.0",
+  "path" : "http://fhir.ch/ig/ch-idmp/1.0.0-snapshot",
+  "mode" : "working",
+  "status" : "trial-use",
   "sequence" : "initial 2",
-  "desc" : "Refdata Initial 2", 
+  "desc" : "Refdata Initial 2",
   "changes" : "changelog.html",
-  "first" : false
+  "first" : true
 }

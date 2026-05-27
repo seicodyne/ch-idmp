@@ -8,17 +8,17 @@ Description: "Padcev 30 mg, Pulver für ein Konzentrat zur Herstellung einer Inf
 * identifier[+].system = $MPID
 * identifier[=].value = "CH-01100869-0682910040000" // MPID
 //* domain.coding[EMA] = $emaDomain#100000000012 "Human use" // Domain
-* extension[authorizedDoseForm].valueCodeableConcept.coding[SMC] = $SMC-AuthorisedDoseFormCS#11215000 "Lyophilisate for solution for infusion" // Authorised Pharmaceutical Dose Form
+* extension[authorizedDoseForm].valueCodeableConcept.coding = $SMC-AuthorisedDoseFormCS#11215000 "Lyophilisate for solution for infusion" // Authorised Pharmaceutical Dose Form
 //* combinedPharmaceuticalDoseForm = n/a // Combined Pharmaceutical Dose Form
 * indication = "Padcev ist indiziert zur Behandlung von Erwachsenen mit lokal fortgeschrittenem oder metastasiertem Urothelkarzinom (mUC), die eine platinhaltige Chemotherapie im neoadjuvanten/adjuvanten, lokal fortgeschrittenen oder metastasierten Setting erhalten haben und die während oder nach der Behandlung mit einem Inhibitor des programmierten Zelltodrezeptors-1 (PD-1) oder des programmierten Zelltod-Liganden 1 (PD-L1) einen Progress oder einen Rückfall der Erkrankung erlitten haben." // Full indication text
-* legalStatusOfSupply = ChSMCLegalStatusOfSupplyCS#756005022001 "Medicinal product subject to medical or veterinary prescription single dispensation (A)" // Legal Status of Supply
+* legalStatusOfSupply = ChSMCLegalStatusOfSupplyCS#756005034000001 "A: Single dispensing requiring a medical or veterinary prescription" // Legal Status of Supply
 * additionalMonitoringIndicator = ChSMCAdditionalMonitoringIndicatorCS#756005001003 "No Warning" // Additional Monitoring Indicator
 * pediatricUseIndicator = ChSMCPediatricUseIndicatorCS#756005003002 "Not authorised for the treatment in children" // Pediatric Use Indicator
 
 // Product Classification.Value
 * classification[+] = $atc#L01EX13 // ATC Code
-* classification[+] = ChSMCAuthorisationCategoryCS#756005021001 "NA KAS art. 12 para. 5 TPLO" // Authorisation Category - sample
-* classification[+] = ChSMCTherapeuticProductcodeCS#756005004003 "Biologics" // Therapeutic Productcode
+* classification[+] = ChSMCAuthorisationCategoryCS#756005011000005 "NA KAS art. 12 para. 5 TPLO" // Authorisation Category - sample
+* classification[+] = ChSMCMedicinalProductCategoryCS#756005039000003 "Biologics" // Therapeutic Productcode
 
 // Attached Document
 * attachedDocument[+] = Reference(DocRef-FI-Padcev)
@@ -38,7 +38,7 @@ Description: "Padcev 30 mg, Pulver für ein Konzentrat zur Herstellung einer Inf
 
 // Country / Language
 * name[de-CH][=].usage[0].country = $country#CH "Switzerland" // Country: https://hl7.org/fhir/R4/valueset-iso3166-1-2.html
-* name[de-CH][=].usage[=].language = $language#de-CH "German (Switzerland)" // Language http://hl7.org/fhir/R4/valueset-languages.html
+* name[de-CH][=].usage[=].language = $language#de-CH // Language http://hl7.org/fhir/R4/valueset-languages.html
 
 // Marketing Status
 * marketingStatus[+].country = $country#CH "Switzerland"

@@ -32,7 +32,6 @@ The following documents have been defined (and described in more detail on the r
 5. [Swiss IDMP Implementation](ch-idmp.html): Overview of the IDMP implementation in Switzerland
 6. [EMA IDMP Implementation](ema-idmp.html): Introduction of the IDMP implemantation by the European Medicines Agency for the European Union.
 7. [Swissmedic IDMP Implementation](idmp.html): Introduction of the IDMP implementation by Swissmedic for Switzerland
-8. [FOPH Speciality List](specialitieslist.html): Introduction on the IDMP implemantation and its FHIR extensions developed for FOPH. 
 
 <div markdown="1" class="stu-note">
 

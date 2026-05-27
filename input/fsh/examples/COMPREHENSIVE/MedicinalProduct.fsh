@@ -8,17 +8,17 @@ Description: "Comprehensive Sample Combipack: Example of a MedicinalProductDefin
 * identifier[+].system = $MPID
 * identifier[=].value = "CH-11111111-1234560010000" // MPID
 //* domain.coding[EMA] = $emaDomain#100000000012 "Human use" // Domain
-* extension[authorizedDoseForm].valueCodeableConcept.coding[SMC] = $SMC-AuthorisedDoseFormCS#14001000 "Cream + Pessary" // Authorised Pharmaceutical Dose Form
+* extension[authorizedDoseForm].valueCodeableConcept.coding = $SMC-AuthorisedDoseFormCS#14001000 "Cream + Pessary" // Authorised Pharmaceutical Dose Form
 * combinedPharmaceuticalDoseForm = $SMC-CombinedDoseFormCS#14001000 "Cream + Pessary"
 * indication = "Comprehensive Sample Combipack wird angewendet zur Behandlung der bakteriellen Vaginose (früher bezeichnet als Haemophilus-Vaginitis, Gardnerella-Vaginitis, unspezifische Vaginitis, Corynebacterium-Vaginitis oder anaerobe Vaginose)" // Full indication text
-* legalStatusOfSupply = ChSMCLegalStatusOfSupplyCS#756005022008 "Dispensation after consultation (D)" // Legal Status of Supply
+* legalStatusOfSupply = ChSMCLegalStatusOfSupplyCS#756005034000005 "D: Dispensed following expert advice" // Legal Status of Supply
 * additionalMonitoringIndicator = ChSMCAdditionalMonitoringIndicatorCS#756005001003 "No Warning" // Additional Monitoring Indicator
 * pediatricUseIndicator = ChSMCPediatricUseIndicatorCS#756005003002 "Not authorised for the treatment in children" // Paediatric Use Indicator
 
 // Product Classification.Value
 * classification[+] = $atc#G01AA01 // ATC Code
-* classification[+] = ChSMCAuthorisationCategoryCS#756005021011 "NA NAS" // Authorisation Category - sample
-* classification[+] = ChSMCTherapeuticProductcodeCS#756005004001 "Synthetic" // Therapeutic Productcode
+* classification[+] = ChSMCAuthorisationCategoryCS#756005011000015 "NA NAS" // Authorisation Category - sample
+* classification[+] = ChSMCMedicinalProductCategoryCS#756005039000001 "Synthetic" // Therapeutic Productcode
 
 
 // Attached Document
@@ -40,7 +40,7 @@ Description: "Comprehensive Sample Combipack: Example of a MedicinalProductDefin
 
 // Country / Language
 * name[de-CH][=].usage[0].country = $country#CH "Switzerland" // Country: https://hl7.org/fhir/R4/valueset-iso3166-1-2.html
-* name[de-CH][=].usage[=].language = $language#de-CH "German (Switzerland)" // Language http://hl7.org/fhir/R4/valueset-languages.html
+* name[de-CH][=].usage[=].language = $language#de-CH // Language http://hl7.org/fhir/R4/valueset-languages.html
 
 // Marketing Status
 * marketingStatus[+].country = $country#CH "Switzerland"

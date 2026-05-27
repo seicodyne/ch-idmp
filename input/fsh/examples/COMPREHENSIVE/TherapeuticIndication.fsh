@@ -18,7 +18,7 @@ Description: "Comprehensive Sample Combipack 20 mg Vaginal Salbe und 100 mg Vagi
 * indication.comorbidity.concept = $mdr#10038141 "Recurrent UTI"
 
 // Therapeutic Indication.Intended Effect
-* indication.intendedEffect.concept = $emaIntendedEffect#200000003194 "therapeutic"
+* indication.intendedEffect.concept = $emaIntendedEffect#756005042000002 "therapeutic"
 
 // 10046961
 Instance: IND-10046961
@@ -40,7 +40,7 @@ Description: "Comprehensive Sample Combipack 20 mg Vaginal Salbe und 100 mg Vagi
 * indication.comorbidity.concept = $mdr#10029883 "Obesity"
 
 // Therapeutic Indication.Intended Effect
-* indication.intendedEffect.concept = $emaIntendedEffect#200000003194 "therapeutic"
+* indication.intendedEffect.concept = $emaIntendedEffect#756005042000002 "therapeutic"
 
 // IND-10079528
 Instance: IND-10079528
@@ -62,7 +62,7 @@ Description: "Comprehensive Sample Combipack 20 mg Vaginal Salbe und 100 mg Vagi
 * indication.comorbidity.concept = $mdr#10012601 "Diabetes mellitus"
 
 // Therapeutic Indication.Intended Effect
-* indication.intendedEffect.concept = $emaIntendedEffect#200000003194 "therapeutic"
+* indication.intendedEffect.concept = $emaIntendedEffect#756005042000002 "therapeutic"
 
 // 10046950
 Instance: IND-10046950
@@ -84,7 +84,7 @@ Description: "Comprehensive Sample Combipack 20 mg Vaginal Salbe und 100 mg Vagi
 * indication.comorbidity.concept = $mdr#10020161 "HIV infection"
 
 // Therapeutic Indication.Intended Effect
-* indication.intendedEffect.concept = $emaIntendedEffect#200000003194 "therapeutic"
+* indication.intendedEffect.concept = $emaIntendedEffect#756005042000002 "therapeutic"
 
 // 10050348
 Instance: IND-10050348
@@ -106,4 +106,4 @@ Description: "Comprehensive Sample Combipack 20 mg Vaginal Salbe und 100 mg Vagi
 * indication.comorbidity.concept = $mdr#10012601 "Diabetes mellitus"
 
 // Therapeutic Indication.Intended Effect
-* indication.intendedEffect.concept = $emaIntendedEffect#200000003194 "therapeutic"
+* indication.intendedEffect.concept = $emaIntendedEffect#756005042000002 "therapeutic"

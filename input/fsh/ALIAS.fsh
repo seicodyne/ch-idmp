@@ -10,8 +10,8 @@ Alias: $language =                      urn:ietf:bcp:47
 Alias: $country =                       urn:iso:std:iso:3166
 
 Alias: $edqm =                          http://standardterms.edqm.eu // https://confluence.hl7.org/display/TA/EDQM+Standard+Terms
-Alias: $gtin =                          urn:oid:2.51.1.1
-Alias: $gln =                           urn:oid:2.51.1.3
+Alias: $gtin =                          https://www.gs1.org/gtin
+Alias: $gln =                           https://www.gs1.org/gln
 Alias: $emaDomain =                     http://spor.ema.europa.eu/v1/lists/100000000004
 Alias: $emaIntendedEffect =             http://spor.ema.europa.eu/v1/lists/200000003186
 Alias: $emaShelfLifeType =              http://spor.ema.europa.eu/v1/lists/100000073343
@@ -34,7 +34,7 @@ Alias:  $Comorbidity =                  https://www.meddra.org
 Alias: $UnitOfMeasurement =             http://unitsofmeasure.org
 
 // Profiles
-Alias: $ChCorePractitioner =                 https://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner
+Alias: $ChCorePractitioner =            https://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner
 
 // XML CH IG Code System
 Alias: $CSChIgExampleTranslation =      https://fhir.ch/ig/ch-ig/CodeSystem/ch-ig-example-translation
@@ -51,13 +51,12 @@ Alias:  $CH-MedicialProductNameTypeCS =               http://fhir.ch/ig/ch-idmp/
 // SMC to be updated as soon the final addresses are officially published by Swissmedic
 Alias:  $SMC-DomainCS =                               http://fhir.ch/ig/ch-idmp/CodeSystem/ch-SMC-domain //Provisorisch
 Alias:  $SMC-AuthorisedDoseFormCS =                   http://standardterms.edqm.eu
-Alias:  $SMC-CombinedDoseFormCS =                   http://standardterms.edqm.eu
+Alias:  $SMC-CombinedDoseFormCS =                     http://standardterms.edqm.eu
 Alias:  $SMC-AdditionalMonitoringIndicatorCS =        http://fhir.ch/ig/ch-idmp/CodeSystem/ch-SMC-additional-monitoring-indicator //Provisorisch
 Alias:  $SMC-AttachedDocumentType =                   http://fhir.ch/ig/ch-idmp/CodeSystem/ch-SMC-AttachedDocumentType //Provisorisch
 Alias:  $SMC-PediatricUseIndicatorCS =                http://fhir.ch/ig/ch-idmp/CodeSystem/ch-SMC-pediatric-use-indicator //Provisorisch
 Alias:  $SMC-AuthorisationCategoryCS =                http://fhir.ch/ig/ch-idmp/CodeSystem/ch-SMC-authorisation-category //Provisorisch
 Alias:  $SMC-MedicinalProductCategoryCS =             http://fhir.ch/ig/ch-idmp/CodeSystem/ch-SMC-MedicinalProductCategory //Provisorisch
-Alias:  $SMC-TherapeuticProductcodeCS =               http://fhir.ch/ig/ch-idmp/CodeSystem/ch-SMC-therapeuticproductcode //Provisorisch
 Alias:  $SMC-OrphanIndicationType =                   http://fhir.ch/ig/ch-idmp/CodeSystem/ch-SMC-OrphanIndicationType //Provisorisch
 Alias:  $SMC-OrphanDesignationAuthorisationStatus =   http://fhir.ch/ig/ch-idmp/CodeSystem/ch-SMC-OrphanDesignationAuthorisationStatus //Provisorisch
 Alias:  $CH-MedicinalProductNameTypeCS =              http://fhir.ch/ig/ch-idmp/CodeSystem/ch-medicinal-product-name-type
@@ -78,10 +77,6 @@ Alias:  $SMC-ApplicationTypeVS =                      http://fhir.ch/ig/ch-idmp/
 Alias:  $SMC-MarketingStatusCS =                      http://fhir.ch/ig/ch-idmp/CodeSystem/ch-SMC-marketing-status //Provisorisch
 
 Alias:  $Refdata-MarketingStatusCS =                  http://fhir.ch/ig/ch-idmp/CodeSystem/ch-Refdata-marketing-status //Provisorisch
-// Section purple - Clinical Particulars 
-
-// SMC
-//Alias:  $ema-IntendedEffectCS =                              http://fhir.ch/ig/ch-idmp/CodeSystem/ch-ema-intended-effect //Provisorisch
 
 // Section blue - Packaging
 

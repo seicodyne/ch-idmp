@@ -17,7 +17,7 @@ Description: "Xospata 40 mg, Filmtabletten: Example of a ClinicalUseDefinition (
 //* indication.comorbidity.concept = $EMA-Comorbidity#.. "xxx"
 
 // Therapeutic Indication.Intended Effect
-* indication.intendedEffect.concept = $emaIntendedEffect#200000003194 "therapeutic"
+* indication.intendedEffect.concept = $emaIntendedEffect#756005042000002 "therapeutic"
 
 // 10081514
 Instance: IND-10081514
@@ -38,7 +38,7 @@ Description: "Xospata 40 mg, Filmtabletten: Example of a ClinicalUseDefinition (
 //* indication.comorbidity.concept = $EMA-Comorbidity#.. "xxx"
 
 // Therapeutic Indication.Intended Effect
-* indication.intendedEffect.concept = $emaIntendedEffect#200000003194 "therapeutic"
+* indication.intendedEffect.concept = $emaIntendedEffect#756005042000002 "therapeutic"
 
 // 10059034
 Instance: IND-10059034
@@ -59,7 +59,7 @@ Description: "Xospata 40 mg, Filmtabletten: Example of a ClinicalUseDefinition (
 //* indication.comorbidity.concept = $EMA-Comorbidity#.. "xxx"
 
 // Therapeutic Indication.Intended Effect
-* indication.intendedEffect.concept = $emaIntendedEffect#200000003194 "therapeutic"
+* indication.intendedEffect.concept = $emaIntendedEffect#756005042000002 "therapeutic"
 
 // 10060558
 Instance: IND-10060558
@@ -80,7 +80,7 @@ Description: "Xospata 40 mg, Filmtabletten: Example of a ClinicalUseDefinition (
 //* indication.comorbidity.concept = $EMA-Comorbidity#.. "xxx"
 
 // Therapeutic Indication.Intended Effect
-* indication.intendedEffect.concept = $emaIntendedEffect#200000003194 "therapeutic"
+* indication.intendedEffect.concept = $emaIntendedEffect#756005042000002 "therapeutic"
 
 // 10084619
 Instance: IND-10084619
@@ -101,4 +101,4 @@ Description: "Xospata 40 mg, Filmtabletten: Example of a ClinicalUseDefinition (
 //* indication.comorbidity.concept = $EMA-Comorbidity#.. "xxx"
 
 // Therapeutic Indication.Intended Effect
-* indication.intendedEffect.concept = $emaIntendedEffect#200000003194 "therapeutic"
+* indication.intendedEffect.concept = $emaIntendedEffect#756005042000002 "therapeutic"

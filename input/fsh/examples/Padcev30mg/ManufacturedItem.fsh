@@ -6,5 +6,5 @@ Description: "Manufactured Item definition for Enfortumabum Vedotinum 30 mg, Lyo
 * status = #active
 
 // 	Manufactured Item
-* manufacturedDoseForm.coding[SMC] = $edqm#11215000 "Lyophilisate for solution for infusion" //Manufactured Dose Form
-* unitOfPresentation.coding[SMC] = $edqm#15060000 "Vial" // Unit of Presentation
+* manufacturedDoseForm.coding = $edqm#11215000 "Lyophilisate for solution for infusion" //Manufactured Dose Form
+* unitOfPresentation.coding = $edqm#15060000 "Vial" // Unit of Presentation

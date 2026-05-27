@@ -12,15 +12,15 @@ Description: "Profile of the MedicinalProductDefinition resource for representin
 
 // * domain
 * domain from EMADomainVS (required)
-* domain.coding 1..
-* domain.coding ^slicing.discriminator[+].type = #value
-* domain.coding ^slicing.discriminator[=].path = "system"
-* domain.coding ^slicing.rules = #open
-* domain.coding contains 
-    EMA 0..1
-* domain.coding[EMA].system 1..
-* domain.coding[EMA].system = $emaDomain
-* domain.coding[EMA].code 1..
+//* domain.coding 1..
+//* domain.coding ^slicing.discriminator[+].type = #value
+//* domain.coding ^slicing.discriminator[=].path = "system"
+//* domain.coding ^slicing.rules = #open
+//* domain.coding contains 
+//    EMA 0..1
+//* domain.coding[EMA].system 1..
+//* domain.coding[EMA].system = $emaDomain
+//* domain.coding[EMA].code 1..
 
 // (Authorised) pharmaceutical dose form
 * extension contains
@@ -28,39 +28,39 @@ Description: "Profile of the MedicinalProductDefinition resource for representin
 
 // Combined pharmaceutical dose form
 * combinedPharmaceuticalDoseForm from EdqmCombinedPharmaceuticalDoseFormVS (required)
-* combinedPharmaceuticalDoseForm.coding 0..
-* combinedPharmaceuticalDoseForm.coding ^slicing.discriminator[+].type = #value
-* combinedPharmaceuticalDoseForm.coding ^slicing.discriminator[=].path = "system"
-* combinedPharmaceuticalDoseForm.coding ^slicing.rules = #open
-* combinedPharmaceuticalDoseForm.coding contains 
-    EDQM 0..1
-* combinedPharmaceuticalDoseForm.coding[EDQM].system 1..
-* combinedPharmaceuticalDoseForm.coding[EDQM].system = $edqm
-* combinedPharmaceuticalDoseForm.coding[EDQM].code 1..
+//* combinedPharmaceuticalDoseForm.coding 0..
+//* combinedPharmaceuticalDoseForm.coding ^slicing.discriminator[+].type = #value
+//* combinedPharmaceuticalDoseForm.coding ^slicing.discriminator[=].path = "system"
+//* combinedPharmaceuticalDoseForm.coding ^slicing.rules = #open
+//* combinedPharmaceuticalDoseForm.coding contains 
+//    EDQM 0..1
+//* combinedPharmaceuticalDoseForm.coding[EDQM].system 1..
+//* combinedPharmaceuticalDoseForm.coding[EDQM].system = $edqm
+//* combinedPharmaceuticalDoseForm.coding[EDQM].code 1..
 
 // Additional Monitoring Indicator
 * additionalMonitoringIndicator from ChSMCAdditionalMonitoringIndicatorVS (required)
-* additionalMonitoringIndicator.coding 0..1
-* additionalMonitoringIndicator.coding ^slicing.discriminator.type = #value
-* additionalMonitoringIndicator.coding ^slicing.discriminator.path = "system"
-* additionalMonitoringIndicator.coding ^slicing.rules = #open
-* additionalMonitoringIndicator.coding contains 
-    SMC 0..1
-* additionalMonitoringIndicator.coding[SMC].system 1..
-* additionalMonitoringIndicator.coding[SMC].system = $SMC-AdditionalMonitoringIndicatorCS
-* additionalMonitoringIndicator.coding[SMC].code 1..
+//* additionalMonitoringIndicator.coding 0..1
+//* additionalMonitoringIndicator.coding ^slicing.discriminator.type = #value
+//* additionalMonitoringIndicator.coding ^slicing.discriminator.path = "system"
+//* additionalMonitoringIndicator.coding ^slicing.rules = #open
+//* additionalMonitoringIndicator.coding contains 
+//    SMC 0..1
+//* additionalMonitoringIndicator.coding[SMC].system 1..
+//* additionalMonitoringIndicator.coding[SMC].system = $SMC-AdditionalMonitoringIndicatorCS
+//* additionalMonitoringIndicator.coding[SMC].code 1..
 
 // Paediatric use indicator
 * pediatricUseIndicator from ChSMCPediatricUseIndicatorVS (required)
-* pediatricUseIndicator.coding 0..1
-* pediatricUseIndicator.coding ^slicing.discriminator.type = #value
-* pediatricUseIndicator.coding ^slicing.discriminator.path = "system"
-* pediatricUseIndicator.coding ^slicing.rules = #open
-* pediatricUseIndicator.coding contains 
-    SMC 0..1
-* pediatricUseIndicator.coding[SMC].system 1..
-* pediatricUseIndicator.coding[SMC].system = $SMC-PediatricUseIndicatorCS
-* pediatricUseIndicator.coding[SMC].code 1..
+//* pediatricUseIndicator.coding 0..1
+//* pediatricUseIndicator.coding ^slicing.discriminator.type = #value
+//* pediatricUseIndicator.coding ^slicing.discriminator.path = "system"
+//* pediatricUseIndicator.coding ^slicing.rules = #open
+//* pediatricUseIndicator.coding contains 
+//    SMC 0..1
+//* pediatricUseIndicator.coding[SMC].system 1..
+//* pediatricUseIndicator.coding[SMC].system = $SMC-PediatricUseIndicatorCS
+//* pediatricUseIndicator.coding[SMC].code 1..
 
 // Full indication text
 * indication ^short = "Description of indication(s) for this product"
@@ -72,8 +72,7 @@ Description: "Profile of the MedicinalProductDefinition resource for representin
 * classification contains
     MedicinalProductCategory 0..1 and
     ATC 0..1 and
-    AuthorisationCategory 0..1 and
-    TherapeuticProductcode 0..1
+    AuthorisationCategory 0..1
 
 // Medicinal product category
 * classification[MedicinalProductCategory].coding 1..
@@ -94,10 +93,10 @@ Description: "Profile of the MedicinalProductDefinition resource for representin
 * classification[ATC].coding.code 1..
 
 // Therapeutic Product code
-* classification[TherapeuticProductcode].coding 1..
-* classification[TherapeuticProductcode].coding.system 1..
-* classification[TherapeuticProductcode].coding.system = $SMC-TherapeuticProductcodeCS (exactly)
-* classification[TherapeuticProductcode].coding.code 1..
+* classification[MedicinalProductCategory].coding 1..
+* classification[MedicinalProductCategory].coding.system 1..
+* classification[MedicinalProductCategory].coding.system = $SMC-MedicinalProductCategoryCS (exactly)
+* classification[MedicinalProductCategory].coding.code 1..
 
 // Medicinal Product Name
 
@@ -157,5 +156,4 @@ Description: "Profile of the MedicinalProductDefinition resource for representin
 * marketingStatus.status.coding[Refdata].system = $Refdata-MarketingStatusCS
 * marketingStatus.status.coding[Refdata].code 0..1
 
-// (Marketing Status) start date / end date
-//* statusDate
+// Documentation: Marketing Status is sliced as the status for Medicinal Products is using a different code system as the status of the Packaged Medicinal Products

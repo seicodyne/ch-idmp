@@ -10,7 +10,7 @@ Xospata wird angewendet für die Behandlung von erwachsenen Patienten, die an re
 
 #### FHIR Examples
 Representation of IDMP data attributes as FHIR XML and JSON:
-[FHIR Beispiel](Bundle-ab55cf13-a819-4875-adaa-5545e2cbdddf.html)
+[FHIR Example](Bundle-ab55cf13-a819-4875-adaa-5545e2cbdddf.html)
 
 #### IDMP Dataexample
 Representation of IDMP/FHIR data elements:

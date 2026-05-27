@@ -13,15 +13,6 @@ Description: "Profile of the Ingredient resource for representing the material u
 
 // ingredient role
 * role from ChSMCIngredientRoleVS (required)
-* role.coding 1..
-* role.coding ^slicing.discriminator.type = #value
-* role.coding ^slicing.discriminator.path = "system"
-* role.coding ^slicing.rules = #open
-* role.coding contains 
-     SMC 0..1
-* role.coding[SMC].system 1..
-* role.coding[SMC].system = $SMC-IngredientRoleCS
-* role.coding[SMC].code 1..
 
 // substance
 * substance.code from ChSMCSubstanceVS (required)
@@ -36,14 +27,6 @@ Description: "Profile of the Ingredient resource for representing the material u
 * substance.code.concept.coding[UNII].system = $SMC-SubstanceCS
 * substance.code.concept.coding[UNII].code 1..
 
-// Substance strength (presentation)
-// * substance.strength.presentationRatio.numerator
-// * substance.strength.presentationRatio.denominator
-
-// Substance strength (presentation)
-// * substance.strength.concentrationRatio.numerator
-// * substance.strength.concentrationRatio.denominator
-
 // Reference Substance
 * substance.strength.referenceStrength.substance from ChSMCSubstanceVS (required)
 * substance.strength.referenceStrength.substance.concept 1..
@@ -57,6 +40,4 @@ Description: "Profile of the Ingredient resource for representing the material u
 * substance.strength.referenceStrength.substance.concept.coding[UNII].system = $SMC-SubstanceCS
 * substance.strength.referenceStrength.substance.concept.coding[UNII].code 1..
 
-// Substance strength(concentration) - to do
-
-// Reference strength ?
+// Documentation: Substances are sliced as different code systems such as EMA SMS, UMC GSID or other substance identifier will be supported in the future

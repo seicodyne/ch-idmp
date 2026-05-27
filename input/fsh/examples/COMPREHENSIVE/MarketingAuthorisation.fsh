@@ -11,8 +11,8 @@ Description: "Comprehensive Sample Combipack: Example of a RegulatedAuthorizatio
 * identifier.value = "12345601" // Marketing Authorisation Number (Medicinal Product)
 * subject = Reference(Comprehensive-Sample-Combipack) // Link to Medicinal Product
 * region = $country#CH "Switzerland" // Country
-* type[+].coding[CH] = ChAuthorisationTypeCS#756000002001 "Marketing Authorisation" // Authorisation Type
-* status[+].coding[SMC] = ChSMCAuthorisationStatusCS#756005023007 "valid" // Authorisation Status
+* type[+].coding = ChAuthorisationTypeCS#756000002001 "Marketing Authorisation" // Authorisation Type
+* status[+].coding = ChSMCAuthorisationStatusCS#756005010000001 "approved" // Authorisation Status
 * statusDate = "2023-11-07" // Authorisation Status Date
 * validityPeriod.start = "2023-11-07" // Validity Period Start
 * validityPeriod.end = "2028-11-06" // Validity Period End
@@ -36,8 +36,8 @@ Description: "Comprehensive Sample Combipack: Example of a RegulatedAuthorizatio
 * identifier.value = "123456002" // Marketing Authorisation Number (Packaged Medicinal Product)
 * subject = Reference(PMP-Comprehensive-Sample-Combipack) // Link to Packaged Medicinal Product
 * region = $country#CH "Switzerland" // Country
-* type[+].coding[CH] = ChAuthorisationTypeCS#756000002001 "Marketing Authorisation" // Authorisation Type
-* status[+].coding[SMC] = ChSMCAuthorisationStatusCS#756005023007 "valid" // Authorisation Status
+* type[+].coding = ChAuthorisationTypeCS#756000002001 "Marketing Authorisation" // Authorisation Type
+* status[+].coding = ChSMCAuthorisationStatusCS#756005010000001 "approved" // Authorisation Status
 * statusDate = "2023-11-07" // Authorisation Status Date
 * validityPeriod.start = "2023-11-07" // Validity Period Start
 * validityPeriod.end = "2028-11-06" // Validity Period End
