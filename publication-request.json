@@ -4,12 +4,15 @@
   "introduction" : "IDMP Base Implementation Guide for Swissmedic",
   "category" : "Administration",
   "ci-build" : "http://fhir.ch/ig/ch-idmp",
-  "version" : "1.0.0",
-  "path" : "http://fhir.ch/ig/ch-idmp/1.0.0-snapshot",
+  "version" : "1.0.0-ballot",
+  "path" : "http://fhir.ch/ig/ch-idmp/1.0.0",
   "mode" : "working",
-  "status" : "trial-use",
-  "sequence" : "initial 2",
-  "desc" : "Refdata Initial 2",
+  "status" : "ballot",
+  "sequence" : "DSTU 1",
+  "desc" : "Refdata DSTU 1",
   "changes" : "changelog.html",
-  "first" : true
+  "first" : true,
+  "registry-description" : "IDMP Base Implementation Guide for Swissmedic",
+  "registry-country" : "ch",
+  "registry-authority" : "Swissmedic"
 }

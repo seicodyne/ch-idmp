@@ -16,7 +16,7 @@ Description: "Profile of the PackagedProductDefinition resource for representing
 
 // Marketing status
 * marketingStatus.status from ChRefdataMarketingStatusVS (required)
-* marketingStatus.status.coding 0..1
+* marketingStatus.status.coding 0..*
 * marketingStatus.status.coding ^slicing.discriminator[+].type = #value
 * marketingStatus.status.coding ^slicing.discriminator[=].path = "system"
 * marketingStatus.status.coding ^slicing.rules = #open

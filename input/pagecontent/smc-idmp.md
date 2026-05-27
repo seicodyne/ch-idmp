@@ -78,37 +78,6 @@ Substance identification is a critical element of IDMP and may involve multiple 
 
 These multiple identifier systems may coexist depending on regulatory context, data exchange partner, and implementation scope.
 
-#### Swiss Controlled Vocabularies Database (Planned)
-
-In addition to international vocabularies, a **Swiss national controlled vocabularies database** is currently under development. The goal of this database is to provide a centralized and governed source for Switzerland-specific value sets, ensuring:
-
-- Alignment with Swiss regulatory requirements
-- Consistent terminology across Swissmedic and national health authorities
-- Integration with international vocabularies where appropriate
-- Long-term governance and versioning of national referentials
-
-It is planned that this database will be introduced alongside the Swiss IDMP implementation and used as a complementary source to international vocabularies, supporting both national needs and global interoperability.
-
-### Implementation Timeline (Indicative)
-
-The following milestones outline the expected rollout of IDMP-related activities in Switzerland:
-
-- **2025**  
-  Publication of the Swissmedic IDMP Handbook
-
-- **2026**  
-  Finalization of the FHIR Implementation Guide for the Swissmedic IDMP pilot
-
-- **2026–2027**  
-  Execution of pilot projects involving stakeholders and early adopters
-
-- **2028–2029**  
-  Gradual introduction of IDMP by Swissmedic for:
-  - Structured data exchange between marketing authorization holders and Swissmedic
-  - Publication of Swissmedic medicinal product data via the Open Government Data (OGD) platform
-
-For more information regarding the datapipeline see: [ch-idmp.html](ch-idmp.html)
-
 ### Importance for Implementation
 The use of controlled vocabularies is essential for achieving the primary goals of IDMP: **semantic interoperability and unambiguous identification of medicinal products**. Leveraging internationally governed vocabularies alongside national value lists ensures both global compatibility and local regulatory relevance.
 

@@ -35,13 +35,13 @@ Description: "Identifier holding a number for GLN (Global Location Number)"
 
 // ------------------------------- Authorization.identifier ------------------------------- //
 
-Profile: SMCIdentifier
-Parent: Identifier
-Id: ch-SMC-authorization-identifier
-Title: "Marketing Authorization Identifier"
-Description: "Identifier holding the SMC Authorisation Number"
-* system 1..
-* system = "urn:oid:2.16.756.5" (exactly)
-* system ^short = "MarketingAuthorizationNumber"
-* value 1..
-* value ^short = "MarketingAuthorizationNumber"
+//Profile: SMCIdentifier
+//Parent: Identifier
+//Id: ch-SMC-authorization-identifier
+//Title: "Marketing Authorization Identifier"
+//Description: "Identifier holding the SMC Authorisation Number"
+//* system 1..
+//* system = "urn:oid:2.16.756.5" (exactly)
+//* system ^short = "MarketingAuthorizationNumber"
+//* value 1..
+//* value ^short = "MarketingAuthorizationNumber"

@@ -142,7 +142,7 @@ Description: "Profile of the MedicinalProductDefinition resource for representin
 
 // Marketing Status
 * status from ChSMCMarketingStatusVS (required)
-* marketingStatus.status.coding 0..1
+* marketingStatus.status.coding 0..*
 * marketingStatus.status.coding ^slicing.discriminator[+].type = #value
 * marketingStatus.status.coding ^slicing.discriminator[=].path = "system"
 * marketingStatus.status.coding ^slicing.rules = #open

@@ -31,3 +31,30 @@ Die bereitgestellte Codierung ist nicht im ValueSet 'Guide Parameter Code'%
 
 # IG Implementation Guide source
 The URL should refer directly to the ImplementationGuide resource
+
+# EDQM Standard Terms is distributed as a fragment CodeSystem (not the full content); referencing it is by design.
+The value set references CodeSystem 'http://standardterms.edqm.eu' which has status 'fragment'
+
+# Collection-bundle examples use relative references between entries; runtime resolution is not guaranteed by design - acceptable.
+# Prefix match (trailing % only). These are the resource types referenced across the example bundles.
+The URL 'MedicinalProductDefinition/%
+The URL 'PackagedProductDefinition/%
+
+#ch-SMC-substance
+The value set expansion is too large, and only a subset has been displayed
+
+# Repeating ElementDefinition
+The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+Das sich wiederholende Element hat ein pattern. Die pattern gilt für alle Wiederholungen (dies war nicht allen Benutzern klar)
+
+# No examples
+The Implementation Guide contains no explicitly linked examples for this profile
+
+# Reference to draft CodeSystem
+Reference to draft CodeSystem urn:iso:std:iso:3166%
+
+# Type Codes
+Keiner der angegebenen Codes ist im Valueset 'FHIR Document Type Codes'%
+
+# Publication Status
+Keiner der angegebenen Codes ist im Valueset 'PublicationStatus' (http://hl7.org/fhir/ValueSet/publication-status|5.0.0), und es wird empfohlen, einen Code aus dieserm Valueset zu verwenden)%
