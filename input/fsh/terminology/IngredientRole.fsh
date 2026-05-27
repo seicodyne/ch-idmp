@@ -13,7 +13,7 @@ Description: "CH - Standard Terms used in Switzerland (aggregations of codes of 
 * ^caseSensitive = true
 * ^content = #complete
 
-* ^concept[+].code = #756005051001
+* ^concept[+].code = #756005035000001
 * ^concept[=].display = "Active"
 * ^concept[=].designation[+].language = #de
 * ^concept[=].designation[=].use.system = $sct
@@ -26,7 +26,7 @@ Description: "CH - Standard Terms used in Switzerland (aggregations of codes of 
 * ^concept[=].designation[=].use.display = "Synonym"
 * ^concept[=].designation[=].value = "WIRKS"
 
-* ^concept[+].code = #756005051002
+* ^concept[+].code = #756005035000002
 * ^concept[=].display = "Excipient"
 * ^concept[=].designation[+].language = #de
 * ^concept[=].designation[=].use.system = $sct
@@ -39,7 +39,7 @@ Description: "CH - Standard Terms used in Switzerland (aggregations of codes of 
 * ^concept[=].designation[=].use.display = "Synonym"
 * ^concept[=].designation[=].value = "HNIDK"
 
-* ^concept[+].code = #756005051003
+* ^concept[+].code = #756005035000003
 * ^concept[=].display = "excipient of particular interest"
 * ^concept[=].designation[+].language = #de
 * ^concept[=].designation[=].use.system = $sct

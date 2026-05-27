@@ -6,8 +6,8 @@ Description: "Manufactured Item definition for Clindamycin 100 Vaginal Pessary"
 * status = #active
 
 // 	Manufactured Item
-* manufacturedDoseForm.coding[SMC] = $edqm#10909000 "Pessary" // Manufactured Dose Form
-* unitOfPresentation.coding[SMC] = $edqm#15039000 "Pessary" // Unit of Presentation
+* manufacturedDoseForm.coding = $edqm#10909000 "Pessary" // Manufactured Dose Form
+* unitOfPresentation.coding = $edqm#15039000 "Pessary" // Unit of Presentation
 
 //-------------------------------------------------
 Instance: MI-Comprehensive-Sample-VaginalCream
@@ -18,5 +18,5 @@ Description: "Manufactured Item definition for Clindamycin 20 Vaginal Cream"
 * status = #active
 
 // 	Manufactured Item
-* manufacturedDoseForm.coding[SMC] = $edqm#10901000 "Vaginal Cream" // Manufactured Dose Form
-* unitOfPresentation.coding[SMC] = $edqm#15058000 "Tube" // Unit of Presentation
+* manufacturedDoseForm.coding = $edqm#10901000 "Vaginal Cream" // Manufactured Dose Form
+* unitOfPresentation.coding = $edqm#15058000 "Tube" // Unit of Presentation

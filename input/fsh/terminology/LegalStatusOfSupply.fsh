@@ -13,20 +13,85 @@ Description: "CH - Standard Terms used in Switzerland (aggregations of codes of 
 * ^caseSensitive = true
 * ^content = #complete
 
-* ^concept[+].code = #756005022001
-* ^concept[=].display = "Medicinal product subject to medical or veterinary prescription single dispensation (A)"
+* ^concept[+].code = #756005034000001
+* ^concept[=].display = "A: Single dispensing requiring a medical or veterinary prescription"
 * ^concept[=].designation[+].language = #de
 * ^concept[=].designation[=].use.system = $sct
 * ^concept[=].designation[=].use.code = #900000000000003001
 * ^concept[=].designation[=].use.display = "Fully specified name"
-* ^concept[=].designation[=].value = "Einmalige Abgabe auf ärztliche oder tierärztliche Verschreibung (A)"
+* ^concept[=].designation[=].value = "A: Einmalige Abgabe auf ärztliche oder tierärztliche Verschreibung"
 * ^concept[=].designation[+].language = #de
 * ^concept[=].designation[=].use.system = $sct
 * ^concept[=].designation[=].use.code = #900000000000013009
 * ^concept[=].designation[=].use.display = "Synonym"
 * ^concept[=].designation[=].value = "A"
 
-* ^concept[+].code = #756005022002
+* ^concept[+].code = #756005034000002
+* ^concept[=].display = "B: Dispensed on prescription by a physician or veterinarian"
+* ^concept[=].designation[+].language = #de
+* ^concept[=].designation[=].use.system = $sct
+* ^concept[=].designation[=].use.code = #900000000000003001
+* ^concept[=].designation[=].use.display = "Fully specified name"
+* ^concept[=].designation[=].value = "B: Abgabe auf ärztliche oder tierärztliche Verschreibung"
+* ^concept[=].designation[+].language = #de
+* ^concept[=].designation[=].use.system = $sct
+* ^concept[=].designation[=].use.code = #900000000000013009
+* ^concept[=].designation[=].use.display = "Synonym"
+* ^concept[=].designation[=].value = "B"
+
+* ^concept[+].code = #756005034000003
+* ^concept[=].display = "B/D: Dispensed on prescription by a physician or veterinarian (B)/Dispensed following expert advice (D)"
+* ^concept[=].designation[+].language = #de
+* ^concept[=].designation[=].use.system = $sct
+* ^concept[=].designation[=].use.code = #900000000000003001
+* ^concept[=].designation[=].use.display = "Fully specified name"
+* ^concept[=].designation[=].value = "B/D: Abgabe auf ärztliche oder tierärztliche Verschreibung (B)/Abgabe nach Fachberatung durch Medizinalpersonen (D)"
+* ^concept[=].designation[+].language = #de
+* ^concept[=].designation[=].use.system = $sct
+* ^concept[=].designation[=].use.code = #900000000000013009
+* ^concept[=].designation[=].use.display = "Synonym"
+* ^concept[=].designation[=].value = "B/D"
+
+* ^concept[+].code = #756005034000004
+* ^concept[=].display = "C: Dispensed following expert advice by healthcare professionals"
+* ^concept[=].designation[+].language = #de
+* ^concept[=].designation[=].use.system = $sct
+* ^concept[=].designation[=].use.code = #900000000000003001
+* ^concept[=].designation[=].use.display = "Fully specified name"
+* ^concept[=].designation[=].value = "C: Abgabe nach Fachberatung durch Medizinalpersonen"
+* ^concept[=].designation[+].language = #de
+* ^concept[=].designation[=].use.system = $sct
+* ^concept[=].designation[=].use.code = #900000000000013009
+* ^concept[=].designation[=].use.display = "Synonym"
+* ^concept[=].designation[=].value = "C"
+
+* ^concept[+].code = #756005034000005
+* ^concept[=].display = "D: Dispensed following expert advice"
+* ^concept[=].designation[+].language = #de
+* ^concept[=].designation[=].use.system = $sct
+* ^concept[=].designation[=].use.code = #900000000000003001
+* ^concept[=].designation[=].use.display = "Fully specified name"
+* ^concept[=].designation[=].value = "D: Abgabe nach Fachberatung"
+* ^concept[=].designation[+].language = #de
+* ^concept[=].designation[=].use.system = $sct
+* ^concept[=].designation[=].use.code = #900000000000013009
+* ^concept[=].designation[=].use.display = "Synonym"
+* ^concept[=].designation[=].value = "D"
+
+* ^concept[+].code = #756005034000006
+* ^concept[=].display = "E: Dispensing in the absence of specialist advice"
+* ^concept[=].designation[+].language = #de
+* ^concept[=].designation[=].use.system = $sct
+* ^concept[=].designation[=].use.code = #900000000000003001
+* ^concept[=].designation[=].use.display = "Fully specified name"
+* ^concept[=].designation[=].value = "E: Abgabe ohne Fachberatung"
+* ^concept[=].designation[+].language = #de
+* ^concept[=].designation[=].use.system = $sct
+* ^concept[=].designation[=].use.code = #900000000000013009
+* ^concept[=].designation[=].use.display = "Synonym"
+* ^concept[=].designation[=].value = "E"
+
+* ^concept[+].code = #756005034000007
 * ^concept[=].display = "Medicinal product subject to medical or veterinary prescription single dispensation (A+)"
 * ^concept[=].designation[+].language = #de
 * ^concept[=].designation[=].use.system = $sct
@@ -38,107 +103,3 @@ Description: "CH - Standard Terms used in Switzerland (aggregations of codes of 
 * ^concept[=].designation[=].use.code = #900000000000013009
 * ^concept[=].designation[=].use.display = "Synonym"
 * ^concept[=].designation[=].value = "A+"
-
-* ^concept[+].code = #756005022003
-* ^concept[=].display = "Medicinal product subject to medical or veterinary prescription (B)"
-* ^concept[=].designation[+].language = #de
-* ^concept[=].designation[=].use.system = $sct
-* ^concept[=].designation[=].use.code = #900000000000003001
-* ^concept[=].designation[=].use.display = "Fully specified name"
-* ^concept[=].designation[=].value = "Abgabe auf ärztliche oder tierärztliche Verschreibung (B)"
-* ^concept[=].designation[+].language = #de
-* ^concept[=].designation[=].use.system = $sct
-* ^concept[=].designation[=].use.code = #900000000000013009
-* ^concept[=].designation[=].use.display = "Synonym"
-* ^concept[=].designation[=].value = "B"
-
-* ^concept[+].code = #756005022004
-* ^concept[=].display = "Medicinal product subject to medical or veterinary prescription (B)/Dispensation after healthcare professional consultation (C)"
-* ^concept[=].designation[+].language = #de
-* ^concept[=].designation[=].use.system = $sct
-* ^concept[=].designation[=].use.code = #900000000000003001
-* ^concept[=].designation[=].use.display = "Fully specified name"
-* ^concept[=].designation[=].value = "Abgabe auf ärztliche oder tierärztliche Verschreibung (B)/Abgabe nach Fachberatung durch Medizinalpersonen"
-* ^concept[=].designation[+].language = #de
-* ^concept[=].designation[=].use.system = $sct
-* ^concept[=].designation[=].use.code = #900000000000013009
-* ^concept[=].designation[=].use.display = "Synonym"
-* ^concept[=].designation[=].value = "B/C"
-
-* ^concept[+].code = #756005022005
-* ^concept[=].display = "Medicinal product subject to medical or veterinary prescription (B)/Dispensation after consultation (D)"
-* ^concept[=].designation[+].language = #de
-* ^concept[=].designation[=].use.system = $sct
-* ^concept[=].designation[=].use.code = #900000000000003001
-* ^concept[=].designation[=].use.display = "Fully specified name"
-* ^concept[=].designation[=].value = "Abgabe auf ärztliche oder tierärztliche Verschreibung (B)/Abgabe nach Fachberatung (D)"
-* ^concept[=].designation[+].language = #de
-* ^concept[=].designation[=].use.system = $sct
-* ^concept[=].designation[=].use.code = #900000000000013009
-* ^concept[=].designation[=].use.display = "Synonym"
-* ^concept[=].designation[=].value = "B/D"
-
-* ^concept[+].code = #756005022006
-* ^concept[=].display = "Dispensation after healthcare professional consultation (C)"
-* ^concept[=].designation[+].language = #de
-* ^concept[=].designation[=].use.system = $sct
-* ^concept[=].designation[=].use.code = #900000000000003001
-* ^concept[=].designation[=].use.display = "Fully specified name"
-* ^concept[=].designation[=].value = "Abgabe nach Fachberatung durch Medizinalpersonen (C)"
-* ^concept[=].designation[+].language = #de
-* ^concept[=].designation[=].use.system = $sct
-* ^concept[=].designation[=].use.code = #900000000000013009
-* ^concept[=].designation[=].use.display = "Synonym"
-* ^concept[=].designation[=].value = "C"
-
-* ^concept[+].code = #756005022007
-* ^concept[=].display = "Dispensation after healthcare professional consultation (C)/Dispension after consultation (D)"
-* ^concept[=].designation[+].language = #de
-* ^concept[=].designation[=].use.system = $sct
-* ^concept[=].designation[=].use.code = #900000000000003001
-* ^concept[=].designation[=].use.display = "Fully specified name"
-* ^concept[=].designation[=].value = "Abgabe nach Fachberatung durch Medizinalpersonen (C)/Abgabe nach Fachberatung (D)"
-* ^concept[=].designation[+].language = #de
-* ^concept[=].designation[=].use.system = $sct
-* ^concept[=].designation[=].use.code = #900000000000013009
-* ^concept[=].designation[=].use.display = "Synonym"
-* ^concept[=].designation[=].value = "C/D"
-
-* ^concept[+].code = #756005022008
-* ^concept[=].display = "Dispensation after consultation (D)"
-* ^concept[=].designation[+].language = #de
-* ^concept[=].designation[=].use.system = $sct
-* ^concept[=].designation[=].use.code = #900000000000003001
-* ^concept[=].designation[=].use.display = "Fully specified name"
-* ^concept[=].designation[=].value = "Abgabe nach Fachberatung (D)"
-* ^concept[=].designation[+].language = #de
-* ^concept[=].designation[=].use.system = $sct
-* ^concept[=].designation[=].use.code = #900000000000013009
-* ^concept[=].designation[=].use.display = "Synonym"
-* ^concept[=].designation[=].value = "D"
-
-* ^concept[+].code = #756005022009
-* ^concept[=].display = "Dispensation after consultation (D)/Dispension without consultation (E)"
-* ^concept[=].designation[+].language = #de
-* ^concept[=].designation[=].use.system = $sct
-* ^concept[=].designation[=].use.code = #900000000000003001
-* ^concept[=].designation[=].use.display = "Fully specified name"
-* ^concept[=].designation[=].value = "Abgabe nach Fachberatung (D) / Abgabe ohne Fachberatung (E)"
-* ^concept[=].designation[+].language = #de
-* ^concept[=].designation[=].use.system = $sct
-* ^concept[=].designation[=].use.code = #900000000000013009
-* ^concept[=].designation[=].use.display = "Synonym"
-* ^concept[=].designation[=].value = "D/E"
-
-* ^concept[+].code = #756005022010
-* ^concept[=].display = "Dispensation without consultation (E)"
-* ^concept[=].designation[+].language = #de
-* ^concept[=].designation[=].use.system = $sct
-* ^concept[=].designation[=].use.code = #900000000000003001
-* ^concept[=].designation[=].use.display = "Fully specified name"
-* ^concept[=].designation[=].value = "Abgabe ohne Fachberatung (E)"
-* ^concept[=].designation[+].language = #de
-* ^concept[=].designation[=].use.system = $sct
-* ^concept[=].designation[=].use.code = #900000000000013009
-* ^concept[=].designation[=].use.display = "Synonym"
-* ^concept[=].designation[=].value = "E"

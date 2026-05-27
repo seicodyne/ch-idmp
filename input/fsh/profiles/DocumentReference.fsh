@@ -5,21 +5,8 @@ Title: "DocumentReference"
 Description: "Profile of the DocumentReference resource for representing professional information and patient information as attachments."
 * . ^short = "DocumentReference"
 
-// Attached Documents
-* status
-
 // (Attached socument) Type
-//* type ^short = "Professional information or patient information"
-//* type 1..
-//* type.coding 1..
-//* type.coding ^slicing.discriminator[+].type = #value
-//* type.coding ^slicing.discriminator[=].path = "system"
-//* type.coding ^slicing.rules = #open
-//* type.coding contains 
-//    SMC 0..1
-//* type.coding[SMC] 
-//* type.coding[SMC].system 1..
-//* type.coding[SMC].system = $SMC-AttachedDocumentType
-//* type.coding[SMC].code 1..
+* type 1..
+* type from ChSMCAttachedDocumentTypeVS (required)
 
 * content.attachment.url 1..

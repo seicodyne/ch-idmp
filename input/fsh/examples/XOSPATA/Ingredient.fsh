@@ -6,7 +6,7 @@ Description: "Xospata 40 mg, Filmtabletten: Example of an Ingredient (Ingredient
 * status = #active
 * for[0] = Reference(PhP-Gilteritinibi-hemifumaras-40-Filmcoatedtablet)
 * for[+] = Reference(MI-Gilteritinibi-hemifumaras-40-Filmcoatedtablet) 
-* role[+].coding[SMC] = $SMC-IngredientRoleCS#756005051001 "Active"
+* role[+].coding = $SMC-IngredientRoleCS#756005035000001 "Active"
 * substance[+].code.concept.coding[UNII] = $SMC-SubstanceCS#5RZZ0Z1GJT "Gilteritinib fumarate"
 * substance[=].strength[+].presentationRatio[+].numerator.value = 44.2
 * substance[=].strength[=].presentationRatio[=].numerator.unit = "mg" 
@@ -36,7 +36,7 @@ Description: "Xospata 40 mg, Filmtabletten: Example of an Ingredient (Ingredient
 * status = #active
 * for[0] = Reference(PhP-Gilteritinibi-hemifumaras-40-Filmcoatedtablet)  
 * for[+] = Reference(MI-Gilteritinibi-hemifumaras-40-Filmcoatedtablet) 
-* role[+].coding[SMC] = $SMC-IngredientRoleCS#756005051002 "Excipient" 
+* role[+].coding = $SMC-IngredientRoleCS#756005035000002 "Excipient" 
 * substance[+].code.concept.coding[UNII] = $SMC-SubstanceCS#3OWL53L36A "Mannitol"
 
 Instance: Hydroxypropylcellulosum
@@ -47,7 +47,7 @@ Description: "Xospata 40 mg, Filmtabletten: Example of an Ingredient (Ingredient
 * status = #active
 * for[0] = Reference(PhP-Gilteritinibi-hemifumaras-40-Filmcoatedtablet)  
 * for[+] = Reference(MI-Gilteritinibi-hemifumaras-40-Filmcoatedtablet) 
-* role[+].coding[SMC] = $SMC-IngredientRoleCS#756005051002 "Excipient" 
+* role[+].coding = $SMC-IngredientRoleCS#756005035000002 "Excipient" 
 * substance[+].code.concept.coding[UNII] = $SMC-SubstanceCS#9XZ8H6N6OH "Hyprolose"
 
 Instance: HydroxypropylcellulosumSubstitutumHumile
@@ -58,7 +58,7 @@ Description: "Xospata 40 mg, Filmtabletten: Example of an Ingredient (Ingredient
 * status = #active
 * for[0] = Reference(PhP-Gilteritinibi-hemifumaras-40-Filmcoatedtablet)  
 * for[+] = Reference(MI-Gilteritinibi-hemifumaras-40-Filmcoatedtablet) 
-* role[+].coding[SMC] = $SMC-IngredientRoleCS#756005051002 "Excipient" 
+* role[+].coding = $SMC-IngredientRoleCS#756005035000002 "Excipient" 
 * substance[+].code.concept.coding[UNII] = $SMC-SubstanceCS#2165RE0K14 "Hydroxypropylcellulose, low-substituted"
 
 Instance: Talcum
@@ -69,7 +69,7 @@ Description: "Xospata 40 mg, Filmtabletten: Example of an Ingredient (Ingredient
 * status = #active
 * for[0] = Reference(PhP-Gilteritinibi-hemifumaras-40-Filmcoatedtablet)  
 * for[+] = Reference(MI-Gilteritinibi-hemifumaras-40-Filmcoatedtablet) 
-* role[+].coding[SMC] = $SMC-IngredientRoleCS#756005051002 "Excipient" 
+* role[+].coding = $SMC-IngredientRoleCS#756005035000002 "Excipient" 
 * substance[+].code.concept.coding[UNII] = $SMC-SubstanceCS#7SEV7J4R1U "Talc"
 
 Instance: Macrogolum8000
@@ -80,7 +80,7 @@ Description: "Xospata 40 mg, Filmtabletten: Example of an Ingredient (Ingredient
 * status = #active
 * for[0] = Reference(PhP-Gilteritinibi-hemifumaras-40-Filmcoatedtablet)  
 * for[+] = Reference(MI-Gilteritinibi-hemifumaras-40-Filmcoatedtablet) 
-* role[+].coding[SMC] = $SMC-IngredientRoleCS#756005051002 "Excipient" 
+* role[+].coding = $SMC-IngredientRoleCS#756005035000002 "Excipient" 
 * substance[+].code.concept.coding[UNII] = $SMC-SubstanceCS#Q662QK8M3B "Macrogol 8000"
 
 Instance: E171
@@ -91,7 +91,7 @@ Description: "Xospata 40 mg, Filmtabletten: Example of an Ingredient (Ingredient
 * status = #active
 * for[0] = Reference(PhP-Gilteritinibi-hemifumaras-40-Filmcoatedtablet)  
 * for[+] = Reference(MI-Gilteritinibi-hemifumaras-40-Filmcoatedtablet) 
-* role[+].coding[SMC] = $SMC-IngredientRoleCS#756005051002 "Excipient"  
+* role[+].coding = $SMC-IngredientRoleCS#756005035000002 "Excipient"  
 * substance[+].code.concept.coding[UNII] = $SMC-SubstanceCS#15FIX9V2JP "Titanium dioxide"
 
 Instance: E172Flavum
@@ -102,7 +102,7 @@ Description: "Xospata 40 mg, Filmtabletten: Example of an Ingredient (Ingredient
 * status = #active
 * for[0] = Reference(PhP-Gilteritinibi-hemifumaras-40-Filmcoatedtablet)  
 * for[+] = Reference(MI-Gilteritinibi-hemifumaras-40-Filmcoatedtablet) 
-* role[+].coding[SMC] = $SMC-IngredientRoleCS#756005051002 "Excipient" 
+* role[+].coding = $SMC-IngredientRoleCS#756005035000002 "Excipient" 
 * substance[+].code.concept.coding[UNII] = $SMC-SubstanceCS#15FIX9V2JP "Titanium dioxide"
 
 Instance: MagnesiumStearate
@@ -113,7 +113,7 @@ Description: "Xospata 40 mg, Filmtabletten: Example of an Ingredient (Ingredient
 * status = #active
 * for[0] = Reference(PhP-Gilteritinibi-hemifumaras-40-Filmcoatedtablet)  
 * for[+] = Reference(MI-Gilteritinibi-hemifumaras-40-Filmcoatedtablet) 
-* role[+].coding[SMC] = $SMC-IngredientRoleCS#756005051002 "Excipient"  
+* role[+].coding = $SMC-IngredientRoleCS#756005035000002 "Excipient"  
 * substance[+].code.concept.coding[UNII] = $SMC-SubstanceCS#70097M6I30 "Magnesium stearate"
 
 Instance: Hypromellosum
@@ -124,5 +124,5 @@ Description: "Xospata 40 mg, Filmtabletten: Example of an Ingredient (Ingredient
 * status = #active
 * for[0] = Reference(PhP-Gilteritinibi-hemifumaras-40-Filmcoatedtablet)  
 * for[+] = Reference(MI-Gilteritinibi-hemifumaras-40-Filmcoatedtablet) 
-* role[+].coding[SMC] = $SMC-IngredientRoleCS#756005051002 "Excipient" 
+* role[+].coding = $SMC-IngredientRoleCS#756005035000002 "Excipient" 
 * substance[+].code.concept.coding[UNII] = $SMC-SubstanceCS#3NXW29V3WO "Hypromellose"

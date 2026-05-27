@@ -6,7 +6,7 @@ Description: "Padcev-30mg-Powder: Example of an Ingredient (Ingredient)"
 * status = #active
 * for[0] = Reference(PhP-Enfortumabum-vedotinum-30-Solution) 
 * for[+] = Reference(MI-Enfortumabum-vedotinum-30-Powder) 
-* role[+].coding[SMC] = $SMC-IngredientRoleCS#756005051001 "Active"
+* role[+].coding = $SMC-IngredientRoleCS#756005035000001 "Active"
 * substance[+].code.concept.coding[UNII] = $SMC-SubstanceCS#DLE8519RWM "Enfortumab vedotin"
 * substance[=].strength[+].presentationRatio[+].numerator.value = 30
 * substance[=].strength[=].presentationRatio[=].numerator.unit = "mg" 

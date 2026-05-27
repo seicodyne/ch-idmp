@@ -13,6 +13,6 @@ Description: "CH - Standard Terms used in Switzerland (aggregations of codes of 
 * ^experimental = false
 * ^caseSensitive = false
 * ^content = #complete
-* #200000003192 "preventive"
-* #200000003194 "therapeutic"
-* #200000003196 "diagnostic / imaging"
+* #756005042000001 "preventive"
+* #756005042000002 "therapeutic"
+* #756005042000003 "diagnostic / imaging"

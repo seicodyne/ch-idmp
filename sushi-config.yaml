@@ -19,19 +19,20 @@ fhirVersion: 5.0.0
 copyrightYear: 2023+
 releaseLabel: trial-use # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 publisher:
-  name: Astellas Pharma AG
+  name: Refdata Foundation
 contact:
-  - name: Astellas Pharma AG
+  - name: Refdata Foundation
     telecom:
       - system: url
-        value: https://www.astellas.com/ch/de/impressum
+        value: https://www.refdata.ch/de/
 
 dependencies:
   hl7.terminology.r5:
     uri: http://terminology.hl7.org/ImplementationGuide/hl7.terminology
     version: 7.1.0
   hl7.fhir.uv.tools.r5:
-    version: 1.1.0
+    uri: http://hl7.org/fhir/tools/ImplementationGuide/hl7.fhir.uv.tools
+    version: 1.1.2
 
 pages:
   index.md:
@@ -51,7 +52,7 @@ pages:
   smc-idmp.md:
     title: Swissmedic IDMP Implementation
   comprehensive.md:
-    title: Eomprehensive
+    title: Comprehensive
   padcev20.md:
     title: Padcev20
   padcev30.md:

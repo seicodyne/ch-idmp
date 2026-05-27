@@ -6,7 +6,7 @@ Description: "Comprehensive-Sample-Combipack Vaginal Pessary: Example of an Ingr
 * status = #active
 * for[0] = Reference(PhP-Comprehensive-Sample-VaginalPessary)
 * for[+] = Reference(MI-Comprehensive-Sample-VaginalPessary) 
-* role[+].coding[SMC] = $SMC-IngredientRoleCS#756005051001 "Active"
+* role[+].coding = $SMC-IngredientRoleCS#756005035000001 "Active"
 * substance[+].code.concept.coding[UNII] = $SMC-SubstanceCS#EH6D7113I8 "Clindamycin phosphate"
 * substance[=].strength[+].
 //* substance[=].strength[+].presentationRatio[+].numerator.value = 44.2
@@ -37,7 +37,7 @@ Description: "Comprehensive-Sample-Combipack Vaginal Pessary: Example of an Ingr
 * status = #active
 * for[0] = Reference(PhP-Comprehensive-Sample-VaginalPessary)
 * for[+] = Reference(MI-Comprehensive-Sample-VaginalPessary) 
-* role[+].coding[SMC] = $SMC-IngredientRoleCS#756005051002 "Excipient" 
+* role[+].coding = $SMC-IngredientRoleCS#756005035000002 "Excipient" 
 * substance[+].code.concept.coding[UNII] = $SMC-SubstanceCS#8334LX7S21 "Hard Fat"
 
 //--------------------------------------------
@@ -50,7 +50,7 @@ Description: "Comprehensive-Sample-Combipack Vaginal Cream: Example of an Ingred
 * status = #active
 * for[0] = Reference(PhP-Comprehensive-Sample-VaginalCream)
 * for[+] = Reference(MI-Comprehensive-Sample-VaginalCream) 
-* role[+].coding[SMC] = $SMC-IngredientRoleCS#756005051001 "Active"
+* role[+].coding = $SMC-IngredientRoleCS#756005035000001 "Active"
 * substance[+].code.concept.coding[UNII] = $SMC-SubstanceCS#EH6D7113I8 "Clindamycin phosphate"
 * substance[=].strength[+].presentationRatio[+].numerator.value = 950.4
 * substance[=].strength[=].presentationRatio[=].numerator.unit = "mg" 
@@ -100,7 +100,7 @@ Description: "Comprehensive-Sample-Combipack Vaginal Cream: Example of an Ingred
 * status = #active
 * for[0] = Reference(PhP-Comprehensive-Sample-VaginalCream)
 * for[+] = Reference(MI-Comprehensive-Sample-VaginalCream) 
-* role[+].coding[SMC] = $SMC-IngredientRoleCS#756005051002 "Excipient" 
+* role[+].coding = $SMC-IngredientRoleCS#756005035000002 "Excipient" 
 * substance[+].code.concept.coding[UNII] = $SMC-SubstanceCS#LKG8494WBH "Benzyl Alcohol"
 
 Instance: SorbitanStearate
@@ -111,7 +111,7 @@ Description: "Comprehensive-Sample-Combipack Vaginal Cream: Example of an Ingred
 * status = #active
 * for[0] = Reference(PhP-Comprehensive-Sample-VaginalCream)
 * for[+] = Reference(MI-Comprehensive-Sample-VaginalCream) 
-* role[+].coding[SMC] = $SMC-IngredientRoleCS#756005051002 "Excipient" 
+* role[+].coding = $SMC-IngredientRoleCS#756005035000002 "Excipient" 
 * substance[+].code.concept.coding[UNII] = $SMC-SubstanceCS#NVZ4I0H58X "Sorbitan monostearate"
 
 Instance: Polysorbate60
@@ -122,7 +122,7 @@ Description: "Comprehensive-Sample-Combipack Vaginal Cream: Example of an Ingred
 * status = #active
 * for[0] = Reference(PhP-Comprehensive-Sample-VaginalCream)
 * for[+] = Reference(MI-Comprehensive-Sample-VaginalCream) 
-* role[+].coding[SMC] = $SMC-IngredientRoleCS#756005051002 "Excipient" 
+* role[+].coding = $SMC-IngredientRoleCS#756005035000002 "Excipient" 
 * substance[+].code.concept.coding[UNII] = $SMC-SubstanceCS#CAL22UVI4M "Polysorbate 60"
 
 Instance: PropyleneGlycol
@@ -133,7 +133,7 @@ Description: "Comprehensive-Sample-Combipack Vaginal Cream: Example of an Ingred
 * status = #active
 * for[0] = Reference(PhP-Comprehensive-Sample-VaginalCream)
 * for[+] = Reference(MI-Comprehensive-Sample-VaginalCream)
-* role[+].coding[SMC] = $SMC-IngredientRoleCS#756005051002 "Excipient" 
+* role[+].coding = $SMC-IngredientRoleCS#756005035000002 "Excipient" 
 * substance[+].code.concept.coding[UNII] = $SMC-SubstanceCS#6DC9Q167V3 "Propylene Glycol"
 
 Instance: StearicAcid
@@ -144,7 +144,7 @@ Description: "Comprehensive-Sample-Combipack Vaginal Cream: Example of an Ingred
 * status = #active
 * for[0] = Reference(PhP-Comprehensive-Sample-VaginalCream)
 * for[+] = Reference(MI-Comprehensive-Sample-VaginalCream)
-* role[+].coding[SMC] = $SMC-IngredientRoleCS#756005051002 "Excipient" 
+* role[+].coding = $SMC-IngredientRoleCS#756005035000002 "Excipient" 
 * substance[+].code.concept.coding[UNII] = $SMC-SubstanceCS#4ELV7Z65AP "Stearic Acid"
 
 Instance: CetostaerylAlcohol
@@ -155,7 +155,7 @@ Description: "Comprehensive-Sample-Combipack Vaginal Cream: Example of an Ingred
 * status = #active
 * for[0] = Reference(PhP-Comprehensive-Sample-VaginalCream)
 * for[+] = Reference(MI-Comprehensive-Sample-VaginalCream)
-* role[+].coding[SMC] = $SMC-IngredientRoleCS#756005051002 "Excipient"  
+* role[+].coding = $SMC-IngredientRoleCS#756005035000002 "Excipient"  
 * substance[+].code.concept.coding[UNII] = $SMC-SubstanceCS#2DMT128M1S "CETOSTEARYL ALCOHOL"
 
 Instance: CetylPalmitate
@@ -166,7 +166,7 @@ Description: "Comprehensive-Sample-Combipack Vaginal Cream: Example of an Ingred
 * status = #active
 * for[0] = Reference(PhP-Comprehensive-Sample-VaginalCream)
 * for[+] = Reference(MI-Comprehensive-Sample-VaginalCream)
-* role[+].coding[SMC] = $SMC-IngredientRoleCS#756005051002 "Excipient" 
+* role[+].coding = $SMC-IngredientRoleCS#756005035000002 "Excipient" 
 * substance[+].code.concept.coding[UNII] = $SMC-SubstanceCS#5ZA2S6B08X "CETYL PALMITATE"
 
 Instance: LiquidParaffin
@@ -177,7 +177,7 @@ Description: "Comprehensive-Sample-Combipack Vaginal Cream: Example of an Ingred
 * status = #active
 * for[0] = Reference(PhP-Gilteritinibi-hemifumaras-40-Filmcoatedtablet)  
 * for[+] = Reference(MI-Gilteritinibi-hemifumaras-40-Filmcoatedtablet) 
-* role[+].coding[SMC] = $SMC-IngredientRoleCS#756005051002 "Excipient"  
+* role[+].coding = $SMC-IngredientRoleCS#756005035000002 "Excipient"  
 * substance[+].code.concept.coding[UNII] = $SMC-SubstanceCS#T5L8T28FGP "LIQUID PARAFFIN"
 
 Instance: Water
@@ -188,5 +188,5 @@ Description: "Comprehensive-Sample-Combipack Vaginal Cream: Example of an Ingred
 * status = #active
 * for[0] = Reference(PhP-Gilteritinibi-hemifumaras-40-Filmcoatedtablet)  
 * for[+] = Reference(MI-Gilteritinibi-hemifumaras-40-Filmcoatedtablet) 
-* role[+].coding[SMC] = $SMC-IngredientRoleCS#756005051002 "Excipient" 
+* role[+].coding = $SMC-IngredientRoleCS#756005035000002 "Excipient" 
 * substance[+].code.concept.coding[UNII] = $SMC-SubstanceCS#059QF0KO0R "Water"

@@ -13,7 +13,7 @@ Description: "CH - Standard Terms used in Switzerland (aggregations of codes of 
 * ^caseSensitive = true
 * ^content = #complete
 
-* ^concept[+].code = #756005007001
+* ^concept[+].code = #756005040000001
 * ^concept[=].display = "Information for healthcare professionals"
 * ^concept[=].designation[+].language = #de
 * ^concept[=].designation[=].use.system = $sct
@@ -26,7 +26,7 @@ Description: "CH - Standard Terms used in Switzerland (aggregations of codes of 
 * ^concept[=].designation[=].use.display = "Synonym"
 * ^concept[=].designation[=].value = "FI"
 
-* ^concept[+].code = #756005007002
+* ^concept[+].code = #756005040000002
 * ^concept[=].display = "Patient Information"
 * ^concept[=].designation[+].language = #de
 * ^concept[=].designation[=].use.system = $sct
@@ -39,7 +39,7 @@ Description: "CH - Standard Terms used in Switzerland (aggregations of codes of 
 * ^concept[=].designation[=].use.display = "Synonym"
 * ^concept[=].designation[=].value = "PI"
 
-* ^concept[+].code = #756005007003
+* ^concept[+].code = #756005040000003
 * ^concept[=].display = "Packaging"
 * ^concept[=].designation[+].language = #de
 * ^concept[=].designation[=].use.system = $sct
@@ -52,7 +52,7 @@ Description: "CH - Standard Terms used in Switzerland (aggregations of codes of 
 * ^concept[=].designation[=].use.display = "Synonym"
 * ^concept[=].designation[=].value = "PE"
 
-* ^concept[+].code = #756005007004
+* ^concept[+].code = #756005040000004
 * ^concept[=].display = "Basic information for export"
 * ^concept[=].designation[+].language = #de
 * ^concept[=].designation[=].use.system = $sct

@@ -10,7 +10,7 @@ Padcev ist indiziert zur Behandlung von Erwachsenen mit lokal fortgeschrittenem 
 
 #### FHIR Examples
 Representation of IDMP data attributes as FHIR XML and JSON:
-[FHIR Beispiel](Bundle-52ae1101-1e39-4280-b6dc-b505d7501b2b.html)
+[FHIR Example](Bundle-52ae1101-1e39-4280-b6dc-b505d7501b2b.html)
 
 #### IDMP Dataexample
 Representation of IDMP/FHIR data elements:

@@ -39,15 +39,7 @@ Description: "Profile of the ClinicalUseDefinition resource for representing an 
 * indication.comorbidity.concept.coding[SMC].system = $mdr
 * indication.comorbidity.concept.coding[SMC].code 1..
 
-// Intended effect
+// Intended effect 
 * indication.intendedEffect from EMAIntendedEffectVS (required)
-* indication.intendedEffect.concept 1..
-* indication.intendedEffect.concept.coding 1..
-* indication.intendedEffect.concept.coding ^slicing.discriminator[+].type = #value
-* indication.intendedEffect.concept.coding ^slicing.discriminator[=].path = "system"
-* indication.intendedEffect.concept.coding ^slicing.rules = #open
-* indication.intendedEffect.concept.coding contains 
-    SMC 0..1
-* indication.intendedEffect.concept.coding[SMC].system 1..
-* indication.intendedEffect.concept.coding[SMC].system = $emaIntendedEffect
-* indication.intendedEffect.concept.coding[SMC].code 1..
+
+// Description: Indication and Comorbidity are sliced as the code system of Snomed is used by other organisations such as FOPH

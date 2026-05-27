@@ -9,7 +9,7 @@ Description: "Padcev 30 mg, Pulver für ein Konzentrat zur Herstellung einer Inf
 * identifier[=].value = "CH-01100869-0682910040000-0002" // PCID
 * packageFor = Reference(Padcev-30mg-Powder) // Link from Packaged Medicinal Product to Medicinal Product
 * description = "Durchstechflasche 1 Stk" // Package Description
-* legalStatusOfSupply[+].code.coding = ChSMCLegalStatusOfSupplyCS#756005022001 "Medicinal product subject to medical or veterinary prescription single dispensation (A)" // Legal Status of Supply (for a package)
+* legalStatusOfSupply[+].code.coding = ChSMCLegalStatusOfSupplyCS#756005034000001 "A: Single dispensing requiring a medical or veterinary prescription" // Legal Status of Supply (for a package)
 * containedItemQuantity[+].value = 30 // Pack Size
 * containedItemQuantity[=].unit = "mg" 
 * containedItemQuantity[=].system = "http://unitsofmeasure.org" 
@@ -20,7 +20,7 @@ Description: "Padcev 30 mg, Pulver für ein Konzentrat zur Herstellung einer Inf
 * packaging.identifier[=].value = "7680682910014" // Data Carrier Identifier - GTIN
 
 // Package Item (Container) - Outer Package
-* packaging.type.coding[SMC] = $edqm#30009000 "Box" // Package Item (Container) Type
+* packaging.type.coding = $edqm#30009000 "Box" // Package Item (Container) Type
 * packaging.quantity = 1 // Package Item (Container) Quantity
 
 // Package Item (Container) - Inner Package
@@ -36,10 +36,10 @@ Description: "Padcev 30 mg, Pulver für ein Konzentrat zur Herstellung einer Inf
 // Shelf Life / Storage
 * packaging.shelfLifeStorage[0].type = $emaShelfLifeType#100000073403 "Shelf life of the medicinal product as packaged for sale" // Shelf Life Type
 * packaging.shelfLifeStorage[=].periodDuration = 36 'mo' "month" // Shelf Life Time Period
-* packaging.shelfLifeStorage[0].specialPrecautionsForStorage.coding = ChSMCSpecialPrecautionsForStorageCS#756005042004 "protect from light" // Special Precautions for Storage
-* packaging.shelfLifeStorage[0].specialPrecautionsForStorage.coding = ChSMCSpecialPrecautionsForStorageCS#756005042001 "Do not freeze" // Special Precautions for Storage
-* packaging.shelfLifeStorage[0].specialPrecautionsForStorage.coding = ChSMCSpecialPrecautionsForStorageCS#756005042007 "in the refrigerator (2°C - 8°C)" // Special Precautions for Storage
-* packaging.shelfLifeStorage[0].specialPrecautionsForStorage.coding = ChSMCSpecialPrecautionsForStorageCS#756005042011 "Store in the original container" // Special Precautions for Storage
+* packaging.shelfLifeStorage[0].specialPrecautionsForStorage.coding = ChSMCSpecialPrecautionsForStorageCS#756005041000004 "protect from light" // Special Precautions for Storage
+* packaging.shelfLifeStorage[0].specialPrecautionsForStorage.coding = ChSMCSpecialPrecautionsForStorageCS#756005041000001 "Do not freeze" // Special Precautions for Storage
+* packaging.shelfLifeStorage[0].specialPrecautionsForStorage.coding = ChSMCSpecialPrecautionsForStorageCS#756005041000007 "in the refrigerator (2°C - 8°C)" // Special Precautions for Storage
+* packaging.shelfLifeStorage[0].specialPrecautionsForStorage.coding = ChSMCSpecialPrecautionsForStorageCS#756005041000011 "Store in the original container" // Special Precautions for Storage
 
 // Shelf Life / Storage
 * packaging.shelfLifeStorage[0].type = $emaShelfLifeType#100000073405 "Shelf life after dilution or reconstitution according to directions" // Shelf Life Type

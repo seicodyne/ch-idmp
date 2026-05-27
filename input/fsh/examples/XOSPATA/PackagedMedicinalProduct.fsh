@@ -9,7 +9,7 @@ Description: "Xospata 40 mg, Filmtabletten: Example of a PackagedProductDefiniti
 * identifier[=].value = "CH-01100869-0672110010000-0001" // PCID
 * packageFor = Reference(Xospata-Filmcoatedtablet)
 * description = "4 Blister zu 7 Tabletten in 1 Box" // Package Description
-* legalStatusOfSupply[+].code = ChSMCLegalStatusOfSupplyCS#756005022001 "Medicinal product subject to medical or veterinary prescription single dispensation (A)"
+* legalStatusOfSupply[+].code = ChSMCLegalStatusOfSupplyCS#756005034000001 "A: Single dispensing requiring a medical or veterinary prescription" //Legal Status of Supply (for a Package)
 * containedItemQuantity[+].value = 48  // Pack Size
 * containedItemQuantity[=].unit = "Tablet" 
 * containedItemQuantity[=].system = $edqm 
@@ -20,13 +20,13 @@ Description: "Xospata 40 mg, Filmtabletten: Example of a PackagedProductDefiniti
 * packaging.identifier[=].value = "7680672110011" // Data Carrier Identifier - GTIN
 
 // Package Item (Container) - Outer Package
-* packaging.type.coding[SMC] = $edqm#30009000 "Box" // Package Item (Container) Type
+* packaging.type.coding = $edqm#30009000 "Box" // Package Item (Container) Type
 * packaging.quantity = 1 // Package Item (Container) Quantity
 
 // Shelf Life / Storage
 * packaging.shelfLifeStorage[0].type = $emaShelfLifeType#100000073403 "Shelf life of the medicinal product as packaged for sale" // Shelf Life Type
 * packaging.shelfLifeStorage[=].periodDuration = 36 'mo' "month" // Shelf Life Time Period
-* packaging.shelfLifeStorage[0].specialPrecautionsForStorage.coding = ChSMCSpecialPrecautionsForStorageCS#756005042009 "Do not store above 30°C" // Special Precaution for Storage
+* packaging.shelfLifeStorage[0].specialPrecautionsForStorage.coding = ChSMCSpecialPrecautionsForStorageCS#756005041000009 "Do not store above 30°C" // Special Precaution for Storage
 
 // Package Item (Container) - Inner Package
 * packaging.packaging[0].type.coding = $edqm#30007000 "Blister" // Package Item (Container) Type

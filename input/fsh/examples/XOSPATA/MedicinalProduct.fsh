@@ -8,16 +8,16 @@ Description: "Xospata 40 mg, Filmtabletten: Example of a MedicinalProductDefinit
 * identifier[+].system = $MPID
 * identifier[=].value = "CH-01100869-0672110010000" // MPID
 //* domain.coding[EMA] = $emaDomain#100000000012 "Human use" // Domain
-* extension[authorizedDoseForm].valueCodeableConcept.coding[SMC] = $SMC-AuthorisedDoseFormCS#10221000 "Film-coated tablet" // Authorised Pharmaceutical Dose Form
+* extension[authorizedDoseForm].valueCodeableConcept.coding = $SMC-AuthorisedDoseFormCS#10221000 "Film-coated tablet" // Authorised Pharmaceutical Dose Form
 //* combinedPharmaceuticalDoseForm = n/a // Combined Pharmaceutical Dose Form
 * indication = "Xospata wird angewendet für die Behandlung von erwachsenen Patienten, die an rezidivierter oder refraktärer akuter myeloider Leukämie (AML) mit FMS-ähnlichen Tyrosinkinase 3 (FLT3)-Mutationen leiden." // Full indication text
-* legalStatusOfSupply = ChSMCLegalStatusOfSupplyCS#756005022001 "Medicinal product subject to medical or veterinary prescription single dispensation (A)" // Legal Status of Supply
+* legalStatusOfSupply = ChSMCLegalStatusOfSupplyCS#756005034000001 "A: Single dispensing requiring a medical or veterinary prescription" // Legal Status of Supply
 * additionalMonitoringIndicator = ChSMCAdditionalMonitoringIndicatorCS#756005001003 "No Warning" // Additional Monitoring Indicator
 * pediatricUseIndicator = ChSMCPediatricUseIndicatorCS#756005003002 "Not authorised for the treatment in children" // Paediatric Use Indicator
 
 // Product Classification.Value
 * classification[+] = $atc#L01EX13 // ATC Code
-* classification[+] = ChSMCTherapeuticProductcodeCS#756005004001 "Synthetic" // Therapeutic Productcode
+* classification[+] = ChSMCMedicinalProductCategoryCS#756005039000001 "Synthetic" // Therapeutic Productcode
 
 
 // Attached Document
@@ -39,7 +39,7 @@ Description: "Xospata 40 mg, Filmtabletten: Example of a MedicinalProductDefinit
 
 // Country / Language
 * name[de-CH][=].usage[0].country = $country#CH "Switzerland" // Country: https://hl7.org/fhir/R4/valueset-iso3166-1-2.html
-* name[de-CH][=].usage[=].language = $language#de-CH "German (Switzerland)" // Language http://hl7.org/fhir/R4/valueset-languages.html
+* name[de-CH][=].usage[=].language = $language#de-CH // Language http://hl7.org/fhir/R4/valueset-languages.html
 
 // Marketing Status
 * marketingStatus[+].country = $country#CH "Switzerland"
