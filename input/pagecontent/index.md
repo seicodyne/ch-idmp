@@ -3,7 +3,7 @@ CH IDMP is a project of the Refdata Foundation Switzerland to enable stuctured d
 
 This is a draft implementation guide as basis for the first IDMP pilot project planned for the year 2027. 
 
-#### FHIR ressources for IDMP
+#### FHIR resources for IDMP
 This implementation guide uses the following FHIR resource to represent the context of the international ISO IDMP (Identification of Medicinal Products) standard:
 
 This implementation guide is dependent on 
@@ -40,6 +40,8 @@ The following documents have been defined (and described in more detail on the r
 </div>
 
 **Download**: You can download this implementation guide in the [npm format](https://confluence.hl7.org/display/FHIR/NPM+Package+Specification) from [here](package.tgz).
+
+**Download**: You can download this implementation guide as an htmp zip]from [here](full-ig.zip).
 
 ### Collaboration
 This guide is the product of collaborative work undertaken with participants from:

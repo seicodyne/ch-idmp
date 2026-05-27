@@ -148,3 +148,19 @@ Usage: #definition
 * uniqueId[+].type = #uri
 * uniqueId[=].value = "http://fhir.ch/ig/ch-idmp/sid/attno"
 * uniqueId[=].preferred = true
+
+
+Instance: SMCLocID
+InstanceOf: NamingSystem
+Title: "Swissmedic Location Identifier"
+Description: "Temporary NamingSystem in this implementation guide until officially released by Swissmedic"
+Usage: #definition
+
+* name = "SMCLocID"
+* status = #draft
+* kind = #identifier
+* date = "2025-10-28"
+* usage = "Used to identify organisation locations registered with Swissmedic."
+* uniqueId[+].type = #uri
+* uniqueId[=].value = "https://www.swissmedic.ch/fhir/identifier/locations"
+* uniqueId[=].preferred = true
