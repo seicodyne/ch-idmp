@@ -2,8 +2,7 @@
 FHIR® Implementation Guide for the 'Swiss IDMP Pilot Project' of the IDMP Usergroup.
 
 * [Current Stable Version of the ePL project of FOPH](https://fhir.ch/ig/ch-epl/index.html)
-* Future Version of the ch-idmp project of Refdata
-* [CI Build](https://fhir.refdata.ch)
+* Future Version of the ch-idmp project of Refdata [CI Build](https://fhir.refdata.ch)
 
 ***************************
 
