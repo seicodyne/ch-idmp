@@ -3,7 +3,7 @@ FHIR® Implementation Guide for the 'Swiss IDMP Pilot Project' of the IDMP Userg
 
 * Current Stable Version of the ePL project of FOPH
 * [CI Build](https://bageplstoragepoc.z1.web.core.windows.net/)
-* Future Version of the ch-idmp project of SMC: not yet available
+* Future Version of the ch-idmp project of Refdata
 * [CI Build](https://fhir.refdata.ch)
 
 ***************************
