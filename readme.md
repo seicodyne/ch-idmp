@@ -1,10 +1,10 @@
 # CH IDMP (R5)
 FHIR® Implementation Guide for the 'Swiss IDMP Pilot Project' of the IDMP Usergroup.
 
-* Current Stable Version of the ePL project of FOPH: not yet available
+* Current Stable Version of the ePL project of FOPH
 * [CI Build](https://bageplstoragepoc.z1.web.core.windows.net/)
 * Future Version of the ch-idmp project of SMC: not yet available
-* [CI Build](https://to-be-defined)
+* [CI Build](https://fhir.refdata.ch)
 
 ***************************
 
