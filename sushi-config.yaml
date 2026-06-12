@@ -9,15 +9,15 @@ url: http://fhir.ch/ig/ch-idmp/ImplementationGuide/ch.fhir.ig.ch-idmp
 name: CH_IDMP
 title: "CH IDMP (R5)"
 description: Implementation Guide CH IDMP (R5)
-status: active
+status: draft
 license: CC0-1.0
 copyright: CC0-1.0
 jurisdiction: urn:iso:std:iso:3166#CH
-date: 2025-12-08
+date: 2026-06-22
 version: 1.0.0-ballot
 fhirVersion: 5.0.0
 copyrightYear: 2026+
-releaseLabel: trial-use # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
+releaseLabel: ballot # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 publisher:
   name: Refdata Foundation
 contact:
