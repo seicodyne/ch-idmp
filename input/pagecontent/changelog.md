@@ -1,5 +1,7 @@
 All significant changes to this FHIR implementation guide will be documented on this page.
 
+### 1.0.0-ballot (2026-06-12)
+
 ### Refdata DSTU 1: Updates from new version of Swissmedic [Business Implementation Guide V2.0](https://www.swissmedic.ch/dam/swissmedic/en/dokumente/e-gov/handbook-smc-idmp-implementation-guide.pdf.download.pdf/SMC-IDMP-IG-V2.0.pdf)  (March 2026)
 
 #### Update Profiles

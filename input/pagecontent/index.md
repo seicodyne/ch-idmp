@@ -1,3 +1,9 @@
+This implementation guide is under informative ballot by HL7 Switzerland
+from August 4th, 2026 until September 30th, 2026.
+Please add your feedback via the 'Propose a change'-link in the footer.
+
+[Changelog](changelog.html) with significant changes, open and closed issues.
+
 ### Introduction
 CH IDMP is a project of the Refdata Foundation Switzerland to enable stuctured datacommunication of medicinal product information in IDMP/FHIR. 
 
