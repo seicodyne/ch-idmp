@@ -8,7 +8,7 @@
   "path" : "http://fhir.ch/ig/ch-idmp/1.0.0-ballot",
   "mode" : "milestone",
   "status" : "ballot",
-  "sequence" : "STU 1",
+  "sequence" : "DSTU 1",
   "desc" : "CH IDMP Informative Ballot",
   "changes" : "changelog.html",
   "first" : true,
