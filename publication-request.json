@@ -3,7 +3,7 @@
   "title" : "CH IDMP",
   "introduction" : "IDMP Base Implementation Guide for Swissmedic",
   "category" : "Administration",
-  "ci-build" : "http://fhir.ch/ig/ch-idmp",
+  "ci-build" : "https://build.fhir.org/ig/seicodyne/ch-idmp",
   "version" : "1.0.0-ballot",
   "path" : "http://fhir.ch/ig/ch-idmp/1.0.0-ballot",
   "mode" : "milestone",
